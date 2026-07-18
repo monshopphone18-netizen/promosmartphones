@@ -100,6 +100,27 @@ const PRODUCTS = [
     {name:'Titane naturel', photo:'images/iphone15promax-naturel.jpg', views:['images/iphone15promax-naturel.jpg','images/iphone15promax-naturel-face.jpg','images/iphone15promax-naturel-photo.jpg']},
     {name:'Titane blanc', photo:'images/iphone15promax-blanc.jpg', views:['images/iphone15promax-blanc.jpg','images/iphone15promax-blanc-face.jpg','images/iphone15promax-blanc-photo.jpg']}
   ]},
+  {id:26, variantGroup:'iphone16', brand:'iPhone', name:'iPhone 16', spec:'128 Go', original:869, price:569, type:'phone', colors:[
+    {name:'Noir', photo:'images/iphone16-noir.jpg', views:['images/iphone16-noir.jpg','images/iphone16-noir-face.jpg','images/iphone16-noir-photo.jpg']},
+    {name:'Blanc', photo:'images/iphone16-blanc.jpg', views:['images/iphone16-blanc.jpg','images/iphone16-blanc-face.jpg','images/iphone16-blanc-photo.jpg']},
+    {name:'Outremer', photo:'images/iphone16-outremer.jpg', views:['images/iphone16-outremer.jpg','images/iphone16-outremer-face.jpg','images/iphone16-outremer-photo.jpg']},
+    {name:'Sarcelle', photo:'images/iphone16-sarcelle.jpg', views:['images/iphone16-sarcelle.jpg','images/iphone16-sarcelle-face.jpg','images/iphone16-sarcelle-photo.jpg']},
+    {name:'Rose', photo:'images/iphone16-rose.jpg', views:['images/iphone16-rose.jpg','images/iphone16-rose-face.jpg','images/iphone16-rose-photo.jpg']}
+  ]},
+  {id:27, variantGroup:'iphone16', brand:'iPhone', name:'iPhone 16', spec:'256 Go', original:999, price:649, type:'phone', colors:[
+    {name:'Noir', photo:'images/iphone16-noir.jpg', views:['images/iphone16-noir.jpg','images/iphone16-noir-face.jpg','images/iphone16-noir-photo.jpg']},
+    {name:'Blanc', photo:'images/iphone16-blanc.jpg', views:['images/iphone16-blanc.jpg','images/iphone16-blanc-face.jpg','images/iphone16-blanc-photo.jpg']},
+    {name:'Outremer', photo:'images/iphone16-outremer.jpg', views:['images/iphone16-outremer.jpg','images/iphone16-outremer-face.jpg','images/iphone16-outremer-photo.jpg']},
+    {name:'Sarcelle', photo:'images/iphone16-sarcelle.jpg', views:['images/iphone16-sarcelle.jpg','images/iphone16-sarcelle-face.jpg','images/iphone16-sarcelle-photo.jpg']},
+    {name:'Rose', photo:'images/iphone16-rose.jpg', views:['images/iphone16-rose.jpg','images/iphone16-rose-face.jpg','images/iphone16-rose-photo.jpg']}
+  ]},
+  {id:28, variantGroup:'iphone16', brand:'iPhone', name:'iPhone 16', spec:'512 Go', original:1229, price:799, type:'phone', colors:[
+    {name:'Noir', photo:'images/iphone16-noir.jpg', views:['images/iphone16-noir.jpg','images/iphone16-noir-face.jpg','images/iphone16-noir-photo.jpg']},
+    {name:'Blanc', photo:'images/iphone16-blanc.jpg', views:['images/iphone16-blanc.jpg','images/iphone16-blanc-face.jpg','images/iphone16-blanc-photo.jpg']},
+    {name:'Outremer', photo:'images/iphone16-outremer.jpg', views:['images/iphone16-outremer.jpg','images/iphone16-outremer-face.jpg','images/iphone16-outremer-photo.jpg']},
+    {name:'Sarcelle', photo:'images/iphone16-sarcelle.jpg', views:['images/iphone16-sarcelle.jpg','images/iphone16-sarcelle-face.jpg','images/iphone16-sarcelle-photo.jpg']},
+    {name:'Rose', photo:'images/iphone16-rose.jpg', views:['images/iphone16-rose.jpg','images/iphone16-rose-face.jpg','images/iphone16-rose-photo.jpg']}
+  ]},
   {id:5, brand:'Samsung', name:'Galaxy A54', spec:'128 Go', original:420, price:249, type:'phone'},
   {id:6, brand:'Samsung', name:'Galaxy S22', spec:'128 Go', original:700, price:389, type:'phone'},
   {id:7, brand:'Samsung', name:'Galaxy S23', spec:'256 Go', original:900, price:549, type:'phone'},
@@ -141,6 +162,10 @@ const PRODUCT_INFO = {
   'iPhone 15 Pro Max': {
     desc: "L'iPhone 15 Pro Max, c'est tout le meilleur de la gamme Pro sur un grand écran de 6,7\". Châssis en titane, puce A17 Pro et un téléobjectif inédit avec zoom optique 5x pour des photos rapprochées d'une qualité impressionnante. La plus grande autonomie de tous les iPhone.",
     specs: [['Écran','6,7" OLED Super Retina XDR · ProMotion 120 Hz · Dynamic Island'],['Puce','A17 Pro'],['Châssis','Titane'],['Appareil photo','Pro : 48 Mpx + ultra grand-angle + téléobjectif 5x'],['Autonomie','Jusqu\'à 29 h de lecture vidéo'],['Connectique','USB-C (USB 3)'],['Nouveauté','Bouton Action'],['Réseau','5G'],['Système','iOS']]
+  },
+  'iPhone 16': {
+    desc: "L'iPhone 16 embarque la puce A18, le nouveau bouton Action et l'inédite Commande d'appareil photo pour lancer et régler vos prises de vue d'un simple geste. Double appareil photo Fusion 48 Mpx, USB-C et coloris éclatants.",
+    specs: [['Écran','6,1" OLED Super Retina XDR'],['Puce','A18'],['Appareil photo','Double Fusion 48 Mpx + ultra grand-angle'],['Autonomie','Jusqu\'à 22 h de lecture vidéo'],['Nouveauté','Bouton Action · Commande d\'appareil photo'],['Connectique','USB-C'],['Réseau','5G'],['Système','iOS']]
   },
   'Galaxy A54': {
     desc: "Le Galaxy A54 offre l'essentiel d'un smartphone moderne à prix doux : grand écran Super AMOLED 120 Hz, batterie longue durée et triple capteur photo 50 Mpx.",
@@ -190,7 +215,8 @@ const COLOR_HEX = {
   'Minuit':'#1D2233', 'Rose':'#E7C8CB', 'Lumière stellaire':'#EDE6D8',
   'Graphite':'#54514A', 'Or':'#F0E4C8', 'Argent':'#F2F2ED',
   'Bleu Sierra':'#A9C0D2', 'Vert alpin':'#4A5D4E', 'Jaune':'#F2E2A0',
-  'Titane noir':'#3B3B3D', 'Titane bleu':'#4A5568', 'Titane naturel':'#C7BEB2', 'Titane blanc':'#E8E6E0'
+  'Titane noir':'#3B3B3D', 'Titane bleu':'#4A5568', 'Titane naturel':'#C7BEB2', 'Titane blanc':'#E8E6E0',
+  'Sarcelle':'#8FB3B0', 'Outremer':'#6B7DD6'
 };
 
 function productInfo(p){ return PRODUCT_INFO[p.name] || {desc:'', specs:[]}; }
