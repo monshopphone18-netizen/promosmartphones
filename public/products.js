@@ -139,6 +139,20 @@ const PRODUCTS = [
     {name:'Titane sable', photo:'images/iphone16promax-sable.jpg', views:['images/iphone16promax-sable.jpg','images/iphone16promax-sable-face.jpg','images/iphone16promax-sable-photo.jpg']},
     {name:'Titane blanc', photo:'images/iphone16promax-blanc.jpg', views:['images/iphone16promax-blanc.jpg','images/iphone16promax-blanc-face.jpg','images/iphone16promax-blanc-photo.jpg']}
   ]},
+  {id:32, variantGroup:'iphone17', brand:'iPhone', name:'iPhone 17', spec:'256 Go', original:969, price:669, type:'phone', colors:[
+    {name:'Sauge', photo:'images/iphone17-sauge.jpg', views:['images/iphone17-sauge.jpg','images/iphone17-sauge-face.jpg','images/iphone17-sauge-photo.jpg']},
+    {name:'Lavande', photo:'images/iphone17-lavande.jpg', views:['images/iphone17-lavande.jpg','images/iphone17-lavande-face.jpg','images/iphone17-lavande-photo.jpg']},
+    {name:'Brume', photo:'images/iphone17-brume.jpg', views:['images/iphone17-brume.jpg','images/iphone17-brume-face.jpg','images/iphone17-brume-photo.jpg']},
+    {name:'Blanc', photo:'images/iphone17-blanc.jpg', views:['images/iphone17-blanc.jpg','images/iphone17-blanc-face.jpg','images/iphone17-blanc-photo.jpg']},
+    {name:'Noir', photo:'images/iphone17-noir.jpg', views:['images/iphone17-noir.jpg','images/iphone17-noir-face.jpg','images/iphone17-noir-photo.jpg']}
+  ]},
+  {id:33, variantGroup:'iphone17', brand:'iPhone', name:'iPhone 17', spec:'512 Go', original:1199, price:849, type:'phone', colors:[
+    {name:'Sauge', photo:'images/iphone17-sauge.jpg', views:['images/iphone17-sauge.jpg','images/iphone17-sauge-face.jpg','images/iphone17-sauge-photo.jpg']},
+    {name:'Lavande', photo:'images/iphone17-lavande.jpg', views:['images/iphone17-lavande.jpg','images/iphone17-lavande-face.jpg','images/iphone17-lavande-photo.jpg']},
+    {name:'Brume', photo:'images/iphone17-brume.jpg', views:['images/iphone17-brume.jpg','images/iphone17-brume-face.jpg','images/iphone17-brume-photo.jpg']},
+    {name:'Blanc', photo:'images/iphone17-blanc.jpg', views:['images/iphone17-blanc.jpg','images/iphone17-blanc-face.jpg','images/iphone17-blanc-photo.jpg']},
+    {name:'Noir', photo:'images/iphone17-noir.jpg', views:['images/iphone17-noir.jpg','images/iphone17-noir-face.jpg','images/iphone17-noir-photo.jpg']}
+  ]},
   {id:5, brand:'Samsung', name:'Galaxy A54', spec:'128 Go', original:420, price:249, type:'phone'},
   {id:6, brand:'Samsung', name:'Galaxy S22', spec:'128 Go', original:700, price:389, type:'phone'},
   {id:7, brand:'Samsung', name:'Galaxy S23', spec:'256 Go', original:900, price:549, type:'phone'},
@@ -189,6 +203,10 @@ const PRODUCT_INFO = {
     desc: "Le sommet de la gamme : l'iPhone 16 Pro Max combine un immense écran de 6,9\", la puce A18 Pro, un châssis en titane et un système photo Pro 48 Mpx avec téléobjectif 5x. La Commande d'appareil photo et une autonomie record en font l'iPhone ultime.",
     specs: [['Écran','6,9" OLED Super Retina XDR · ProMotion 120 Hz'],['Puce','A18 Pro'],['Châssis','Titane'],['Appareil photo','Pro : 48 Mpx + ultra grand-angle 48 Mpx + téléobjectif 5x'],['Autonomie','Jusqu\'à 33 h de lecture vidéo'],['Nouveauté','Bouton Action · Commande d\'appareil photo'],['Connectique','USB-C (USB 3)'],['Réseau','5G'],['Système','iOS']]
   },
+  'iPhone 17': {
+    desc: "L'iPhone 17 place la barre encore plus haut avec un écran ProMotion 120 Hz plus grand, la puissante puce A19 et un double appareil photo 48 Mpx. Design coloré, verre renforcé Ceramic Shield et USB-C : le tout dans un modèle standard plus abouti que jamais.",
+    specs: [['Écran','6,3" OLED Super Retina XDR · ProMotion 120 Hz'],['Puce','A19'],['Appareil photo','Double Fusion 48 Mpx + ultra grand-angle 48 Mpx'],['Autonomie','Jusqu\'à 24 h de lecture vidéo'],['Protection','Ceramic Shield'],['Connectique','USB-C'],['Réseau','5G'],['Système','iOS']]
+  },
   'Galaxy A54': {
     desc: "Le Galaxy A54 offre l'essentiel d'un smartphone moderne à prix doux : grand écran Super AMOLED 120 Hz, batterie longue durée et triple capteur photo 50 Mpx.",
     specs: [['Écran','6,4" Super AMOLED 120 Hz'],['Processeur','Exynos 1380'],['Appareil photo','Triple, principal 50 Mpx'],['Batterie','5000 mAh'],['Réseau','5G'],['Système','Android']]
@@ -238,7 +256,8 @@ const COLOR_HEX = {
   'Graphite':'#54514A', 'Or':'#F0E4C8', 'Argent':'#F2F2ED',
   'Bleu Sierra':'#A9C0D2', 'Vert alpin':'#4A5D4E', 'Jaune':'#F2E2A0',
   'Titane noir':'#3B3B3D', 'Titane bleu':'#4A5568', 'Titane naturel':'#C7BEB2', 'Titane blanc':'#E8E6E0',
-  'Sarcelle':'#8FB3B0', 'Outremer':'#6B7DD6', 'Titane sable':'#C9B79C'
+  'Sarcelle':'#8FB3B0', 'Outremer':'#6B7DD6', 'Titane sable':'#C9B79C',
+  'Sauge':'#9CAE8B', 'Lavande':'#C7BEDC', 'Brume':'#C5CED6'
 };
 
 function productInfo(p){ return PRODUCT_INFO[p.name] || {desc:'', specs:[]}; }
