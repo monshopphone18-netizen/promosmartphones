@@ -62,6 +62,26 @@ const PRODUCTS = [
     {name:'Vert', photo:'images/iphone15-vert.jpg', views:['images/iphone15-vert.jpg','images/iphone15-vert-face.jpg','images/iphone15-vert-photo.jpg']},
     {name:'Jaune', photo:'images/iphone15-jaune.jpg', views:['images/iphone15-jaune.jpg','images/iphone15-jaune-face.jpg','images/iphone15-jaune-photo.jpg']}
   ]},
+  {id:19, variantGroup:'iphone15pro', brand:'iPhone', name:'iPhone 15 Pro', spec:'128 Go', original:1150, price:749, type:'phone', colors:[
+    {name:'Titane noir', photo:'images/iphone15pro-noir.jpg', views:['images/iphone15pro-noir.jpg','images/iphone15pro-noir-face.jpg','images/iphone15pro-noir-photo.jpg']},
+    {name:'Titane bleu', photo:'images/iphone15pro-bleu.jpg', views:['images/iphone15pro-bleu.jpg','images/iphone15pro-bleu-face.jpg','images/iphone15pro-bleu-photo.jpg']},
+    {name:'Titane naturel', photo:'images/iphone15pro-naturel.jpg', views:['images/iphone15pro-naturel.jpg','images/iphone15pro-naturel-face.jpg','images/iphone15pro-naturel-photo.jpg']}
+  ]},
+  {id:20, variantGroup:'iphone15pro', brand:'iPhone', name:'iPhone 15 Pro', spec:'256 Go', original:1280, price:839, type:'phone', colors:[
+    {name:'Titane noir', photo:'images/iphone15pro-noir.jpg', views:['images/iphone15pro-noir.jpg','images/iphone15pro-noir-face.jpg','images/iphone15pro-noir-photo.jpg']},
+    {name:'Titane bleu', photo:'images/iphone15pro-bleu.jpg', views:['images/iphone15pro-bleu.jpg','images/iphone15pro-bleu-face.jpg','images/iphone15pro-bleu-photo.jpg']},
+    {name:'Titane naturel', photo:'images/iphone15pro-naturel.jpg', views:['images/iphone15pro-naturel.jpg','images/iphone15pro-naturel-face.jpg','images/iphone15pro-naturel-photo.jpg']}
+  ]},
+  {id:21, variantGroup:'iphone15pro', brand:'iPhone', name:'iPhone 15 Pro', spec:'512 Go', original:1510, price:989, type:'phone', colors:[
+    {name:'Titane noir', photo:'images/iphone15pro-noir.jpg', views:['images/iphone15pro-noir.jpg','images/iphone15pro-noir-face.jpg','images/iphone15pro-noir-photo.jpg']},
+    {name:'Titane bleu', photo:'images/iphone15pro-bleu.jpg', views:['images/iphone15pro-bleu.jpg','images/iphone15pro-bleu-face.jpg','images/iphone15pro-bleu-photo.jpg']},
+    {name:'Titane naturel', photo:'images/iphone15pro-naturel.jpg', views:['images/iphone15pro-naturel.jpg','images/iphone15pro-naturel-face.jpg','images/iphone15pro-naturel-photo.jpg']}
+  ]},
+  {id:22, variantGroup:'iphone15pro', brand:'iPhone', name:'iPhone 15 Pro', spec:'1 To', original:1740, price:1149, type:'phone', colors:[
+    {name:'Titane noir', photo:'images/iphone15pro-noir.jpg', views:['images/iphone15pro-noir.jpg','images/iphone15pro-noir-face.jpg','images/iphone15pro-noir-photo.jpg']},
+    {name:'Titane bleu', photo:'images/iphone15pro-bleu.jpg', views:['images/iphone15pro-bleu.jpg','images/iphone15pro-bleu-face.jpg','images/iphone15pro-bleu-photo.jpg']},
+    {name:'Titane naturel', photo:'images/iphone15pro-naturel.jpg', views:['images/iphone15pro-naturel.jpg','images/iphone15pro-naturel-face.jpg','images/iphone15pro-naturel-photo.jpg']}
+  ]},
   {id:5, brand:'Samsung', name:'Galaxy A54', spec:'128 Go', original:420, price:249, type:'phone'},
   {id:6, brand:'Samsung', name:'Galaxy S22', spec:'128 Go', original:700, price:389, type:'phone'},
   {id:7, brand:'Samsung', name:'Galaxy S23', spec:'256 Go', original:900, price:549, type:'phone'},
@@ -95,6 +115,10 @@ const PRODUCT_INFO = {
   'iPhone 15': {
     desc: "L'iPhone 15 passe à l'USB-C et à la Dynamic Island. Sa puce A16 Bionic et son capteur principal 48 Mpx offrent des photos très détaillées avec un zoom 2x de qualité optique.",
     specs: [['Écran','6,1" OLED Super Retina XDR · Dynamic Island'],['Puce','A16 Bionic'],['Appareil photo','Principal 48 Mpx + ultra grand-angle'],['Autonomie','Jusqu\'à 20 h de lecture vidéo'],['Connectique','USB-C'],['Réseau','5G'],['Système','iOS']]
+  },
+  'iPhone 15 Pro': {
+    desc: "L'iPhone 15 Pro adopte un châssis en titane léger et robuste, la puce A17 Pro ultra-performante, un nouveau bouton Action personnalisable et l'USB-C. Son système photo Pro 48 Mpx avec téléobjectif capture des images d'une netteté exceptionnelle, de jour comme de nuit.",
+    specs: [['Écran','6,1" OLED Super Retina XDR · ProMotion 120 Hz · Dynamic Island'],['Puce','A17 Pro'],['Châssis','Titane'],['Appareil photo','Pro : 48 Mpx + ultra grand-angle + téléobjectif 3x'],['Autonomie','Jusqu\'à 23 h de lecture vidéo'],['Connectique','USB-C (USB 3)'],['Nouveauté','Bouton Action'],['Réseau','5G'],['Système','iOS']]
   },
   'Galaxy A54': {
     desc: "Le Galaxy A54 offre l'essentiel d'un smartphone moderne à prix doux : grand écran Super AMOLED 120 Hz, batterie longue durée et triple capteur photo 50 Mpx.",
@@ -143,7 +167,8 @@ const COLOR_HEX = {
   'Bleu':'#3E6488', 'Rouge':'#B91C2B', 'Vert':'#5B6E52',
   'Minuit':'#1D2233', 'Rose':'#E7C8CB', 'Lumière stellaire':'#EDE6D8',
   'Graphite':'#54514A', 'Or':'#F0E4C8', 'Argent':'#F2F2ED',
-  'Bleu Sierra':'#A9C0D2', 'Vert alpin':'#4A5D4E', 'Jaune':'#F2E2A0'
+  'Bleu Sierra':'#A9C0D2', 'Vert alpin':'#4A5D4E', 'Jaune':'#F2E2A0',
+  'Titane noir':'#3B3B3D', 'Titane bleu':'#4A5568', 'Titane naturel':'#C7BEB2'
 };
 
 function productInfo(p){ return PRODUCT_INFO[p.name] || {desc:'', specs:[]}; }

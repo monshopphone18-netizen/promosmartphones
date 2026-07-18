@@ -31,6 +31,10 @@ const PRODUCTS = {
   16: { name: 'iPhone 13 · 512 Go',               price: 599  },
   17: { name: 'iPhone 13 Pro Max · 128 Go',       price: 509  },
   18: { name: 'iPhone 13 Pro Max · 256 Go',       price: 569  },
+  19: { name: 'iPhone 15 Pro · 128 Go',            price: 749  },
+  20: { name: 'iPhone 15 Pro · 256 Go',            price: 839  },
+  21: { name: 'iPhone 15 Pro · 512 Go',            price: 989  },
+  22: { name: 'iPhone 15 Pro · 1 To',              price: 1149 },
 };
 
 module.exports = async (req, res) => {
