@@ -35,6 +35,9 @@ const PRODUCTS = {
   20: { name: 'iPhone 15 Pro · 256 Go',            price: 839  },
   21: { name: 'iPhone 15 Pro · 512 Go',            price: 989  },
   22: { name: 'iPhone 15 Pro · 1 To',              price: 1149 },
+  23: { name: 'iPhone 15 Pro Max · 256 Go',        price: 859  },
+  24: { name: 'iPhone 15 Pro Max · 512 Go',        price: 999  },
+  25: { name: 'iPhone 15 Pro Max · 1 To',          price: 1179 },
 };
 
 module.exports = async (req, res) => {

@@ -82,6 +82,24 @@ const PRODUCTS = [
     {name:'Titane bleu', photo:'images/iphone15pro-bleu.jpg', views:['images/iphone15pro-bleu.jpg','images/iphone15pro-bleu-face.jpg','images/iphone15pro-bleu-photo.jpg']},
     {name:'Titane naturel', photo:'images/iphone15pro-naturel.jpg', views:['images/iphone15pro-naturel.jpg','images/iphone15pro-naturel-face.jpg','images/iphone15pro-naturel-photo.jpg']}
   ]},
+  {id:23, variantGroup:'iphone15promax', brand:'iPhone', name:'iPhone 15 Pro Max', spec:'256 Go', original:1259, price:859, type:'phone', colors:[
+    {name:'Titane noir', photo:'images/iphone15promax-noir.jpg', views:['images/iphone15promax-noir.jpg','images/iphone15promax-noir-face.jpg','images/iphone15promax-noir-photo.jpg']},
+    {name:'Titane bleu', photo:'images/iphone15promax-bleu.jpg', views:['images/iphone15promax-bleu.jpg','images/iphone15promax-bleu-face.jpg','images/iphone15promax-bleu-photo.jpg']},
+    {name:'Titane naturel', photo:'images/iphone15promax-naturel.jpg', views:['images/iphone15promax-naturel.jpg','images/iphone15promax-naturel-face.jpg','images/iphone15promax-naturel-photo.jpg']},
+    {name:'Titane blanc', photo:'images/iphone15promax-blanc.jpg', views:['images/iphone15promax-blanc.jpg','images/iphone15promax-blanc-face.jpg','images/iphone15promax-blanc-photo.jpg']}
+  ]},
+  {id:24, variantGroup:'iphone15promax', brand:'iPhone', name:'iPhone 15 Pro Max', spec:'512 Go', original:1489, price:999, type:'phone', colors:[
+    {name:'Titane noir', photo:'images/iphone15promax-noir.jpg', views:['images/iphone15promax-noir.jpg','images/iphone15promax-noir-face.jpg','images/iphone15promax-noir-photo.jpg']},
+    {name:'Titane bleu', photo:'images/iphone15promax-bleu.jpg', views:['images/iphone15promax-bleu.jpg','images/iphone15promax-bleu-face.jpg','images/iphone15promax-bleu-photo.jpg']},
+    {name:'Titane naturel', photo:'images/iphone15promax-naturel.jpg', views:['images/iphone15promax-naturel.jpg','images/iphone15promax-naturel-face.jpg','images/iphone15promax-naturel-photo.jpg']},
+    {name:'Titane blanc', photo:'images/iphone15promax-blanc.jpg', views:['images/iphone15promax-blanc.jpg','images/iphone15promax-blanc-face.jpg','images/iphone15promax-blanc-photo.jpg']}
+  ]},
+  {id:25, variantGroup:'iphone15promax', brand:'iPhone', name:'iPhone 15 Pro Max', spec:'1 To', original:1719, price:1179, type:'phone', colors:[
+    {name:'Titane noir', photo:'images/iphone15promax-noir.jpg', views:['images/iphone15promax-noir.jpg','images/iphone15promax-noir-face.jpg','images/iphone15promax-noir-photo.jpg']},
+    {name:'Titane bleu', photo:'images/iphone15promax-bleu.jpg', views:['images/iphone15promax-bleu.jpg','images/iphone15promax-bleu-face.jpg','images/iphone15promax-bleu-photo.jpg']},
+    {name:'Titane naturel', photo:'images/iphone15promax-naturel.jpg', views:['images/iphone15promax-naturel.jpg','images/iphone15promax-naturel-face.jpg','images/iphone15promax-naturel-photo.jpg']},
+    {name:'Titane blanc', photo:'images/iphone15promax-blanc.jpg', views:['images/iphone15promax-blanc.jpg','images/iphone15promax-blanc-face.jpg','images/iphone15promax-blanc-photo.jpg']}
+  ]},
   {id:5, brand:'Samsung', name:'Galaxy A54', spec:'128 Go', original:420, price:249, type:'phone'},
   {id:6, brand:'Samsung', name:'Galaxy S22', spec:'128 Go', original:700, price:389, type:'phone'},
   {id:7, brand:'Samsung', name:'Galaxy S23', spec:'256 Go', original:900, price:549, type:'phone'},
@@ -119,6 +137,10 @@ const PRODUCT_INFO = {
   'iPhone 15 Pro': {
     desc: "L'iPhone 15 Pro adopte un châssis en titane léger et robuste, la puce A17 Pro ultra-performante, un nouveau bouton Action personnalisable et l'USB-C. Son système photo Pro 48 Mpx avec téléobjectif capture des images d'une netteté exceptionnelle, de jour comme de nuit.",
     specs: [['Écran','6,1" OLED Super Retina XDR · ProMotion 120 Hz · Dynamic Island'],['Puce','A17 Pro'],['Châssis','Titane'],['Appareil photo','Pro : 48 Mpx + ultra grand-angle + téléobjectif 3x'],['Autonomie','Jusqu\'à 23 h de lecture vidéo'],['Connectique','USB-C (USB 3)'],['Nouveauté','Bouton Action'],['Réseau','5G'],['Système','iOS']]
+  },
+  'iPhone 15 Pro Max': {
+    desc: "L'iPhone 15 Pro Max, c'est tout le meilleur de la gamme Pro sur un grand écran de 6,7\". Châssis en titane, puce A17 Pro et un téléobjectif inédit avec zoom optique 5x pour des photos rapprochées d'une qualité impressionnante. La plus grande autonomie de tous les iPhone.",
+    specs: [['Écran','6,7" OLED Super Retina XDR · ProMotion 120 Hz · Dynamic Island'],['Puce','A17 Pro'],['Châssis','Titane'],['Appareil photo','Pro : 48 Mpx + ultra grand-angle + téléobjectif 5x'],['Autonomie','Jusqu\'à 29 h de lecture vidéo'],['Connectique','USB-C (USB 3)'],['Nouveauté','Bouton Action'],['Réseau','5G'],['Système','iOS']]
   },
   'Galaxy A54': {
     desc: "Le Galaxy A54 offre l'essentiel d'un smartphone moderne à prix doux : grand écran Super AMOLED 120 Hz, batterie longue durée et triple capteur photo 50 Mpx.",
@@ -168,7 +190,7 @@ const COLOR_HEX = {
   'Minuit':'#1D2233', 'Rose':'#E7C8CB', 'Lumière stellaire':'#EDE6D8',
   'Graphite':'#54514A', 'Or':'#F0E4C8', 'Argent':'#F2F2ED',
   'Bleu Sierra':'#A9C0D2', 'Vert alpin':'#4A5D4E', 'Jaune':'#F2E2A0',
-  'Titane noir':'#3B3B3D', 'Titane bleu':'#4A5568', 'Titane naturel':'#C7BEB2'
+  'Titane noir':'#3B3B3D', 'Titane bleu':'#4A5568', 'Titane naturel':'#C7BEB2', 'Titane blanc':'#E8E6E0'
 };
 
 function productInfo(p){ return PRODUCT_INFO[p.name] || {desc:'', specs:[]}; }
