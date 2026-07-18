@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Commande confirmée — PromoSmartphones</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{ --ink:#14191D; --paper:#EDEAE2; --green:#279965; --slate:#5C6670; --line:rgba(20,25,29,0.12); }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;}
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  .box{background:#fff;border:1px solid var(--line);border-radius:16px;padding:40px;max-width:440px;width:100%;text-align:center;}
+  .check{width:56px;height:56px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;}
+  h1{font-family:'Space Grotesk',sans-serif;font-size:24px;margin:0 0 10px;}
+  p{color:var(--slate);font-size:14px;margin:0 0 6px;line-height:1.5;}
+  .order-num{font-weight:600;background:#F3F1EA;display:inline-block;padding:5px 12px;border-radius:6px;margin:14px 0 22px;}
+  a.back{display:inline-block;margin-top:6px;background:var(--ink);color:var(--paper);border-radius:10px;padding:13px 22px;font-weight:600;font-size:14px;text-decoration:none;}
+  .loading{color:var(--slate);font-size:14px;}
+</style>
+</head>
+<body>
+  <div class="box" id="box">
+    <p class="loading">Vérification de votre commande…</p>
+  </div>
+
+<script>
+async function loadOrder(){
+  const params = new URLSearchParams(window.location.search);
+  const sessionId = params.get('session_id');
+  const box = document.getElementById('box');
+
+  if(!sessionId){
+    box.innerHTML = '<p>Aucune commande à afficher.</p><a class="back" href="/index.html">Retour à la boutique</a>';
+    return;
+  }
+
+  try{
+    const res = await fetch('/api/session-status?session_id=' + encodeURIComponent(sessionId));
+    const data = await res.json();
+
+    if(data.status !== 'paid'){
+      box.innerHTML = '<p>Le paiement n\'a pas pu être confirmé. Contactez-nous si le montant a bien été débité.</p><a class="back" href="/index.html">Retour à la boutique</a>';
+      return;
+    }
+
+    const amount = (data.amount_total/100).toFixed(2).replace('.', ',');
+    box.innerHTML = `
+      <div class="check"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg></div>
+      <h1>Commande confirmée</h1>
+      <p>Merci${data.email ? ' — un e-mail de confirmation a été envoyé à ' + data.email : ''}.</p>
+      <p>Montant réglé : <strong class="mono">${amount} €</strong></p>
+      <div class="order-num mono">Réf. ${data.order_ref}</div>
+      <br>
+      <a class="back" href="/index.html">Retour à la boutique</a>
+    `;
+  } catch(err){
+    box.innerHTML = '<p>Impossible de vérifier la commande pour le moment.</p><a class="back" href="/index.html">Retour à la boutique</a>';
+  }
+}
+loadOrder();
+</script>
+</body>
+</html>

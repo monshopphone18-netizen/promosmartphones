@@ -1,0 +1,248 @@
+// products.js — données partagées entre le catalogue (index.html) et les fiches (produit.html)
+
+const PRODUCTS = [
+  {id:1, brand:'iPhone', name:'iPhone 12', spec:'64 Go', original:600, price:329, type:'phone', colors:[
+    {name:'Violet', photo:'images/iphone12-violet.jpg', views:['images/iphone12-violet.jpg','images/iphone12-violet-face.jpg','images/iphone12-violet-photo.jpg']},
+    {name:'Noir', photo:'images/iphone12-noir.jpg', views:['images/iphone12-noir.jpg','images/iphone12-noir-face.jpg','images/iphone12-noir-photo.jpg']},
+    {name:'Blanc', photo:'images/iphone12-blanc.jpg', views:['images/iphone12-blanc.jpg','images/iphone12-blanc-face.jpg','images/iphone12-blanc-photo.jpg']},
+    {name:'Bleu', photo:'images/iphone12-bleu.jpg', views:['images/iphone12-bleu.jpg','images/iphone12-bleu-face.jpg','images/iphone12-bleu-photo.jpg']},
+    {name:'Rouge', photo:'images/iphone12-rouge.jpg', views:['images/iphone12-rouge.jpg','images/iphone12-rouge-face.jpg','images/iphone12-rouge-photo.jpg']},
+    {name:'Vert', photo:'images/iphone12-vert.jpg', hex:'#B9CBAE', views:['images/iphone12-vert.jpg','images/iphone12-vert-face.jpg','images/iphone12-vert-photo.jpg']}
+  ]},
+  {id:2, variantGroup:'iphone13', brand:'iPhone', name:'iPhone 13', spec:'128 Go', original:699, price:419, type:'phone', colors:[
+    {name:'Minuit', photo:'images/iphone13-minuit.jpg', views:['images/iphone13-minuit.jpg','images/iphone13-minuit-face.jpg','images/iphone13-minuit-photo.jpg']},
+    {name:'Rose', photo:'images/iphone13-rose.jpg', views:['images/iphone13-rose.jpg','images/iphone13-rose-face.jpg','images/iphone13-rose-photo.jpg']},
+    {name:'Bleu', photo:'images/iphone13-bleu.jpg', views:['images/iphone13-bleu.jpg','images/iphone13-bleu-face.jpg','images/iphone13-bleu-photo.jpg']},
+    {name:'Rouge', photo:'images/iphone13-rouge.jpg', views:['images/iphone13-rouge.jpg','images/iphone13-rouge-face.jpg','images/iphone13-rouge-photo.jpg']},
+    {name:'Lumière stellaire', photo:'images/iphone13-starlight.jpg', views:['images/iphone13-starlight.jpg','images/iphone13-starlight-face.jpg','images/iphone13-starlight-photo.jpg']},
+    {name:'Vert', photo:'images/iphone13-vert.jpg', views:['images/iphone13-vert.jpg','images/iphone13-vert-face.jpg','images/iphone13-vert-photo.jpg']}
+  ]},
+  {id:15, variantGroup:'iphone13', brand:'iPhone', name:'iPhone 13', spec:'256 Go', original:799, price:479, type:'phone', colors:[
+    {name:'Minuit', photo:'images/iphone13-minuit.jpg', views:['images/iphone13-minuit.jpg','images/iphone13-minuit-face.jpg','images/iphone13-minuit-photo.jpg']},
+    {name:'Rose', photo:'images/iphone13-rose.jpg', views:['images/iphone13-rose.jpg','images/iphone13-rose-face.jpg','images/iphone13-rose-photo.jpg']},
+    {name:'Bleu', photo:'images/iphone13-bleu.jpg', views:['images/iphone13-bleu.jpg','images/iphone13-bleu-face.jpg','images/iphone13-bleu-photo.jpg']},
+    {name:'Rouge', photo:'images/iphone13-rouge.jpg', views:['images/iphone13-rouge.jpg','images/iphone13-rouge-face.jpg','images/iphone13-rouge-photo.jpg']},
+    {name:'Lumière stellaire', photo:'images/iphone13-starlight.jpg', views:['images/iphone13-starlight.jpg','images/iphone13-starlight-face.jpg','images/iphone13-starlight-photo.jpg']},
+    {name:'Vert', photo:'images/iphone13-vert.jpg', views:['images/iphone13-vert.jpg','images/iphone13-vert-face.jpg','images/iphone13-vert-photo.jpg']}
+  ]},
+  {id:16, variantGroup:'iphone13', brand:'iPhone', name:'iPhone 13', spec:'512 Go', original:999, price:599, type:'phone', colors:[
+    {name:'Minuit', photo:'images/iphone13-minuit.jpg', views:['images/iphone13-minuit.jpg','images/iphone13-minuit-face.jpg','images/iphone13-minuit-photo.jpg']},
+    {name:'Rose', photo:'images/iphone13-rose.jpg', views:['images/iphone13-rose.jpg','images/iphone13-rose-face.jpg','images/iphone13-rose-photo.jpg']},
+    {name:'Bleu', photo:'images/iphone13-bleu.jpg', views:['images/iphone13-bleu.jpg','images/iphone13-bleu-face.jpg','images/iphone13-bleu-photo.jpg']},
+    {name:'Rouge', photo:'images/iphone13-rouge.jpg', views:['images/iphone13-rouge.jpg','images/iphone13-rouge-face.jpg','images/iphone13-rouge-photo.jpg']},
+    {name:'Lumière stellaire', photo:'images/iphone13-starlight.jpg', views:['images/iphone13-starlight.jpg','images/iphone13-starlight-face.jpg','images/iphone13-starlight-photo.jpg']},
+    {name:'Vert', photo:'images/iphone13-vert.jpg', views:['images/iphone13-vert.jpg','images/iphone13-vert-face.jpg','images/iphone13-vert-photo.jpg']}
+  ]},
+  {id:17, variantGroup:'iphone13promax', brand:'iPhone', name:'iPhone 13 Pro Max', spec:'128 Go', original:849, price:509, type:'phone', colors:[
+    {name:'Graphite', photo:'images/iphone13promax-graphite.jpg', views:['images/iphone13promax-graphite.jpg','images/iphone13promax-graphite-face.jpg','images/iphone13promax-graphite-photo.jpg']},
+    {name:'Or', photo:'images/iphone13promax-or.jpg', views:['images/iphone13promax-or.jpg','images/iphone13promax-or-face.jpg','images/iphone13promax-or-photo.jpg']},
+    {name:'Argent', photo:'images/iphone13promax-argent.jpg', views:['images/iphone13promax-argent.jpg','images/iphone13promax-argent-face.jpg','images/iphone13promax-argent-photo.jpg']},
+    {name:'Bleu Sierra', photo:'images/iphone13promax-bleu.jpg', views:['images/iphone13promax-bleu.jpg','images/iphone13promax-bleu-face.jpg','images/iphone13promax-bleu-photo.jpg']},
+    {name:'Vert alpin', photo:'images/iphone13promax-vert.jpg', views:['images/iphone13promax-vert.jpg','images/iphone13promax-vert-face.jpg','images/iphone13promax-vert-photo.jpg']}
+  ]},
+  {id:18, variantGroup:'iphone13promax', brand:'iPhone', name:'iPhone 13 Pro Max', spec:'256 Go', original:949, price:569, type:'phone', colors:[
+    {name:'Graphite', photo:'images/iphone13promax-graphite.jpg', views:['images/iphone13promax-graphite.jpg','images/iphone13promax-graphite-face.jpg','images/iphone13promax-graphite-photo.jpg']},
+    {name:'Or', photo:'images/iphone13promax-or.jpg', views:['images/iphone13promax-or.jpg','images/iphone13promax-or-face.jpg','images/iphone13promax-or-photo.jpg']},
+    {name:'Argent', photo:'images/iphone13promax-argent.jpg', views:['images/iphone13promax-argent.jpg','images/iphone13promax-argent-face.jpg','images/iphone13promax-argent-photo.jpg']},
+    {name:'Bleu Sierra', photo:'images/iphone13promax-bleu.jpg', views:['images/iphone13promax-bleu.jpg','images/iphone13promax-bleu-face.jpg','images/iphone13promax-bleu-photo.jpg']},
+    {name:'Vert alpin', photo:'images/iphone13promax-vert.jpg', views:['images/iphone13promax-vert.jpg','images/iphone13promax-vert-face.jpg','images/iphone13promax-vert-photo.jpg']}
+  ]},
+  {id:3, brand:'iPhone', name:'iPhone 14', spec:'128 Go', original:849, price:519, type:'phone', colors:[
+    {name:'Minuit', photo:'images/iphone14-minuit.jpg', views:['images/iphone14-minuit.jpg','images/iphone14-minuit-face.jpg','images/iphone14-minuit-photo.jpg']},
+    {name:'Lumière stellaire', photo:'images/iphone14-starlight.jpg', views:['images/iphone14-starlight.jpg','images/iphone14-starlight-face.jpg','images/iphone14-starlight-photo.jpg']},
+    {name:'Violet', photo:'images/iphone14-violet.jpg', views:['images/iphone14-violet.jpg','images/iphone14-violet-face.jpg','images/iphone14-violet-photo.jpg']},
+    {name:'Bleu', photo:'images/iphone14-bleu.jpg', views:['images/iphone14-bleu.jpg','images/iphone14-bleu-face.jpg','images/iphone14-bleu-photo.jpg']},
+    {name:'Rouge', photo:'images/iphone14-rouge.jpg', views:['images/iphone14-rouge.jpg','images/iphone14-rouge-face.jpg','images/iphone14-rouge-photo.jpg']},
+    {name:'Jaune', photo:'images/iphone14-jaune.jpg', views:['images/iphone14-jaune.jpg','images/iphone14-jaune-face.jpg','images/iphone14-jaune-photo.jpg']}
+  ]},
+  {id:4, brand:'iPhone', name:'iPhone 15', spec:'256 Go', original:1150, price:799, type:'phone', colors:[
+    {name:'Noir', photo:'images/iphone15-noir.jpg', views:['images/iphone15-noir.jpg','images/iphone15-noir-face.jpg','images/iphone15-noir-photo.jpg']},
+    {name:'Rose', photo:'images/iphone15-rose.jpg', views:['images/iphone15-rose.jpg','images/iphone15-rose-face.jpg','images/iphone15-rose-photo.jpg']},
+    {name:'Bleu', photo:'images/iphone15-bleu.jpg', views:['images/iphone15-bleu.jpg','images/iphone15-bleu-face.jpg','images/iphone15-bleu-photo.jpg']},
+    {name:'Vert', photo:'images/iphone15-vert.jpg', views:['images/iphone15-vert.jpg','images/iphone15-vert-face.jpg','images/iphone15-vert-photo.jpg']},
+    {name:'Jaune', photo:'images/iphone15-jaune.jpg', views:['images/iphone15-jaune.jpg','images/iphone15-jaune-face.jpg','images/iphone15-jaune-photo.jpg']}
+  ]},
+  {id:5, brand:'Samsung', name:'Galaxy A54', spec:'128 Go', original:420, price:249, type:'phone'},
+  {id:6, brand:'Samsung', name:'Galaxy S22', spec:'128 Go', original:700, price:389, type:'phone'},
+  {id:7, brand:'Samsung', name:'Galaxy S23', spec:'256 Go', original:900, price:549, type:'phone'},
+  {id:8, brand:'Samsung', name:'Galaxy Z Flip 4', spec:'256 Go', original:850, price:459, type:'phone'},
+  {id:9, brand:'Samsung', name:'Galaxy Tab S8', spec:'128 Go', original:650, price:379, type:'tablet'},
+  {id:10, brand:'Mac', name:'MacBook Air M1', spec:'256 Go SSD · 8 Go RAM', original:1200, price:749, type:'laptop'},
+  {id:11, brand:'Mac', name:'MacBook Air M2', spec:'256 Go SSD · 8 Go RAM', original:1500, price:999, type:'laptop'},
+  {id:12, brand:'Mac', name:'MacBook Pro M1', spec:'512 Go SSD · 16 Go RAM', original:1700, price:1099, type:'laptop'},
+  {id:13, brand:'Mac', name:'Mac Mini M2', spec:'256 Go SSD · 8 Go RAM', original:800, price:499, type:'desktop'},
+  {id:14, brand:'Mac', name:'iMac 24" M1', spec:'256 Go SSD · 8 Go RAM', original:1500, price:899, type:'desktop'},
+];
+
+// Descriptions + caractéristiques techniques, par modèle (partagées entre capacités)
+const PRODUCT_INFO = {
+  'iPhone 12': {
+    desc: "L'iPhone 12 inaugure le design à bords plats et l'écran Super Retina XDR OLED. Propulsé par la puce A14 Bionic et compatible 5G, il offre d'excellentes performances et un double appareil photo 12 Mpx pour des photos nettes de jour comme de nuit.",
+    specs: [['Écran','6,1" OLED Super Retina XDR'],['Puce','A14 Bionic'],['Appareil photo','Double 12 Mpx (grand-angle + ultra grand-angle)'],['Autonomie','Jusqu\'à 17 h de lecture vidéo'],['Réseau','5G'],['Sécurité','Face ID'],['Système','iOS']]
+  },
+  'iPhone 13': {
+    desc: "L'iPhone 13 embarque la puce A15 Bionic, un écran Super Retina XDR plus lumineux et une meilleure autonomie. Son double appareil photo avec stabilisation par décalage de capteur capture des photos et vidéos d'une grande qualité.",
+    specs: [['Écran','6,1" OLED Super Retina XDR'],['Puce','A15 Bionic'],['Appareil photo','Double 12 Mpx + stabilisation capteur'],['Autonomie','Jusqu\'à 19 h de lecture vidéo'],['Réseau','5G'],['Sécurité','Face ID'],['Système','iOS']]
+  },
+  'iPhone 13 Pro Max': {
+    desc: "Le modèle le plus abouti de la gamme 13 : grand écran ProMotion 120 Hz, système à trois appareils photo Pro avec téléobjectif et scanner LiDAR, et une autonomie record. Idéal pour la photo, la vidéo et le jeu.",
+    specs: [['Écran','6,7" OLED ProMotion 120 Hz'],['Puce','A15 Bionic'],['Appareil photo','Triple 12 Mpx (télé, grand-angle, ultra) + LiDAR'],['Autonomie','Jusqu\'à 28 h de lecture vidéo'],['Réseau','5G'],['Sécurité','Face ID'],['Système','iOS']]
+  },
+  'iPhone 14': {
+    desc: "L'iPhone 14 mise sur la fiabilité : puce A15 Bionic au top, appareil photo principal amélioré en basse lumière et nouvelles fonctions de sécurité comme la Détection des accidents. Un excellent équilibre performance / prix.",
+    specs: [['Écran','6,1" OLED Super Retina XDR'],['Puce','A15 Bionic (5 cœurs GPU)'],['Appareil photo','Double 12 Mpx + Photonic Engine'],['Autonomie','Jusqu\'à 20 h de lecture vidéo'],['Réseau','5G'],['Sécurité','Face ID · Détection des accidents'],['Système','iOS']]
+  },
+  'iPhone 15': {
+    desc: "L'iPhone 15 passe à l'USB-C et à la Dynamic Island. Sa puce A16 Bionic et son capteur principal 48 Mpx offrent des photos très détaillées avec un zoom 2x de qualité optique.",
+    specs: [['Écran','6,1" OLED Super Retina XDR · Dynamic Island'],['Puce','A16 Bionic'],['Appareil photo','Principal 48 Mpx + ultra grand-angle'],['Autonomie','Jusqu\'à 20 h de lecture vidéo'],['Connectique','USB-C'],['Réseau','5G'],['Système','iOS']]
+  },
+  'Galaxy A54': {
+    desc: "Le Galaxy A54 offre l'essentiel d'un smartphone moderne à prix doux : grand écran Super AMOLED 120 Hz, batterie longue durée et triple capteur photo 50 Mpx.",
+    specs: [['Écran','6,4" Super AMOLED 120 Hz'],['Processeur','Exynos 1380'],['Appareil photo','Triple, principal 50 Mpx'],['Batterie','5000 mAh'],['Réseau','5G'],['Système','Android']]
+  },
+  'Galaxy S22': {
+    desc: "Compact et haut de gamme, le Galaxy S22 combine un écran Dynamic AMOLED 2X 120 Hz, la puissance du Snapdragon 8 Gen 1 et un triple appareil photo 50 Mpx très polyvalent.",
+    specs: [['Écran','6,1" Dynamic AMOLED 2X 120 Hz'],['Processeur','Snapdragon 8 Gen 1'],['Appareil photo','Triple, principal 50 Mpx'],['Batterie','3700 mAh'],['Réseau','5G'],['Système','Android']]
+  },
+  'Galaxy S23': {
+    desc: "Le Galaxy S23 pousse l'autonomie et les performances plus loin grâce au Snapdragon 8 Gen 2. Photos éclatantes de jour comme de nuit et écran ultra fluide 120 Hz.",
+    specs: [['Écran','6,1" Dynamic AMOLED 2X 120 Hz'],['Processeur','Snapdragon 8 Gen 2 for Galaxy'],['Appareil photo','Triple, principal 50 Mpx'],['Batterie','3900 mAh'],['Réseau','5G'],['Système','Android']]
+  },
+  'Galaxy Z Flip 4': {
+    desc: "Le Galaxy Z Flip 4 se plie pour tenir dans la poche et se déplie sur un grand écran 6,7\". Un écran externe pratique et un design iconique pour se démarquer.",
+    specs: [['Écran principal','6,7" Dynamic AMOLED 120 Hz pliable'],['Écran externe','1,9" Super AMOLED'],['Processeur','Snapdragon 8+ Gen 1'],['Appareil photo','Double 12 Mpx'],['Batterie','3700 mAh'],['Système','Android']]
+  },
+  'Galaxy Tab S8': {
+    desc: "La Galaxy Tab S8 est une tablette Android puissante avec S Pen inclus, parfaite pour le travail, le dessin et le divertissement sur un grand écran 120 Hz.",
+    specs: [['Écran','11" LCD 120 Hz'],['Processeur','Snapdragon 8 Gen 1'],['Stylet','S Pen inclus'],['Batterie','8000 mAh'],['Connectivité','Wi-Fi'],['Système','Android']]
+  },
+  'MacBook Air M1': {
+    desc: "Le MacBook Air M1 a marqué un tournant : silencieux (sans ventilateur), rapide et endurant. Idéal pour la bureautique, le web et les tâches créatives légères.",
+    specs: [['Puce','Apple M1 (8 cœurs CPU)'],['Écran','13,3" Retina'],['Mémoire','8 Go RAM unifiée'],['Stockage','SSD 256 Go'],['Autonomie','Jusqu\'à 18 h'],['Système','macOS']]
+  },
+  'MacBook Air M2': {
+    desc: "Plus fin et plus puissant, le MacBook Air M2 ajoute un écran Liquid Retina plus grand, la recharge MagSafe et la puce M2 pour un usage quotidien fluide et une grande autonomie.",
+    specs: [['Puce','Apple M2'],['Écran','13,6" Liquid Retina'],['Mémoire','8 Go RAM unifiée'],['Stockage','SSD 256 Go'],['Autonomie','Jusqu\'à 18 h'],['Recharge','MagSafe'],['Système','macOS']]
+  },
+  'MacBook Pro M1': {
+    desc: "Le MacBook Pro M1 combine la puce M1, un système de refroidissement actif pour tenir la charge, et 16 Go de RAM. Un vrai outil de travail pour les créatifs et développeurs.",
+    specs: [['Puce','Apple M1'],['Écran','13,3" Retina'],['Mémoire','16 Go RAM unifiée'],['Stockage','SSD 512 Go'],['Autonomie','Jusqu\'à 20 h'],['Système','macOS']]
+  },
+  'Mac Mini M2': {
+    desc: "Le Mac Mini M2 est un ordinateur de bureau compact et silencieux. Branchez votre écran, clavier et souris et profitez de la puissance de la puce M2. (Écran et périphériques non inclus.)",
+    specs: [['Puce','Apple M2'],['Mémoire','8 Go RAM unifiée'],['Stockage','SSD 256 Go'],['Connectique','Thunderbolt 4, HDMI, USB-A'],['Réseau','Wi-Fi 6 · Gigabit Ethernet'],['Système','macOS']]
+  },
+  'iMac 24" M1': {
+    desc: "L'iMac 24\" M1 est un tout-en-un élégant avec un superbe écran 4,5K Retina. Parfait pour toute la famille : design fin, couleurs vives et puce M1 rapide.",
+    specs: [['Puce','Apple M1'],['Écran','24" 4,5K Retina'],['Mémoire','8 Go RAM unifiée'],['Stockage','SSD 256 Go'],['Webcam','FaceTime HD 1080p'],['Système','macOS']]
+  }
+};
+
+const COLOR_HEX = {
+  'Violet':'#B7A9D6', 'Noir':'#1D1D1F', 'Blanc':'#F5F5F0',
+  'Bleu':'#3E6488', 'Rouge':'#B91C2B', 'Vert':'#5B6E52',
+  'Minuit':'#1D2233', 'Rose':'#E7C8CB', 'Lumière stellaire':'#EDE6D8',
+  'Graphite':'#54514A', 'Or':'#F0E4C8', 'Argent':'#F2F2ED',
+  'Bleu Sierra':'#A9C0D2', 'Vert alpin':'#4A5D4E', 'Jaune':'#F2E2A0'
+};
+
+function productInfo(p){ return PRODUCT_INFO[p.name] || {desc:'', specs:[]}; }
+function discountPct(p){ return Math.round((1 - p.price/p.original)*100); }
+
+// ---------- Panier partagé (persistant via localStorage) ----------
+function loadCart(){
+  try { return JSON.parse(localStorage.getItem('psCart') || '{}') || {}; }
+  catch(e){ return {}; }
+}
+function saveCart(c){
+  try { localStorage.setItem('psCart', JSON.stringify(c)); } catch(e){}
+}
+
+// ---------- Illustrations SVG (fallback quand pas de photo) ----------
+function illustration(type, size=48){
+  return illustrationFor({type, brand:'', name:''}, size);
+}
+function illustrationFor(p, size=48){
+  const ink = 'currentColor';
+  const amber = '#F5A527';
+  const name = (p.name||'').toLowerCase();
+  const isIphone = p.brand === 'iPhone';
+  const isSamsung = p.brand === 'Samsung';
+  const isFlip = name.includes('flip');
+  const isTablet = p.type === 'tablet';
+  const isMini = name.includes('mini');
+  const isImac = name.includes('imac');
+
+  const bg = `<rect x="2" y="2" width="92" height="92" rx="20" fill="none" stroke="${ink}" stroke-width="1" stroke-opacity="0.08"/>`;
+
+  if(p.type === 'phone' && !isFlip){
+    if(isIphone){
+      return `<svg width="${size}" height="${size}" viewBox="0 0 96 96" fill="none">
+        ${bg}
+        <rect x="30" y="10" width="36" height="76" rx="9" stroke="${ink}" stroke-width="1.8"/>
+        <rect x="41" y="17" width="14" height="5" rx="2.5" fill="${ink}"/>
+        <circle cx="66" cy="19.5" r="1.3" fill="${amber}"/>
+        <rect x="41" y="79" width="14" height="2.4" rx="1.2" fill="${ink}" opacity="0.55"/>
+        <line x1="30" y1="30" x2="30" y2="40" stroke="${ink}" stroke-width="1.8"/>
+      </svg>`;
+    }
+    if(isSamsung){
+      return `<svg width="${size}" height="${size}" viewBox="0 0 96 96" fill="none">
+        ${bg}
+        <rect x="30" y="10" width="36" height="76" rx="5" stroke="${ink}" stroke-width="1.8"/>
+        <circle cx="48" cy="19" r="2.2" stroke="${ink}" stroke-width="1.4"/>
+        <circle cx="48" cy="19" r="0.8" fill="${amber}"/>
+        <rect x="65" y="34" width="1.6" height="10" fill="${ink}"/>
+      </svg>`;
+    }
+  }
+  if(isFlip){
+    return `<svg width="${size}" height="${size}" viewBox="0 0 96 96" fill="none">
+      ${bg}
+      <rect x="28" y="14" width="40" height="30" rx="5" stroke="${ink}" stroke-width="1.8"/>
+      <rect x="28" y="52" width="40" height="30" rx="5" stroke="${ink}" stroke-width="1.8"/>
+      <line x1="26" y1="47" x2="70" y2="47" stroke="${ink}" stroke-width="2.4"/>
+      <circle cx="48" cy="28" r="1.6" fill="${amber}"/>
+    </svg>`;
+  }
+  if(isTablet){
+    return `<svg width="${size}" height="${size}" viewBox="0 0 96 96" fill="none">
+      ${bg}
+      <rect x="20" y="8" width="56" height="80" rx="7" stroke="${ink}" stroke-width="1.8"/>
+      <circle cx="48" cy="17" r="1.6" fill="${amber}"/>
+      <rect x="41" y="78" width="14" height="2.4" rx="1.2" fill="${ink}" opacity="0.5"/>
+    </svg>`;
+  }
+  if(p.type === 'laptop'){
+    return `<svg width="${size}" height="${size}" viewBox="0 0 96 96" fill="none">
+      ${bg}
+      <path d="M32 20a4 4 0 014-4h24a4 4 0 014 4v38H32V20z" stroke="${ink}" stroke-width="1.8"/>
+      <circle cx="48" cy="23" r="1.1" fill="${amber}"/>
+      <path d="M18 66h60l6 12a3 3 0 01-2.8 4.2H14.8A3 3 0 0112 78.2z" stroke="${ink}" stroke-width="1.8"/>
+      <line x1="30" y1="58" x2="66" y2="58" stroke="${ink}" stroke-width="1.4" opacity="0.5"/>
+      <rect x="42" y="70" width="12" height="1.6" rx="0.8" fill="${ink}" opacity="0.4"/>
+    </svg>`;
+  }
+  if(isMini){
+    return `<svg width="${size}" height="${size}" viewBox="0 0 96 96" fill="none">
+      ${bg}
+      <rect x="20" y="38" width="56" height="14" rx="3" stroke="${ink}" stroke-width="1.8"/>
+      <line x1="27" y1="45" x2="43" y2="45" stroke="${ink}" stroke-width="1.2" opacity="0.5"/>
+      <circle cx="70" cy="45" r="1.2" fill="${amber}"/>
+    </svg>`;
+  }
+  if(isImac){
+    return `<svg width="${size}" height="${size}" viewBox="0 0 96 96" fill="none">
+      ${bg}
+      <rect x="18" y="12" width="60" height="42" rx="5" stroke="${ink}" stroke-width="1.8"/>
+      <circle cx="48" cy="19" r="1.1" fill="${amber}"/>
+      <line x1="48" y1="54" x2="48" y2="66" stroke="${ink}" stroke-width="1.8"/>
+      <ellipse cx="48" cy="70" rx="16" ry="3.4" stroke="${ink}" stroke-width="1.8"/>
+    </svg>`;
+  }
+  return `<svg width="${size}" height="${size}" viewBox="0 0 96 96" fill="none">
+    ${bg}
+    <rect x="24" y="8" width="48" height="80" rx="6" stroke="${ink}" stroke-width="1.8"/>
+    <line x1="34" y1="20" x2="62" y2="20" stroke="${ink}" stroke-width="1.4"/>
+  </svg>`;
+}

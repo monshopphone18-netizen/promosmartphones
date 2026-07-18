@@ -1,0 +1,9 @@
+{
+  "name": "tage-shop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Boutique TAGÉ — iPhone, Samsung et Mac reconditionnés",
+  "dependencies": {
+    "stripe": "^17.0.0"
+  }
+}
