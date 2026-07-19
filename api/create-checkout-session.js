@@ -72,7 +72,7 @@ const PRODUCTS = {
   58: { name: 'iPhone 14 Pro Max · 256 Go',        price: 899  },
   59: { name: 'iPhone 14 Pro Max · 512 Go',        price: 1049 },
   60: { name: 'iPhone 14 Pro Max · 1 To',          price: 1209 },
-  61: { name: 'Galaxy A56 · 128 Go',               price: 289  },
+  61: { name: 'Galaxy A56 · 128 Go',               price: 299  },
   62: { name: 'Galaxy A56 · 256 Go',               price: 329  },
   63: { name: 'Galaxy S25+ · 256 Go',              price: 699  },
   64: { name: 'Galaxy S25 Ultra · 256 Go',         price: 759  },
@@ -81,6 +81,8 @@ const PRODUCTS = {
   67: { name: 'Galaxy S26 · 256 Go',               price: 599  },
   68: { name: 'Galaxy S26 · 512 Go',               price: 679  },
   69: { name: 'Galaxy S25+ · 512 Go',              price: 769  },
+  70: { name: 'Galaxy Z Flip 6 · 256 Go',          price: 629  },
+  71: { name: 'Galaxy Z Flip 6 · 512 Go',          price: 709  },
 };
 
 module.exports = async (req, res) => {

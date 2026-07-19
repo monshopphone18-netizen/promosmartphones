@@ -303,7 +303,7 @@ const PRODUCTS = [
     {name:'Bleu intense', photo:'images/iphone17promax-bleu.jpg', views:['images/iphone17promax-bleu.jpg','images/iphone17promax-bleu-face.jpg','images/iphone17promax-bleu-photo.jpg']},
     {name:'Argent', photo:'images/iphone17promax-argent.jpg', views:['images/iphone17promax-argent.jpg','images/iphone17promax-argent-face.jpg','images/iphone17promax-argent-photo.jpg']}
   ]},
-  {id:61, variantGroup:'galaxya56', brand:'Samsung', name:'Galaxy A56', spec:'128 Go', original:479, price:289, type:'phone', colors:[
+  {id:61, variantGroup:'galaxya56', brand:'Samsung', name:'Galaxy A56', spec:'128 Go', original:479, price:299, type:'phone', colors:[
     {name:'Vert', photo:'images/galaxya56-vert.jpg', views:['images/galaxya56-vert.jpg','images/galaxya56-vert-face.jpg']},
     {name:'Rose', photo:'images/galaxya56-rose.jpg', views:['images/galaxya56-rose.jpg','images/galaxya56-rose-derriere.jpg']},
     {name:'Gris', photo:'images/galaxya56-gris.jpg', views:['images/galaxya56-gris.jpg','images/galaxya56-gris-derriere.jpg']}
@@ -329,22 +329,22 @@ const PRODUCTS = [
     {name:'Bleu', photo:'images/galaxys25ultra-bleu.jpg', views:['images/galaxys25ultra-bleu.jpg','images/galaxys25ultra-bleu-face.jpg','images/galaxys25ultra-bleu-derriere.jpg']},
     {name:'Or rose', photo:'images/galaxys25ultra-orrose.jpg', views:['images/galaxys25ultra-orrose.jpg','images/galaxys25ultra-orrose-face.jpg','images/galaxys25ultra-orrose-derriere.jpg']},
     {name:'Vert', photo:'images/galaxys25ultra-vert.jpg', views:['images/galaxys25ultra-vert.jpg','images/galaxys25ultra-vert-face.jpg','images/galaxys25ultra-vert-derriere.jpg']},
-    {name:'Argent', photo:'images/galaxys25ultra-argent.jpg', views:['images/galaxys25ultra-argent.jpg','images/galaxys25ultra-argent-face.jpg']},
-    {name:'Noir', photo:'images/galaxys25ultra-noir.jpg', views:['images/galaxys25ultra-noir.jpg']}
+    {name:'Argent', photo:'images/galaxys25ultra-argent.jpg', views:['images/galaxys25ultra-argent.jpg','images/galaxys25ultra-argent-face.jpg','images/galaxys25ultra-argent-derriere.jpg']},
+    {name:'Noir', photo:'images/galaxys25ultra-noir.jpg', views:['images/galaxys25ultra-noir.jpg','images/galaxys25ultra-noir-face.jpg','images/galaxys25ultra-noir-arriere.jpg']}
   ]},
   {id:65, variantGroup:'galaxys25ultra', brand:'Samsung', name:'Galaxy S25 Ultra', spec:'512 Go', original:1399, price:839, type:'phone', colors:[
     {name:'Bleu', photo:'images/galaxys25ultra-bleu.jpg', views:['images/galaxys25ultra-bleu.jpg','images/galaxys25ultra-bleu-face.jpg','images/galaxys25ultra-bleu-derriere.jpg']},
     {name:'Or rose', photo:'images/galaxys25ultra-orrose.jpg', views:['images/galaxys25ultra-orrose.jpg','images/galaxys25ultra-orrose-face.jpg','images/galaxys25ultra-orrose-derriere.jpg']},
     {name:'Vert', photo:'images/galaxys25ultra-vert.jpg', views:['images/galaxys25ultra-vert.jpg','images/galaxys25ultra-vert-face.jpg','images/galaxys25ultra-vert-derriere.jpg']},
-    {name:'Argent', photo:'images/galaxys25ultra-argent.jpg', views:['images/galaxys25ultra-argent.jpg','images/galaxys25ultra-argent-face.jpg']},
-    {name:'Noir', photo:'images/galaxys25ultra-noir.jpg', views:['images/galaxys25ultra-noir.jpg']}
+    {name:'Argent', photo:'images/galaxys25ultra-argent.jpg', views:['images/galaxys25ultra-argent.jpg','images/galaxys25ultra-argent-face.jpg','images/galaxys25ultra-argent-derriere.jpg']},
+    {name:'Noir', photo:'images/galaxys25ultra-noir.jpg', views:['images/galaxys25ultra-noir.jpg','images/galaxys25ultra-noir-face.jpg','images/galaxys25ultra-noir-arriere.jpg']}
   ]},
   {id:66, variantGroup:'galaxys25ultra', brand:'Samsung', name:'Galaxy S25 Ultra', spec:'1 To', original:1629, price:979, type:'phone', colors:[
     {name:'Bleu', photo:'images/galaxys25ultra-bleu.jpg', views:['images/galaxys25ultra-bleu.jpg','images/galaxys25ultra-bleu-face.jpg','images/galaxys25ultra-bleu-derriere.jpg']},
     {name:'Or rose', photo:'images/galaxys25ultra-orrose.jpg', views:['images/galaxys25ultra-orrose.jpg','images/galaxys25ultra-orrose-face.jpg','images/galaxys25ultra-orrose-derriere.jpg']},
     {name:'Vert', photo:'images/galaxys25ultra-vert.jpg', views:['images/galaxys25ultra-vert.jpg','images/galaxys25ultra-vert-face.jpg','images/galaxys25ultra-vert-derriere.jpg']},
-    {name:'Argent', photo:'images/galaxys25ultra-argent.jpg', views:['images/galaxys25ultra-argent.jpg','images/galaxys25ultra-argent-face.jpg']},
-    {name:'Noir', photo:'images/galaxys25ultra-noir.jpg', views:['images/galaxys25ultra-noir.jpg']}
+    {name:'Argent', photo:'images/galaxys25ultra-argent.jpg', views:['images/galaxys25ultra-argent.jpg','images/galaxys25ultra-argent-face.jpg','images/galaxys25ultra-argent-derriere.jpg']},
+    {name:'Noir', photo:'images/galaxys25ultra-noir.jpg', views:['images/galaxys25ultra-noir.jpg','images/galaxys25ultra-noir-face.jpg','images/galaxys25ultra-noir-arriere.jpg']}
   ]},
   {id:67, variantGroup:'galaxys26', brand:'Samsung', name:'Galaxy S26', spec:'256 Go', original:999, price:599, type:'phone', colors:[
     {name:'Bleu', photo:'images/galaxys26-bleu.jpg', views:['images/galaxys26-bleu.jpg','images/galaxys26-bleu-face.jpg']},
@@ -355,6 +355,20 @@ const PRODUCTS = [
     {name:'Bleu', photo:'images/galaxys26-bleu.jpg', views:['images/galaxys26-bleu.jpg','images/galaxys26-bleu-face.jpg']},
     {name:'Mauve', photo:'images/galaxys26-mauve.jpg', views:['images/galaxys26-mauve.jpg','images/galaxys26-mauve-face.jpg','images/galaxys26-mauve-derriere.jpg']},
     {name:'Noir', photo:'images/galaxys26-noir.jpg', views:['images/galaxys26-noir.jpg','images/galaxys26-noir-face.jpg']}
+  ]},
+  {id:70, variantGroup:'galaxyzflip6', brand:'Samsung', name:'Galaxy Z Flip 6', spec:'256 Go', original:1053, price:629, type:'phone', colors:[
+    {name:'Noir', photo:'images/galaxyzflip6-noir.jpg', views:['images/galaxyzflip6-noir.jpg','images/galaxyzflip6-noir-face.jpg','images/galaxyzflip6-noir-plier.jpg']},
+    {name:'Argent', photo:'images/galaxyzflip6-argent.jpg', views:['images/galaxyzflip6-argent.jpg','images/galaxyzflip6-argent-face.jpg','images/galaxyzflip6-argent-plier.jpg']},
+    {name:'Bleu', photo:'images/galaxyzflip6-bleu.jpg', views:['images/galaxyzflip6-bleu.jpg','images/galaxyzflip6-bleu-face.jpg','images/galaxyzflip6-bleu-plier.jpg']},
+    {name:'Jaune', photo:'images/galaxyzflip6-jaune.jpg', views:['images/galaxyzflip6-jaune.jpg','images/galaxyzflip6-jaune-face.jpg','images/galaxyzflip6-jaune-plier.jpg']},
+    {name:'Vert', photo:'images/galaxyzflip6-vert-face.jpg', views:['images/galaxyzflip6-vert-face.jpg','images/galaxyzflip6-vert-plier.jpg']}
+  ]},
+  {id:71, variantGroup:'galaxyzflip6', brand:'Samsung', name:'Galaxy Z Flip 6', spec:'512 Go', original:1183, price:709, type:'phone', colors:[
+    {name:'Noir', photo:'images/galaxyzflip6-noir.jpg', views:['images/galaxyzflip6-noir.jpg','images/galaxyzflip6-noir-face.jpg','images/galaxyzflip6-noir-plier.jpg']},
+    {name:'Argent', photo:'images/galaxyzflip6-argent.jpg', views:['images/galaxyzflip6-argent.jpg','images/galaxyzflip6-argent-face.jpg','images/galaxyzflip6-argent-plier.jpg']},
+    {name:'Bleu', photo:'images/galaxyzflip6-bleu.jpg', views:['images/galaxyzflip6-bleu.jpg','images/galaxyzflip6-bleu-face.jpg','images/galaxyzflip6-bleu-plier.jpg']},
+    {name:'Jaune', photo:'images/galaxyzflip6-jaune.jpg', views:['images/galaxyzflip6-jaune.jpg','images/galaxyzflip6-jaune-face.jpg','images/galaxyzflip6-jaune-plier.jpg']},
+    {name:'Vert', photo:'images/galaxyzflip6-vert-face.jpg', views:['images/galaxyzflip6-vert-face.jpg','images/galaxyzflip6-vert-plier.jpg']}
   ]},
   {id:6, brand:'Samsung', name:'Galaxy S22', spec:'128 Go', original:700, price:389, type:'phone'},
   {id:7, brand:'Samsung', name:'Galaxy S23', spec:'256 Go', original:900, price:549, type:'phone'},
@@ -448,6 +462,10 @@ const PRODUCT_INFO = {
   'Galaxy S26': {
     desc: "Le Galaxy S26 inaugure la nouvelle génération Samsung : design affiné, écran Dynamic AMOLED 2X 120 Hz éclatant et puce dernière génération optimisée pour l'IA Galaxy. Un triple capteur photo 50 Mpx et une autonomie solide pour un usage quotidien exigeant.",
     specs: [['Écran','6,3" Dynamic AMOLED 2X 120 Hz'],['Processeur','Snapdragon dernière génération for Galaxy'],['Appareil photo','Triple 50 Mpx + ultra grand-angle + téléobjectif'],['Batterie','4300 mAh · charge rapide 25 W'],['Réseau','5G'],['Système','Android']]
+  },
+  'Galaxy Z Flip 6': {
+    desc: "Le Galaxy Z Flip 6 se plie pour tenir dans n'importe quelle poche et se déplie sur un grand écran Dynamic AMOLED 2X 120 Hz. Écran externe FlexWindow pratique pour les notifications et selfies, puce Snapdragon 8 Gen 3 for Galaxy et coloris pop pour se démarquer.",
+    specs: [['Écran principal','6,7" Dynamic AMOLED 2X 120 Hz pliable'],['Écran externe','3,4" Super AMOLED FlexWindow'],['Processeur','Snapdragon 8 Gen 3 for Galaxy'],['Appareil photo','Double 50 Mpx + ultra grand-angle'],['Batterie','4000 mAh · charge rapide 25 W'],['Réseau','5G'],['Système','Android']]
   },
   'Galaxy S22': {
     desc: "Compact et haut de gamme, le Galaxy S22 combine un écran Dynamic AMOLED 2X 120 Hz, la puissance du Snapdragon 8 Gen 1 et un triple appareil photo 50 Mpx très polyvalent.",
