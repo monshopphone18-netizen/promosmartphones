@@ -83,6 +83,9 @@ const PRODUCTS = {
   69: { name: 'Galaxy S25+ · 512 Go',              price: 769  },
   70: { name: 'Galaxy Z Flip 6 · 256 Go',          price: 629  },
   71: { name: 'Galaxy Z Flip 6 · 512 Go',          price: 709  },
+  72: { name: 'Galaxy Z Fold 7 · 256 Go',          price: 1249 },
+  73: { name: 'Galaxy Z Fold 7 · 512 Go',          price: 1329 },
+  74: { name: 'Galaxy Z Fold 7 · 1 To',            price: 1459 },
 };
 
 module.exports = async (req, res) => {
