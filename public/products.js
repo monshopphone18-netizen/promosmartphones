@@ -388,10 +388,6 @@ const PRODUCTS = [
     {name:'Noir', photo:'images/galaxyzfold7-noir.jpg', views:['images/galaxyzfold7-noir.jpg','images/galaxyzfold7-noir-face.jpg','images/galaxyzfold7-noir-interieur.jpg']},
     {name:'Vert', photo:'images/galaxyzfold7-vert.jpg', views:['images/galaxyzfold7-vert.jpg','images/galaxyzfold7-vert-deplier.jpg']}
   ]},
-  {id:6, brand:'Samsung', name:'Galaxy S22', spec:'128 Go', original:700, price:389, type:'phone'},
-  {id:7, brand:'Samsung', name:'Galaxy S23', spec:'256 Go', original:900, price:549, type:'phone'},
-  {id:8, brand:'Samsung', name:'Galaxy Z Flip 4', spec:'256 Go', original:850, price:459, type:'phone'},
-  {id:9, brand:'Samsung', name:'Galaxy Tab S8', spec:'128 Go', original:650, price:379, type:'tablet'},
   {id:10, brand:'Mac', name:'MacBook Air M1', spec:'256 Go SSD · 8 Go RAM', original:1200, price:749, type:'laptop'},
   {id:11, brand:'Mac', name:'MacBook Air M2', spec:'256 Go SSD · 8 Go RAM', original:1500, price:999, type:'laptop'},
   {id:12, brand:'Mac', name:'MacBook Pro M1', spec:'512 Go SSD · 16 Go RAM', original:1700, price:1099, type:'laptop'},
@@ -411,6 +407,14 @@ const PRODUCTS = [
   ]},
   {id:77, brand:'Mac', name:'MacBook Pro M5', spec:'1 To SSD · 16 Go RAM', original:2199, price:1429, type:'laptop', colors:[
     {name:'Noir sidéral', photo:'images/macbookprom5-noir.jpg', views:['images/macbookprom5-noir.jpg','images/macbookprom5-noir-cote.jpg']}
+  ]},
+  {id:78, brand:'Mac', name:'MacBook Air 13" (2026)', spec:'512 Go SSD · 16 Go RAM', original:1399, price:909, type:'laptop', colors:[
+    {name:'Bleu ciel', photo:'images/macbookair26-bleuciel.jpg', views:['images/macbookair26-bleuciel.jpg','images/macbookair26-bleuciel-face.jpg','images/macbookair26-bleuciel-cote.jpg']},
+    {name:'Lumière stellaire', photo:'images/macbookair26-starlight.jpg', views:['images/macbookair26-starlight.jpg','images/macbookair26-starlight-face.jpg','images/macbookair26-starlight-cote.jpg']},
+    {name:'Minuit', photo:'images/macbookair26-minuit.jpg', views:['images/macbookair26-minuit.jpg','images/macbookair26-minuit-face.jpg','images/macbookair26-minuit-clavier.jpg']}
+  ]},
+  {id:79, brand:'Apple', name:'AirPods Pro 2', spec:'Boîtier de charge MagSafe', original:219, price:139, type:'accessory', colors:[
+    {name:'Blanc', photo:'images/airpodspro2.jpg', views:['images/airpodspro2.jpg','images/airpodspro2-face.jpg','images/airpodspro2-boite.jpg']}
   ]},
 ];
 
@@ -504,22 +508,6 @@ const PRODUCT_INFO = {
     desc: "Le Galaxy Z Flip 6 se plie pour tenir dans n'importe quelle poche et se déplie sur un grand écran Dynamic AMOLED 2X 120 Hz. Écran externe FlexWindow pratique pour les notifications et selfies, puce Snapdragon 8 Gen 3 for Galaxy et coloris pop pour se démarquer.",
     specs: [['Écran principal','6,7" Dynamic AMOLED 2X 120 Hz pliable'],['Écran externe','3,4" Super AMOLED FlexWindow'],['Processeur','Snapdragon 8 Gen 3 for Galaxy'],['Appareil photo','Double 50 Mpx + ultra grand-angle'],['Batterie','4000 mAh · charge rapide 25 W'],['Réseau','5G'],['Système','Android']]
   },
-  'Galaxy S22': {
-    desc: "Compact et haut de gamme, le Galaxy S22 combine un écran Dynamic AMOLED 2X 120 Hz, la puissance du Snapdragon 8 Gen 1 et un triple appareil photo 50 Mpx très polyvalent.",
-    specs: [['Écran','6,1" Dynamic AMOLED 2X 120 Hz'],['Processeur','Snapdragon 8 Gen 1'],['Appareil photo','Triple, principal 50 Mpx'],['Batterie','3700 mAh'],['Réseau','5G'],['Système','Android']]
-  },
-  'Galaxy S23': {
-    desc: "Le Galaxy S23 pousse l'autonomie et les performances plus loin grâce au Snapdragon 8 Gen 2. Photos éclatantes de jour comme de nuit et écran ultra fluide 120 Hz.",
-    specs: [['Écran','6,1" Dynamic AMOLED 2X 120 Hz'],['Processeur','Snapdragon 8 Gen 2 for Galaxy'],['Appareil photo','Triple, principal 50 Mpx'],['Batterie','3900 mAh'],['Réseau','5G'],['Système','Android']]
-  },
-  'Galaxy Z Flip 4': {
-    desc: "Le Galaxy Z Flip 4 se plie pour tenir dans la poche et se déplie sur un grand écran 6,7\". Un écran externe pratique et un design iconique pour se démarquer.",
-    specs: [['Écran principal','6,7" Dynamic AMOLED 120 Hz pliable'],['Écran externe','1,9" Super AMOLED'],['Processeur','Snapdragon 8+ Gen 1'],['Appareil photo','Double 12 Mpx'],['Batterie','3700 mAh'],['Système','Android']]
-  },
-  'Galaxy Tab S8': {
-    desc: "La Galaxy Tab S8 est une tablette Android puissante avec S Pen inclus, parfaite pour le travail, le dessin et le divertissement sur un grand écran 120 Hz.",
-    specs: [['Écran','11" LCD 120 Hz'],['Processeur','Snapdragon 8 Gen 1'],['Stylet','S Pen inclus'],['Batterie','8000 mAh'],['Connectivité','Wi-Fi'],['Système','Android']]
-  },
   'MacBook Air M1': {
     desc: "Le MacBook Air M1 a marqué un tournant : silencieux (sans ventilateur), rapide et endurant. Idéal pour la bureautique, le web et les tâches créatives légères.",
     specs: [['Puce','Apple M1 (8 cœurs CPU)'],['Écran','13,3" Retina'],['Mémoire','8 Go RAM unifiée'],['Stockage','SSD 256 Go'],['Autonomie','Jusqu\'à 18 h'],['Système','macOS']]
@@ -547,6 +535,14 @@ const PRODUCT_INFO = {
   'MacBook Pro M5': {
     desc: "Le MacBook Pro M5 pousse les performances au maximum grâce à la puce Apple M5 et son GPU nouvelle génération. Écran Liquid Retina XDR, châssis en aluminium robuste et autonomie exceptionnelle : la référence pour les créatifs et développeurs les plus exigeants.",
     specs: [['Puce','Apple M5 (CPU 10 cœurs · GPU 10 cœurs)'],['Écran','14,2" Liquid Retina XDR'],['Mémoire','16 Go RAM unifiée'],['Stockage','SSD 1 To'],['Autonomie','Jusqu\'à 24 h'],['Connectique','Thunderbolt 5 · MagSafe · HDMI'],['Système','macOS']]
+  },
+  'MacBook Air 13" (2026)': {
+    desc: "Le tout nouveau MacBook Air 13\" allie légèreté extrême et puissance grâce à la puce Apple M5. Écran Liquid Retina lumineux, autonomie de toute une journée et coloris raffinés : l'ordinateur portable idéal pour un usage nomade au quotidien.",
+    specs: [['Puce','Apple M5 (CPU 10 cœurs · GPU 8 cœurs)'],['Écran','13" Liquid Retina'],['Mémoire','16 Go RAM unifiée'],['Stockage','SSD 512 Go'],['Autonomie','Jusqu\'à 18 h'],['Connectique','USB-C · MagSafe'],['Système','macOS']]
+  },
+  'AirPods Pro 2': {
+    desc: "Les AirPods Pro 2 offrent une réduction de bruit active deux fois plus performante, un son spatial personnalisé et un boîtier de charge MagSafe avec haut-parleur intégré. Le compagnon audio idéal pour tous vos appareils Apple.",
+    specs: [['Réduction de bruit','Active, jusqu\'à 2x plus performante'],['Audio','Son spatial personnalisé'],['Autonomie','Jusqu\'à 6 h (30 h avec boîtier)'],['Étanchéité','IP54'],['Charge','MagSafe · USB-C · Qi'],['Compatibilité','iPhone, iPad, Mac']]
   }
 };
 
@@ -563,7 +559,8 @@ const COLOR_HEX = {
   'Bleu Pacifique':'#38566B', 'Noir sidéral':'#3A3A3C', 'Violet intense':'#4E4159',
   'Gris':'#B7B7B2', 'Bleu foncé':'#1E3A5F',
   'Or rose':'#D9AFA0', 'Mauve':'#6E6288',
-  'Indigo':'#4A5FA5', 'Jaune agrume':'#D9E05B', 'Rose poudre':'#F0C4D4'
+  'Indigo':'#4A5FA5', 'Jaune agrume':'#D9E05B', 'Rose poudre':'#F0C4D4',
+  'Bleu ciel':'#A9C8DE'
 };
 
 function productInfo(p){ return PRODUCT_INFO[p.name] || {desc:'', specs:[]}; }

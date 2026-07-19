@@ -17,10 +17,6 @@ const PRODUCTS = {
   2:  { name: 'iPhone 13 · 128 Go',               price: 419  },
   3:  { name: 'iPhone 14 · 128 Go',               price: 519  },
   4:  { name: 'iPhone 15 · 256 Go',               price: 799  },
-  6:  { name: 'Galaxy S22 · 128 Go',               price: 389  },
-  7:  { name: 'Galaxy S23 · 256 Go',               price: 549  },
-  8:  { name: 'Galaxy Z Flip 4 · 256 Go',          price: 459  },
-  9:  { name: 'Galaxy Tab S8 · 128 Go',            price: 379  },
   10: { name: 'MacBook Air M1 · 256 Go',           price: 749  },
   11: { name: 'MacBook Air M2 · 256 Go',           price: 999  },
   12: { name: 'MacBook Pro M1 · 512 Go',           price: 1099 },
@@ -89,6 +85,8 @@ const PRODUCTS = {
   75: { name: 'MacBook Neo · 256 Go',              price: 479  },
   76: { name: 'MacBook Neo · 512 Go',              price: 559  },
   77: { name: 'MacBook Pro M5 · 1 To',             price: 1429 },
+  78: { name: 'MacBook Air 13" (2026) · 512 Go',   price: 909  },
+  79: { name: 'AirPods Pro 2',                     price: 139  },
 };
 
 module.exports = async (req, res) => {
