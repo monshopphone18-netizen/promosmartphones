@@ -45,7 +45,9 @@ function updateCartUI(){
   set('cartCount', count);
   set('itemCount', count);
   set('cartTotal', total + ' €');
-  const cb = document.getElementById('checkoutBtn'); if(cb) cb.disabled = count===0;
+  const cgv = document.getElementById('cgvAccept');
+  const cgvOk = !cgv || cgv.checked;
+  const cb = document.getElementById('checkoutBtn'); if(cb) cb.disabled = count===0 || !cgvOk;
   const err = document.getElementById('checkoutError'); if(err) err.style.display = 'none';
 
   const body = document.getElementById('drawerBody');
@@ -140,6 +142,12 @@ document.addEventListener('keydown', e=>{
 async function goToStripeCheckout(){
   const entries = cartEntries();
   if(entries.length===0) return;
+  const cgv = document.getElementById('cgvAccept');
+  if(cgv && !cgv.checked){
+    const errorBox = document.getElementById('checkoutError');
+    if(errorBox){ errorBox.textContent = 'Merci d\'accepter les CGV pour continuer.'; errorBox.style.display = 'block'; }
+    return;
+  }
   const btn = document.getElementById('checkoutBtn');
   const label = document.getElementById('checkoutLabel');
   const spinner = document.getElementById('checkoutSpinner');
