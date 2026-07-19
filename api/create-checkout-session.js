@@ -62,6 +62,9 @@ const PRODUCTS = {
   47: { name: 'iPhone 12 Pro · 128 Go',            price: 469  },
   48: { name: 'iPhone 12 Pro · 256 Go',            price: 529  },
   49: { name: 'iPhone 12 Pro · 512 Go',            price: 629  },
+  50: { name: 'iPhone 12 Pro Max · 128 Go',        price: 489  },
+  51: { name: 'iPhone 12 Pro Max · 256 Go',        price: 549  },
+  52: { name: 'iPhone 12 Pro Max · 512 Go',        price: 649  },
 };
 
 module.exports = async (req, res) => {

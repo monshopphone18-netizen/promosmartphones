@@ -252,6 +252,21 @@ const PRODUCTS = [
     {name:'Argent', photo:'images/iphone12pro-argent.jpg', views:['images/iphone12pro-argent.jpg','images/iphone12pro-argent-face.jpg','images/iphone12pro-argent-photo.jpg']},
     {name:'Or', photo:'images/iphone12pro-or.jpg', views:['images/iphone12pro-or.jpg','images/iphone12pro-or-face.jpg','images/iphone12pro-or-photo.jpg']}
   ]},
+  {id:50, variantGroup:'iphone12promax', brand:'iPhone', name:'iPhone 12 Pro Max', spec:'128 Go', original:1139, price:489, type:'phone', colors:[
+    {name:'Bleu Pacifique', photo:'images/iphone12promax-bleu.jpg', views:['images/iphone12promax-bleu.jpg','images/iphone12promax-bleu-face.jpg','images/iphone12promax-bleu-photo.jpg']},
+    {name:'Graphite', photo:'images/iphone12promax-graphite.jpg', views:['images/iphone12promax-graphite.jpg','images/iphone12promax-graphite-face.jpg','images/iphone12promax-graphite-photo.jpg']},
+    {name:'Or', photo:'images/iphone12promax-or.jpg', views:['images/iphone12promax-or.jpg','images/iphone12promax-or-face.jpg','images/iphone12promax-or-photo.jpg']}
+  ]},
+  {id:51, variantGroup:'iphone12promax', brand:'iPhone', name:'iPhone 12 Pro Max', spec:'256 Go', original:1239, price:549, type:'phone', colors:[
+    {name:'Bleu Pacifique', photo:'images/iphone12promax-bleu.jpg', views:['images/iphone12promax-bleu.jpg','images/iphone12promax-bleu-face.jpg','images/iphone12promax-bleu-photo.jpg']},
+    {name:'Graphite', photo:'images/iphone12promax-graphite.jpg', views:['images/iphone12promax-graphite.jpg','images/iphone12promax-graphite-face.jpg','images/iphone12promax-graphite-photo.jpg']},
+    {name:'Or', photo:'images/iphone12promax-or.jpg', views:['images/iphone12promax-or.jpg','images/iphone12promax-or-face.jpg','images/iphone12promax-or-photo.jpg']}
+  ]},
+  {id:52, variantGroup:'iphone12promax', brand:'iPhone', name:'iPhone 12 Pro Max', spec:'512 Go', original:1439, price:649, type:'phone', colors:[
+    {name:'Bleu Pacifique', photo:'images/iphone12promax-bleu.jpg', views:['images/iphone12promax-bleu.jpg','images/iphone12promax-bleu-face.jpg','images/iphone12promax-bleu-photo.jpg']},
+    {name:'Graphite', photo:'images/iphone12promax-graphite.jpg', views:['images/iphone12promax-graphite.jpg','images/iphone12promax-graphite-face.jpg','images/iphone12promax-graphite-photo.jpg']},
+    {name:'Or', photo:'images/iphone12promax-or.jpg', views:['images/iphone12promax-or.jpg','images/iphone12promax-or-face.jpg','images/iphone12promax-or-photo.jpg']}
+  ]},
   {id:5, brand:'Samsung', name:'Galaxy A54', spec:'128 Go', original:420, price:249, type:'phone'},
   {id:6, brand:'Samsung', name:'Galaxy S22', spec:'128 Go', original:700, price:389, type:'phone'},
   {id:7, brand:'Samsung', name:'Galaxy S23', spec:'256 Go', original:900, price:549, type:'phone'},
@@ -266,6 +281,10 @@ const PRODUCTS = [
 
 // Descriptions + caractéristiques techniques, par modèle (partagées entre capacités)
 const PRODUCT_INFO = {
+  'iPhone 12 Pro Max': {
+    desc: "L'iPhone 12 Pro Max, c'est le grand format Pro : \u00e9cran 6,7\" Super Retina XDR, ch\u00e2ssis en acier inoxydable, puce A14 Bionic et un syst\u00e8me photo Pro triple 12 Mpx avec stabilisation par d\u00e9calage de capteur et scanner LiDAR. Excellent pour la photo et la vid\u00e9o.",
+    specs: [['\u00c9cran','6,7\" OLED Super Retina XDR'],['Puce','A14 Bionic'],['Ch\u00e2ssis','Acier inoxydable'],['Appareil photo','Pro : triple 12 Mpx + LiDAR'],['Autonomie','Jusqu\'\u00e0 20 h de lecture vid\u00e9o'],['R\u00e9seau','5G'],['S\u00e9curit\u00e9','Face ID'],['Syst\u00e8me','iOS']]
+  },
   'iPhone 12 Pro': {
     desc: "L'iPhone 12 Pro allie un châssis en acier inoxydable, l'écran Super Retina XDR et la puce A14 Bionic. Son système photo Pro triple 12 Mpx avec scanner LiDAR et la 5G en font un excellent choix pour la photo et la vidéo.",
     specs: [['\u00c9cran','6,1\" OLED Super Retina XDR'],['Puce','A14 Bionic'],['Ch\u00e2ssis','Acier inoxydable'],['Appareil photo','Pro : triple 12 Mpx + LiDAR'],['Autonomie','Jusqu\'\u00e0 17 h de lecture vid\u00e9o'],['R\u00e9seau','5G'],['S\u00e9curit\u00e9','Face ID'],['Syst\u00e8me','iOS']]
