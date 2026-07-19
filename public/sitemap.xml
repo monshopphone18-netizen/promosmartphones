@@ -21,6 +21,26 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.promosmartphones.com/blog.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.promosmartphones.com/blog-iphone-17-pro-max-pas-cher.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.promosmartphones.com/blog-galaxy-s25-ultra-prix.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.promosmartphones.com/blog-neuf-destockage-vs-reconditionne.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.promosmartphones.com/garantie.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
