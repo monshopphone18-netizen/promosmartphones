@@ -303,7 +303,6 @@ const PRODUCTS = [
     {name:'Bleu intense', photo:'images/iphone17promax-bleu.jpg', views:['images/iphone17promax-bleu.jpg','images/iphone17promax-bleu-face.jpg','images/iphone17promax-bleu-photo.jpg']},
     {name:'Argent', photo:'images/iphone17promax-argent.jpg', views:['images/iphone17promax-argent.jpg','images/iphone17promax-argent-face.jpg','images/iphone17promax-argent-photo.jpg']}
   ]},
-  {id:5, brand:'Samsung', name:'Galaxy A54', spec:'128 Go', original:420, price:249, type:'phone'},
   {id:61, variantGroup:'galaxya56', brand:'Samsung', name:'Galaxy A56', spec:'128 Go', original:479, price:289, type:'phone', colors:[
     {name:'Vert', photo:'images/galaxya56-vert.jpg', views:['images/galaxya56-vert.jpg','images/galaxya56-vert-face.jpg']},
     {name:'Rose', photo:'images/galaxya56-rose.jpg', views:['images/galaxya56-rose.jpg','images/galaxya56-rose-derriere.jpg']},
@@ -314,11 +313,48 @@ const PRODUCTS = [
     {name:'Rose', photo:'images/galaxya56-rose.jpg', views:['images/galaxya56-rose.jpg','images/galaxya56-rose-derriere.jpg']},
     {name:'Gris', photo:'images/galaxya56-gris.jpg', views:['images/galaxya56-gris.jpg','images/galaxya56-gris-derriere.jpg']}
   ]},
-  {id:63, brand:'Samsung', name:'Galaxy S25+', spec:'256 Go', original:1156, price:699, type:'phone', colors:[
+  {id:63, variantGroup:'galaxys25plus', brand:'Samsung', name:'Galaxy S25+', spec:'256 Go', original:1156, price:699, type:'phone', colors:[
     {name:'Argent', photo:'images/galaxys25plus-argent.jpg', views:['images/galaxys25plus-argent.jpg','images/galaxys25plus-argent-face.jpg','images/galaxys25plus-argent-photo.jpg']},
     {name:'Bleu', photo:'images/galaxys25plus-bleu.jpg', views:['images/galaxys25plus-bleu.jpg','images/galaxys25plus-bleu-face.jpg','images/galaxys25plus-bleu-photo.jpg']},
     {name:'Bleu foncé', photo:'images/galaxys25plus-bleufonce.jpg', views:['images/galaxys25plus-bleufonce.jpg','images/galaxys25plus-bleufonce-face.jpg','images/galaxys25plus-bleufonce-photo.jpg']},
     {name:'Vert', photo:'images/galaxys25plus-vert.jpg', views:['images/galaxys25plus-vert.jpg','images/galaxys25plus-vert-face.jpg','images/galaxys25plus-vert-photo.jpg']}
+  ]},
+  {id:69, variantGroup:'galaxys25plus', brand:'Samsung', name:'Galaxy S25+', spec:'512 Go', original:1286, price:769, type:'phone', colors:[
+    {name:'Argent', photo:'images/galaxys25plus-argent.jpg', views:['images/galaxys25plus-argent.jpg','images/galaxys25plus-argent-face.jpg','images/galaxys25plus-argent-photo.jpg']},
+    {name:'Bleu', photo:'images/galaxys25plus-bleu.jpg', views:['images/galaxys25plus-bleu.jpg','images/galaxys25plus-bleu-face.jpg','images/galaxys25plus-bleu-photo.jpg']},
+    {name:'Bleu foncé', photo:'images/galaxys25plus-bleufonce.jpg', views:['images/galaxys25plus-bleufonce.jpg','images/galaxys25plus-bleufonce-face.jpg','images/galaxys25plus-bleufonce-photo.jpg']},
+    {name:'Vert', photo:'images/galaxys25plus-vert.jpg', views:['images/galaxys25plus-vert.jpg','images/galaxys25plus-vert-face.jpg','images/galaxys25plus-vert-photo.jpg']}
+  ]},
+  {id:64, variantGroup:'galaxys25ultra', brand:'Samsung', name:'Galaxy S25 Ultra', spec:'256 Go', original:1269, price:759, type:'phone', colors:[
+    {name:'Bleu', photo:'images/galaxys25ultra-bleu.jpg', views:['images/galaxys25ultra-bleu.jpg','images/galaxys25ultra-bleu-face.jpg','images/galaxys25ultra-bleu-derriere.jpg']},
+    {name:'Or rose', photo:'images/galaxys25ultra-orrose.jpg', views:['images/galaxys25ultra-orrose.jpg','images/galaxys25ultra-orrose-face.jpg','images/galaxys25ultra-orrose-derriere.jpg']},
+    {name:'Vert', photo:'images/galaxys25ultra-vert.jpg', views:['images/galaxys25ultra-vert.jpg','images/galaxys25ultra-vert-face.jpg','images/galaxys25ultra-vert-derriere.jpg']},
+    {name:'Argent', photo:'images/galaxys25ultra-argent.jpg', views:['images/galaxys25ultra-argent.jpg','images/galaxys25ultra-argent-face.jpg']},
+    {name:'Noir', photo:'images/galaxys25ultra-noir.jpg', views:['images/galaxys25ultra-noir.jpg']}
+  ]},
+  {id:65, variantGroup:'galaxys25ultra', brand:'Samsung', name:'Galaxy S25 Ultra', spec:'512 Go', original:1399, price:839, type:'phone', colors:[
+    {name:'Bleu', photo:'images/galaxys25ultra-bleu.jpg', views:['images/galaxys25ultra-bleu.jpg','images/galaxys25ultra-bleu-face.jpg','images/galaxys25ultra-bleu-derriere.jpg']},
+    {name:'Or rose', photo:'images/galaxys25ultra-orrose.jpg', views:['images/galaxys25ultra-orrose.jpg','images/galaxys25ultra-orrose-face.jpg','images/galaxys25ultra-orrose-derriere.jpg']},
+    {name:'Vert', photo:'images/galaxys25ultra-vert.jpg', views:['images/galaxys25ultra-vert.jpg','images/galaxys25ultra-vert-face.jpg','images/galaxys25ultra-vert-derriere.jpg']},
+    {name:'Argent', photo:'images/galaxys25ultra-argent.jpg', views:['images/galaxys25ultra-argent.jpg','images/galaxys25ultra-argent-face.jpg']},
+    {name:'Noir', photo:'images/galaxys25ultra-noir.jpg', views:['images/galaxys25ultra-noir.jpg']}
+  ]},
+  {id:66, variantGroup:'galaxys25ultra', brand:'Samsung', name:'Galaxy S25 Ultra', spec:'1 To', original:1629, price:979, type:'phone', colors:[
+    {name:'Bleu', photo:'images/galaxys25ultra-bleu.jpg', views:['images/galaxys25ultra-bleu.jpg','images/galaxys25ultra-bleu-face.jpg','images/galaxys25ultra-bleu-derriere.jpg']},
+    {name:'Or rose', photo:'images/galaxys25ultra-orrose.jpg', views:['images/galaxys25ultra-orrose.jpg','images/galaxys25ultra-orrose-face.jpg','images/galaxys25ultra-orrose-derriere.jpg']},
+    {name:'Vert', photo:'images/galaxys25ultra-vert.jpg', views:['images/galaxys25ultra-vert.jpg','images/galaxys25ultra-vert-face.jpg','images/galaxys25ultra-vert-derriere.jpg']},
+    {name:'Argent', photo:'images/galaxys25ultra-argent.jpg', views:['images/galaxys25ultra-argent.jpg','images/galaxys25ultra-argent-face.jpg']},
+    {name:'Noir', photo:'images/galaxys25ultra-noir.jpg', views:['images/galaxys25ultra-noir.jpg']}
+  ]},
+  {id:67, variantGroup:'galaxys26', brand:'Samsung', name:'Galaxy S26', spec:'256 Go', original:999, price:599, type:'phone', colors:[
+    {name:'Bleu', photo:'images/galaxys26-bleu.jpg', views:['images/galaxys26-bleu.jpg','images/galaxys26-bleu-face.jpg']},
+    {name:'Mauve', photo:'images/galaxys26-mauve.jpg', views:['images/galaxys26-mauve.jpg','images/galaxys26-mauve-face.jpg','images/galaxys26-mauve-derriere.jpg']},
+    {name:'Noir', photo:'images/galaxys26-noir.jpg', views:['images/galaxys26-noir.jpg','images/galaxys26-noir-face.jpg']}
+  ]},
+  {id:68, variantGroup:'galaxys26', brand:'Samsung', name:'Galaxy S26', spec:'512 Go', original:1129, price:679, type:'phone', colors:[
+    {name:'Bleu', photo:'images/galaxys26-bleu.jpg', views:['images/galaxys26-bleu.jpg','images/galaxys26-bleu-face.jpg']},
+    {name:'Mauve', photo:'images/galaxys26-mauve.jpg', views:['images/galaxys26-mauve.jpg','images/galaxys26-mauve-face.jpg','images/galaxys26-mauve-derriere.jpg']},
+    {name:'Noir', photo:'images/galaxys26-noir.jpg', views:['images/galaxys26-noir.jpg','images/galaxys26-noir-face.jpg']}
   ]},
   {id:6, brand:'Samsung', name:'Galaxy S22', spec:'128 Go', original:700, price:389, type:'phone'},
   {id:7, brand:'Samsung', name:'Galaxy S23', spec:'256 Go', original:900, price:549, type:'phone'},
@@ -397,10 +433,6 @@ const PRODUCT_INFO = {
     desc: "L'iPhone 17 Pro Max, c'est le summum : le plus grand écran, la puce A19 Pro, un châssis en aluminium avec plateau caméra intégral et un système photo Pro triple 48 Mpx avec le meilleur téléobjectif jamais vu sur iPhone. Une autonomie exceptionnelle pour tenir toute la journée et plus encore.",
     specs: [['Écran','6,9" OLED Super Retina XDR · ProMotion 120 Hz'],['Puce','A19 Pro'],['Châssis','Aluminium · plateau caméra intégral'],['Appareil photo','Pro : triple 48 Mpx + téléobjectif longue portée'],['Autonomie','Jusqu\'à 37 h de lecture vidéo'],['Protection','Ceramic Shield 2'],['Connectique','USB-C (USB 3)'],['Réseau','5G'],['Système','iOS']]
   },
-  'Galaxy A54': {
-    desc: "Le Galaxy A54 offre l'essentiel d'un smartphone moderne à prix doux : grand écran Super AMOLED 120 Hz, batterie longue durée et triple capteur photo 50 Mpx.",
-    specs: [['Écran','6,4" Super AMOLED 120 Hz'],['Processeur','Exynos 1380'],['Appareil photo','Triple, principal 50 Mpx'],['Batterie','5000 mAh'],['Réseau','5G'],['Système','Android']]
-  },
   'Galaxy A56': {
     desc: "Le Galaxy A56 5G modernise la gamme A avec un écran Super AMOLED 120 Hz lumineux, la puce Exynos 1580 et un triple capteur photo 50 Mpx stabilisé. Une autonomie confortable et une charge rapide 45 W pour un usage quotidien sans compromis.",
     specs: [['Écran','6,7" Super AMOLED 120 Hz'],['Processeur','Exynos 1580'],['Appareil photo','Triple, principal 50 Mpx OIS'],['Batterie','5000 mAh · charge rapide 45 W'],['Réseau','5G'],['Système','Android']]
@@ -408,6 +440,14 @@ const PRODUCT_INFO = {
   'Galaxy S25+': {
     desc: "Le Galaxy S25+ est le haut de gamme Samsung par excellence : grand écran Dynamic AMOLED 2X 120 Hz, châssis en titane, puce Snapdragon 8 Elite for Galaxy et triple capteur photo 50 Mpx boosté par l'IA Galaxy. Puissance, autonomie et finitions premium réunies.",
     specs: [['Écran','6,7" Dynamic AMOLED 2X 120 Hz'],['Processeur','Snapdragon 8 Elite for Galaxy'],['Châssis','Titane'],['Appareil photo','Triple 50 Mpx + ultra grand-angle + téléobjectif'],['Batterie','4900 mAh · charge rapide 45 W'],['Réseau','5G'],['Système','Android']]
+  },
+  'Galaxy S25 Ultra': {
+    desc: "Le Galaxy S25 Ultra est le fleuron absolu de Samsung : châssis en titane, écran Dynamic AMOLED 2X 120 Hz, S Pen intégré et système photo Pro 200 Mpx avec téléobjectif longue portée. Le Snapdragon 8 Elite for Galaxy et l'IA Galaxy en font l'appareil le plus puissant de la gamme.",
+    specs: [['Écran','6,9" Dynamic AMOLED 2X 120 Hz'],['Processeur','Snapdragon 8 Elite for Galaxy'],['Châssis','Titane'],['Appareil photo','Pro 200 Mpx + ultra grand-angle + double téléobjectif'],['Stylet','S Pen intégré'],['Batterie','5000 mAh · charge rapide 45 W'],['Réseau','5G'],['Système','Android']]
+  },
+  'Galaxy S26': {
+    desc: "Le Galaxy S26 inaugure la nouvelle génération Samsung : design affiné, écran Dynamic AMOLED 2X 120 Hz éclatant et puce dernière génération optimisée pour l'IA Galaxy. Un triple capteur photo 50 Mpx et une autonomie solide pour un usage quotidien exigeant.",
+    specs: [['Écran','6,3" Dynamic AMOLED 2X 120 Hz'],['Processeur','Snapdragon dernière génération for Galaxy'],['Appareil photo','Triple 50 Mpx + ultra grand-angle + téléobjectif'],['Batterie','4300 mAh · charge rapide 25 W'],['Réseau','5G'],['Système','Android']]
   },
   'Galaxy S22': {
     desc: "Compact et haut de gamme, le Galaxy S22 combine un écran Dynamic AMOLED 2X 120 Hz, la puissance du Snapdragon 8 Gen 1 et un triple appareil photo 50 Mpx très polyvalent.",
@@ -458,7 +498,8 @@ const COLOR_HEX = {
   'Sauge':'#9CAE8B', 'Lavande':'#C7BEDC', 'Brume':'#C5CED6',
   'Bleu intense':'#33415C', 'Orange cosmique':'#D8703B',
   'Bleu Pacifique':'#38566B', 'Noir sidéral':'#3A3A3C', 'Violet intense':'#4E4159',
-  'Gris':'#B7B7B2', 'Bleu foncé':'#1E3A5F'
+  'Gris':'#B7B7B2', 'Bleu foncé':'#1E3A5F',
+  'Or rose':'#D9AFA0', 'Mauve':'#6E6288'
 };
 
 function productInfo(p){ return PRODUCT_INFO[p.name] || {desc:'', specs:[]}; }
