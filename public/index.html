@@ -129,6 +129,7 @@
   footer{border-top:1px solid var(--line);padding:36px 0;}
   .footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;}
   .footer-inner p{font-size:13px;color:var(--slate);margin:0;}
+  .footer-legal-links a:hover{color:var(--ink);text-decoration:underline;}
 
   .overlay{position:fixed;inset:0;background:rgba(20,25,29,0.45);z-index:50;opacity:0;pointer-events:none;transition:opacity .2s ease;}
   .overlay.open{opacity:1;pointer-events:auto;}
@@ -236,6 +237,9 @@
         <button class="filter-btn" data-f="iPhone">iPhone</button>
         <button class="filter-btn" data-f="Samsung">Samsung</button>
         <button class="filter-btn" data-f="Mac">Mac</button>
+        <button class="filter-btn" data-f="iPad">iPad</button>
+        <button class="filter-btn" data-f="AirPods">AirPods</button>
+        <button class="filter-btn" data-f="AppleWatch">Apple Watch</button>
       </div>
     </div>
     <div class="grid" id="grid"></div>
@@ -268,7 +272,8 @@
 <footer id="contact">
   <div class="wrap footer-inner">
     <p>© 2026 PromoSmartphones. Produits neufs, vente de déstockage.</p>
-    <p>Contact : hello@tage-boutique.example</p>
+    <p>Contact : monshopphone18@gmail.com</p>
+    <p class="footer-legal-links"><a href="mentions-legales.html">Mentions légales</a> · <a href="cgv.html">CGV</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="garantie.html">Garantie &amp; retours</a></p>
   </div>
 </footer>
 
@@ -323,7 +328,13 @@ let selectedVariant = {};
 
 function renderGrid(){
   const grid = document.getElementById('grid');
-  const items = PRODUCTS.filter(p => currentFilter==='all' || p.brand===currentFilter);
+  const items = PRODUCTS.filter(p => {
+    if(currentFilter==='all') return true;
+    if(currentFilter==='iPad') return p.type==='tablet';
+    if(currentFilter==='AirPods') return p.type==='accessory';
+    if(currentFilter==='AppleWatch') return p.type==='watch';
+    return p.brand===currentFilter;
+  });
 
   const groups = [];
   const seen = new Set();
