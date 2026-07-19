@@ -17,8 +17,6 @@ const PRODUCTS = {
   2:  { name: 'iPhone 13 · 128 Go',               price: 419  },
   3:  { name: 'iPhone 14 · 128 Go',               price: 519  },
   4:  { name: 'iPhone 15 · 256 Go',               price: 799  },
-  13: { name: 'Mac Mini M2 · 256 Go',              price: 499  },
-  14: { name: 'iMac 24" M1 · 256 Go',              price: 899  },
   15: { name: 'iPhone 13 · 256 Go',               price: 479  },
   16: { name: 'iPhone 13 · 512 Go',               price: 599  },
   17: { name: 'iPhone 13 Pro Max · 128 Go',       price: 509  },
@@ -87,6 +85,8 @@ const PRODUCTS = {
   80: { name: 'AirPods Max',                       price: 249  },
   81: { name: 'Apple Watch Ultra 2',                price: 519  },
   82: { name: 'Apple Watch Ultra 3',                price: 589  },
+  83: { name: 'iPad 11 (2025, A16) · 128 Go',       price: 309  },
+  84: { name: 'iPad Air 7 (2025, M3) · 128 Go',     price: 489  },
 };
 
 module.exports = async (req, res) => {

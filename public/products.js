@@ -388,8 +388,6 @@ const PRODUCTS = [
     {name:'Noir', photo:'images/galaxyzfold7-noir.jpg', views:['images/galaxyzfold7-noir.jpg','images/galaxyzfold7-noir-face.jpg','images/galaxyzfold7-noir-interieur.jpg']},
     {name:'Vert', photo:'images/galaxyzfold7-vert.jpg', views:['images/galaxyzfold7-vert.jpg','images/galaxyzfold7-vert-deplier.jpg']}
   ]},
-  {id:13, brand:'Mac', name:'Mac Mini M2', spec:'256 Go SSD · 8 Go RAM', original:800, price:499, type:'desktop'},
-  {id:14, brand:'Mac', name:'iMac 24" M1', spec:'256 Go SSD · 8 Go RAM', original:1500, price:899, type:'desktop'},
   {id:75, variantGroup:'macbookneo', brand:'Mac', name:'MacBook Neo', spec:'256 Go SSD · 8 Go RAM', original:799, price:479, type:'laptop', colors:[
     {name:'Argent', photo:'images/macbookneo-argent.jpg', views:['images/macbookneo-argent.jpg','images/macbookneo-argent-clavier.jpg','images/macbookneo-argent-cote.jpg']},
     {name:'Indigo', photo:'images/macbookneo-indigo.jpg', views:['images/macbookneo-indigo.jpg','images/macbookneo-indigo-clavier.jpg','images/macbookneo-indigo-cote.jpg']},
@@ -426,6 +424,17 @@ const PRODUCTS = [
   {id:82, brand:'Apple', name:'Apple Watch Ultra 3', spec:'49 mm · GPS + Cellular', original:899, price:589, type:'watch', colors:[
     {name:'Titane naturel', photo:'images/watchultra3-naturel.jpg', views:['images/watchultra3-naturel.jpg','images/watchultra3-naturel-face.jpg']},
     {name:'Titane noir', photo:'images/watchultra3-noir.jpg', views:['images/watchultra3-noir.jpg','images/watchultra3-noir-face.jpg']}
+  ]},
+  {id:83, brand:'Apple', name:'iPad 11 (2025, A16)', spec:'128 Go · WiFi', original:509, price:309, type:'tablet', colors:[
+    {name:'Argent', photo:'images/ipad11-argent.jpg', views:['images/ipad11-argent.jpg']},
+    {name:'Bleu', photo:'images/ipad11-bleu.jpg', views:['images/ipad11-bleu.jpg']},
+    {name:'Rose', photo:'images/ipad11-rose.jpg', views:['images/ipad11-rose.jpg']}
+  ]},
+  {id:84, brand:'Apple', name:'iPad Air 7 (2025, M3)', spec:'128 Go · WiFi', original:819, price:489, type:'tablet', colors:[
+    {name:'Bleu', photo:'images/ipadair7-bleu.jpg', views:['images/ipadair7-bleu.jpg','images/ipadair7-bleu-face.jpg']},
+    {name:'Gris sidéral', photo:'images/ipadair7-grissideral.jpg', views:['images/ipadair7-grissideral.jpg','images/ipadair7-grissideral-face.jpg']},
+    {name:'Lumière stellaire', photo:'images/ipadair7-starlight.jpg', views:['images/ipadair7-starlight.jpg','images/ipadair7-starlight-face.jpg']},
+    {name:'Mauve', photo:'images/ipadair7-mauve.jpg', views:['images/ipadair7-mauve.jpg','images/ipadair7-mauve-face.jpg']}
   ]},
 ];
 
@@ -519,14 +528,6 @@ const PRODUCT_INFO = {
     desc: "Le Galaxy Z Flip 6 se plie pour tenir dans n'importe quelle poche et se déplie sur un grand écran Dynamic AMOLED 2X 120 Hz. Écran externe FlexWindow pratique pour les notifications et selfies, puce Snapdragon 8 Gen 3 for Galaxy et coloris pop pour se démarquer.",
     specs: [['Écran principal','6,7" Dynamic AMOLED 2X 120 Hz pliable'],['Écran externe','3,4" Super AMOLED FlexWindow'],['Processeur','Snapdragon 8 Gen 3 for Galaxy'],['Appareil photo','Double 50 Mpx + ultra grand-angle'],['Batterie','4000 mAh · charge rapide 25 W'],['Réseau','5G'],['Système','Android']]
   },
-  'Mac Mini M2': {
-    desc: "Le Mac Mini M2 est un ordinateur de bureau compact et silencieux. Branchez votre écran, clavier et souris et profitez de la puissance de la puce M2. (Écran et périphériques non inclus.)",
-    specs: [['Puce','Apple M2'],['Mémoire','8 Go RAM unifiée'],['Stockage','SSD 256 Go'],['Connectique','Thunderbolt 4, HDMI, USB-A'],['Réseau','Wi-Fi 6 · Gigabit Ethernet'],['Système','macOS']]
-  },
-  'iMac 24" M1': {
-    desc: "L'iMac 24\" M1 est un tout-en-un élégant avec un superbe écran 4,5K Retina. Parfait pour toute la famille : design fin, couleurs vives et puce M1 rapide.",
-    specs: [['Puce','Apple M1'],['Écran','24" 4,5K Retina'],['Mémoire','8 Go RAM unifiée'],['Stockage','SSD 256 Go'],['Webcam','FaceTime HD 1080p'],['Système','macOS']]
-  },
   'MacBook Neo': {
     desc: "Le MacBook Neo réinvente l'ordinateur portable abordable d'Apple : ultra fin, ultra léger, avec un écran Liquid Retina éclatant et des coloris pop pour se démarquer. Silencieux (sans ventilateur) et endurant, il est parfait pour la bureautique, le web et un usage créatif léger au quotidien.",
     specs: [['Puce','Apple M4'],['Écran','13,6" Liquid Retina'],['Mémoire','8 Go RAM unifiée'],['Autonomie','Jusqu\'à 18 h'],['Connectique','USB-C · MagSafe'],['Système','macOS']]
@@ -554,6 +555,14 @@ const PRODUCT_INFO = {
   'Apple Watch Ultra 3': {
     desc: "L'Apple Watch Ultra 3 repousse encore les limites avec la connectivité satellite intégrée, un écran encore plus lumineux et la puce Apple S10 nouvelle génération. Le compagnon ultime pour l'exploration, le sport intensif et la plongée.",
     specs: [['Boîtier','Titane 49 mm'],['Écran','Retina LTPO OLED Always-On'],['Puce','Apple S10'],['Autonomie','Jusqu\'à 42 h (72 h en mode Économie)'],['Étanchéité','100 m · EN13319'],['Connectivité','Satellite intégrée · GPS double fréquence'],['Système','watchOS']]
+  },
+  'iPad 11 (2025, A16)': {
+    desc: "L'iPad 11 embarque la puce A16 pour une fluidité au top dans toutes les applications. Écran Liquid Retina 11\", USB-C et compatibilité avec l'Apple Pencil (USB-C) et le Smart Keyboard Folio en font une tablette polyvalente pour toute la famille.",
+    specs: [['Écran','11" Liquid Retina'],['Puce','Apple A16'],['Connectique','USB-C'],['Appareil photo','12 Mpx'],['Accessoires','Compatible Apple Pencil (USB-C)'],['Système','iPadOS']]
+  },
+  'iPad Air 7 (2025, M3)': {
+    desc: "L'iPad Air 7 passe à la puce Apple M3, offrant une puissance digne d'un ordinateur portable dans un format ultra fin. Écran Liquid Retina 11\", compatibilité Apple Pencil Pro et Magic Keyboard : parfait pour la création comme pour la productivité.",
+    specs: [['Écran','11" Liquid Retina'],['Puce','Apple M3'],['Connectique','USB-C (USB 3)'],['Appareil photo','12 Mpx'],['Accessoires','Compatible Apple Pencil Pro · Magic Keyboard'],['Système','iPadOS']]
   }
 };
 
@@ -571,7 +580,7 @@ const COLOR_HEX = {
   'Gris':'#B7B7B2', 'Bleu foncé':'#1E3A5F',
   'Or rose':'#D9AFA0', 'Mauve':'#6E6288',
   'Indigo':'#4A5FA5', 'Jaune agrume':'#D9E05B', 'Rose poudre':'#F0C4D4',
-  'Bleu ciel':'#A9C8DE', 'Orange':'#E0763A'
+  'Bleu ciel':'#A9C8DE', 'Orange':'#E0763A', 'Gris sidéral':'#8E8E93'
 };
 
 function productInfo(p){ return PRODUCT_INFO[p.name] || {desc:'', specs:[]}; }
