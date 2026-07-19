@@ -25,6 +25,39 @@ const PRODUCTS = [
     {name:'Rouge', photo:'images/iphone12-rouge.jpg', views:['images/iphone12-rouge.jpg','images/iphone12-rouge-face.jpg','images/iphone12-rouge-photo.jpg']},
     {name:'Vert', photo:'images/iphone12-vert.jpg', hex:'#B9CBAE', views:['images/iphone12-vert.jpg','images/iphone12-vert-face.jpg','images/iphone12-vert-photo.jpg']}
   ]},
+  {id:47, variantGroup:'iphone12pro', brand:'iPhone', name:'iPhone 12 Pro', spec:'128 Go', original:1039, price:469, type:'phone', colors:[
+    {name:'Bleu Pacifique', photo:'images/iphone12pro-bleu.jpg', views:['images/iphone12pro-bleu.jpg','images/iphone12pro-bleu-face.jpg','images/iphone12pro-bleu-photo.jpg']},
+    {name:'Graphite', photo:'images/iphone12pro-graphite.jpg', views:['images/iphone12pro-graphite.jpg','images/iphone12pro-graphite-face.jpg','images/iphone12pro-graphite-photo.jpg']},
+    {name:'Argent', photo:'images/iphone12pro-argent.jpg', views:['images/iphone12pro-argent.jpg','images/iphone12pro-argent-face.jpg','images/iphone12pro-argent-photo.jpg']},
+    {name:'Or', photo:'images/iphone12pro-or.jpg', views:['images/iphone12pro-or.jpg','images/iphone12pro-or-face.jpg','images/iphone12pro-or-photo.jpg']}
+  ]},
+  {id:48, variantGroup:'iphone12pro', brand:'iPhone', name:'iPhone 12 Pro', spec:'256 Go', original:1139, price:529, type:'phone', colors:[
+    {name:'Bleu Pacifique', photo:'images/iphone12pro-bleu.jpg', views:['images/iphone12pro-bleu.jpg','images/iphone12pro-bleu-face.jpg','images/iphone12pro-bleu-photo.jpg']},
+    {name:'Graphite', photo:'images/iphone12pro-graphite.jpg', views:['images/iphone12pro-graphite.jpg','images/iphone12pro-graphite-face.jpg','images/iphone12pro-graphite-photo.jpg']},
+    {name:'Argent', photo:'images/iphone12pro-argent.jpg', views:['images/iphone12pro-argent.jpg','images/iphone12pro-argent-face.jpg','images/iphone12pro-argent-photo.jpg']},
+    {name:'Or', photo:'images/iphone12pro-or.jpg', views:['images/iphone12pro-or.jpg','images/iphone12pro-or-face.jpg','images/iphone12pro-or-photo.jpg']}
+  ]},
+  {id:49, variantGroup:'iphone12pro', brand:'iPhone', name:'iPhone 12 Pro', spec:'512 Go', original:1339, price:629, type:'phone', colors:[
+    {name:'Bleu Pacifique', photo:'images/iphone12pro-bleu.jpg', views:['images/iphone12pro-bleu.jpg','images/iphone12pro-bleu-face.jpg','images/iphone12pro-bleu-photo.jpg']},
+    {name:'Graphite', photo:'images/iphone12pro-graphite.jpg', views:['images/iphone12pro-graphite.jpg','images/iphone12pro-graphite-face.jpg','images/iphone12pro-graphite-photo.jpg']},
+    {name:'Argent', photo:'images/iphone12pro-argent.jpg', views:['images/iphone12pro-argent.jpg','images/iphone12pro-argent-face.jpg','images/iphone12pro-argent-photo.jpg']},
+    {name:'Or', photo:'images/iphone12pro-or.jpg', views:['images/iphone12pro-or.jpg','images/iphone12pro-or-face.jpg','images/iphone12pro-or-photo.jpg']}
+  ]},
+  {id:50, variantGroup:'iphone12promax', brand:'iPhone', name:'iPhone 12 Pro Max', spec:'128 Go', original:1139, price:489, type:'phone', colors:[
+    {name:'Bleu Pacifique', photo:'images/iphone12promax-bleu.jpg', views:['images/iphone12promax-bleu.jpg','images/iphone12promax-bleu-face.jpg','images/iphone12promax-bleu-photo.jpg']},
+    {name:'Graphite', photo:'images/iphone12promax-graphite.jpg', views:['images/iphone12promax-graphite.jpg','images/iphone12promax-graphite-face.jpg','images/iphone12promax-graphite-photo.jpg']},
+    {name:'Or', photo:'images/iphone12promax-or.jpg', views:['images/iphone12promax-or.jpg','images/iphone12promax-or-face.jpg','images/iphone12promax-or-photo.jpg']}
+  ]},
+  {id:51, variantGroup:'iphone12promax', brand:'iPhone', name:'iPhone 12 Pro Max', spec:'256 Go', original:1239, price:549, type:'phone', colors:[
+    {name:'Bleu Pacifique', photo:'images/iphone12promax-bleu.jpg', views:['images/iphone12promax-bleu.jpg','images/iphone12promax-bleu-face.jpg','images/iphone12promax-bleu-photo.jpg']},
+    {name:'Graphite', photo:'images/iphone12promax-graphite.jpg', views:['images/iphone12promax-graphite.jpg','images/iphone12promax-graphite-face.jpg','images/iphone12promax-graphite-photo.jpg']},
+    {name:'Or', photo:'images/iphone12promax-or.jpg', views:['images/iphone12promax-or.jpg','images/iphone12promax-or-face.jpg','images/iphone12promax-or-photo.jpg']}
+  ]},
+  {id:52, variantGroup:'iphone12promax', brand:'iPhone', name:'iPhone 12 Pro Max', spec:'512 Go', original:1439, price:649, type:'phone', colors:[
+    {name:'Bleu Pacifique', photo:'images/iphone12promax-bleu.jpg', views:['images/iphone12promax-bleu.jpg','images/iphone12promax-bleu-face.jpg','images/iphone12promax-bleu-photo.jpg']},
+    {name:'Graphite', photo:'images/iphone12promax-graphite.jpg', views:['images/iphone12promax-graphite.jpg','images/iphone12promax-graphite-face.jpg','images/iphone12promax-graphite-photo.jpg']},
+    {name:'Or', photo:'images/iphone12promax-or.jpg', views:['images/iphone12promax-or.jpg','images/iphone12promax-or-face.jpg','images/iphone12promax-or-photo.jpg']}
+  ]},
   {id:2, variantGroup:'iphone13', brand:'iPhone', name:'iPhone 13', spec:'128 Go', original:699, price:419, type:'phone', colors:[
     {name:'Bleu', photo:'images/iphone13-bleu.jpg', views:['images/iphone13-bleu.jpg','images/iphone13-bleu-face.jpg','images/iphone13-bleu-photo.jpg']},
     {name:'Minuit', photo:'images/iphone13-minuit.jpg', views:['images/iphone13-minuit.jpg','images/iphone13-minuit-face.jpg','images/iphone13-minuit-photo.jpg']},
@@ -86,6 +119,42 @@ const PRODUCTS = [
     {name:'Bleu', photo:'images/iphone14-bleu.jpg', views:['images/iphone14-bleu.jpg','images/iphone14-bleu-face.jpg','images/iphone14-bleu-photo.jpg']},
     {name:'Rouge', photo:'images/iphone14-rouge.jpg', views:['images/iphone14-rouge.jpg','images/iphone14-rouge-face.jpg','images/iphone14-rouge-photo.jpg']},
     {name:'Jaune', photo:'images/iphone14-jaune.jpg', views:['images/iphone14-jaune.jpg','images/iphone14-jaune-face.jpg','images/iphone14-jaune-photo.jpg']}
+  ]},
+  {id:53, variantGroup:'iphone14pro', brand:'iPhone', name:'iPhone 14 Pro', spec:'128 Go', original:969, price:629, type:'phone', colors:[
+    {name:'Or', photo:'images/iphone14pro-or.jpg', views:['images/iphone14pro-or.jpg','images/iphone14pro-or-face.jpg','images/iphone14pro-or-arriere.jpg']},
+    {name:'Noir sidéral', photo:'images/iphone14pro-noir.jpg', views:['images/iphone14pro-noir.jpg','images/iphone14pro-noir-face.jpg','images/iphone14pro-noir-arriere.jpg']}
+  ]},
+  {id:54, variantGroup:'iphone14pro', brand:'iPhone', name:'iPhone 14 Pro', spec:'256 Go', original:1099, price:719, type:'phone', colors:[
+    {name:'Or', photo:'images/iphone14pro-or.jpg', views:['images/iphone14pro-or.jpg','images/iphone14pro-or-face.jpg','images/iphone14pro-or-arriere.jpg']},
+    {name:'Noir sidéral', photo:'images/iphone14pro-noir.jpg', views:['images/iphone14pro-noir.jpg','images/iphone14pro-noir-face.jpg','images/iphone14pro-noir-arriere.jpg']}
+  ]},
+  {id:55, variantGroup:'iphone14pro', brand:'iPhone', name:'iPhone 14 Pro', spec:'512 Go', original:1329, price:869, type:'phone', colors:[
+    {name:'Or', photo:'images/iphone14pro-or.jpg', views:['images/iphone14pro-or.jpg','images/iphone14pro-or-face.jpg','images/iphone14pro-or-arriere.jpg']},
+    {name:'Noir sidéral', photo:'images/iphone14pro-noir.jpg', views:['images/iphone14pro-noir.jpg','images/iphone14pro-noir-face.jpg','images/iphone14pro-noir-arriere.jpg']}
+  ]},
+  {id:56, variantGroup:'iphone14pro', brand:'iPhone', name:'iPhone 14 Pro', spec:'1 To', original:1559, price:1029, type:'phone', colors:[
+    {name:'Or', photo:'images/iphone14pro-or.jpg', views:['images/iphone14pro-or.jpg','images/iphone14pro-or-face.jpg','images/iphone14pro-or-arriere.jpg']},
+    {name:'Noir sidéral', photo:'images/iphone14pro-noir.jpg', views:['images/iphone14pro-noir.jpg','images/iphone14pro-noir-face.jpg','images/iphone14pro-noir-arriere.jpg']}
+  ]},
+  {id:57, variantGroup:'iphone14promax', brand:'iPhone', name:'iPhone 14 Pro Max', spec:'128 Go', original:1239, price:809, type:'phone', colors:[
+    {name:'Violet intense', photo:'images/iphone14promax-violet.jpg', views:['images/iphone14promax-violet.jpg','images/iphone14promax-violet-face.jpg','images/iphone14promax-violet-arriere.jpg']},
+    {name:'Or', photo:'images/iphone14promax-or.jpg', views:['images/iphone14promax-or.jpg','images/iphone14promax-or-face.jpg','images/iphone14promax-or-arriere.jpg']},
+    {name:'Noir sidéral', photo:'images/iphone14promax-noir.jpg', views:['images/iphone14promax-noir.jpg','images/iphone14promax-noir-face.jpg','images/iphone14promax-noir-arriere.jpg']}
+  ]},
+  {id:58, variantGroup:'iphone14promax', brand:'iPhone', name:'iPhone 14 Pro Max', spec:'256 Go', original:1369, price:899, type:'phone', colors:[
+    {name:'Violet intense', photo:'images/iphone14promax-violet.jpg', views:['images/iphone14promax-violet.jpg','images/iphone14promax-violet-face.jpg','images/iphone14promax-violet-arriere.jpg']},
+    {name:'Or', photo:'images/iphone14promax-or.jpg', views:['images/iphone14promax-or.jpg','images/iphone14promax-or-face.jpg','images/iphone14promax-or-arriere.jpg']},
+    {name:'Noir sidéral', photo:'images/iphone14promax-noir.jpg', views:['images/iphone14promax-noir.jpg','images/iphone14promax-noir-face.jpg','images/iphone14promax-noir-arriere.jpg']}
+  ]},
+  {id:59, variantGroup:'iphone14promax', brand:'iPhone', name:'iPhone 14 Pro Max', spec:'512 Go', original:1599, price:1049, type:'phone', colors:[
+    {name:'Violet intense', photo:'images/iphone14promax-violet.jpg', views:['images/iphone14promax-violet.jpg','images/iphone14promax-violet-face.jpg','images/iphone14promax-violet-arriere.jpg']},
+    {name:'Or', photo:'images/iphone14promax-or.jpg', views:['images/iphone14promax-or.jpg','images/iphone14promax-or-face.jpg','images/iphone14promax-or-arriere.jpg']},
+    {name:'Noir sidéral', photo:'images/iphone14promax-noir.jpg', views:['images/iphone14promax-noir.jpg','images/iphone14promax-noir-face.jpg','images/iphone14promax-noir-arriere.jpg']}
+  ]},
+  {id:60, variantGroup:'iphone14promax', brand:'iPhone', name:'iPhone 14 Pro Max', spec:'1 To', original:1829, price:1209, type:'phone', colors:[
+    {name:'Violet intense', photo:'images/iphone14promax-violet.jpg', views:['images/iphone14promax-violet.jpg','images/iphone14promax-violet-face.jpg','images/iphone14promax-violet-arriere.jpg']},
+    {name:'Or', photo:'images/iphone14promax-or.jpg', views:['images/iphone14promax-or.jpg','images/iphone14promax-or-face.jpg','images/iphone14promax-or-arriere.jpg']},
+    {name:'Noir sidéral', photo:'images/iphone14promax-noir.jpg', views:['images/iphone14promax-noir.jpg','images/iphone14promax-noir-face.jpg','images/iphone14promax-noir-arriere.jpg']}
   ]},
   {id:45, variantGroup:'iphone15', brand:'iPhone', name:'iPhone 15', spec:'128 Go', original:1020, price:699, type:'phone', colors:[
     {name:'Rose', photo:'images/iphone15-rose.jpg', views:['images/iphone15-rose.jpg','images/iphone15-rose-face.jpg','images/iphone15-rose-photo.jpg']},
@@ -234,39 +303,6 @@ const PRODUCTS = [
     {name:'Bleu intense', photo:'images/iphone17promax-bleu.jpg', views:['images/iphone17promax-bleu.jpg','images/iphone17promax-bleu-face.jpg','images/iphone17promax-bleu-photo.jpg']},
     {name:'Argent', photo:'images/iphone17promax-argent.jpg', views:['images/iphone17promax-argent.jpg','images/iphone17promax-argent-face.jpg','images/iphone17promax-argent-photo.jpg']}
   ]},
-  {id:47, variantGroup:'iphone12pro', brand:'iPhone', name:'iPhone 12 Pro', spec:'128 Go', original:1039, price:469, type:'phone', colors:[
-    {name:'Bleu Pacifique', photo:'images/iphone12pro-bleu.jpg', views:['images/iphone12pro-bleu.jpg','images/iphone12pro-bleu-face.jpg','images/iphone12pro-bleu-photo.jpg']},
-    {name:'Graphite', photo:'images/iphone12pro-graphite.jpg', views:['images/iphone12pro-graphite.jpg','images/iphone12pro-graphite-face.jpg','images/iphone12pro-graphite-photo.jpg']},
-    {name:'Argent', photo:'images/iphone12pro-argent.jpg', views:['images/iphone12pro-argent.jpg','images/iphone12pro-argent-face.jpg','images/iphone12pro-argent-photo.jpg']},
-    {name:'Or', photo:'images/iphone12pro-or.jpg', views:['images/iphone12pro-or.jpg','images/iphone12pro-or-face.jpg','images/iphone12pro-or-photo.jpg']}
-  ]},
-  {id:48, variantGroup:'iphone12pro', brand:'iPhone', name:'iPhone 12 Pro', spec:'256 Go', original:1139, price:529, type:'phone', colors:[
-    {name:'Bleu Pacifique', photo:'images/iphone12pro-bleu.jpg', views:['images/iphone12pro-bleu.jpg','images/iphone12pro-bleu-face.jpg','images/iphone12pro-bleu-photo.jpg']},
-    {name:'Graphite', photo:'images/iphone12pro-graphite.jpg', views:['images/iphone12pro-graphite.jpg','images/iphone12pro-graphite-face.jpg','images/iphone12pro-graphite-photo.jpg']},
-    {name:'Argent', photo:'images/iphone12pro-argent.jpg', views:['images/iphone12pro-argent.jpg','images/iphone12pro-argent-face.jpg','images/iphone12pro-argent-photo.jpg']},
-    {name:'Or', photo:'images/iphone12pro-or.jpg', views:['images/iphone12pro-or.jpg','images/iphone12pro-or-face.jpg','images/iphone12pro-or-photo.jpg']}
-  ]},
-  {id:49, variantGroup:'iphone12pro', brand:'iPhone', name:'iPhone 12 Pro', spec:'512 Go', original:1339, price:629, type:'phone', colors:[
-    {name:'Bleu Pacifique', photo:'images/iphone12pro-bleu.jpg', views:['images/iphone12pro-bleu.jpg','images/iphone12pro-bleu-face.jpg','images/iphone12pro-bleu-photo.jpg']},
-    {name:'Graphite', photo:'images/iphone12pro-graphite.jpg', views:['images/iphone12pro-graphite.jpg','images/iphone12pro-graphite-face.jpg','images/iphone12pro-graphite-photo.jpg']},
-    {name:'Argent', photo:'images/iphone12pro-argent.jpg', views:['images/iphone12pro-argent.jpg','images/iphone12pro-argent-face.jpg','images/iphone12pro-argent-photo.jpg']},
-    {name:'Or', photo:'images/iphone12pro-or.jpg', views:['images/iphone12pro-or.jpg','images/iphone12pro-or-face.jpg','images/iphone12pro-or-photo.jpg']}
-  ]},
-  {id:50, variantGroup:'iphone12promax', brand:'iPhone', name:'iPhone 12 Pro Max', spec:'128 Go', original:1139, price:489, type:'phone', colors:[
-    {name:'Bleu Pacifique', photo:'images/iphone12promax-bleu.jpg', views:['images/iphone12promax-bleu.jpg','images/iphone12promax-bleu-face.jpg','images/iphone12promax-bleu-photo.jpg']},
-    {name:'Graphite', photo:'images/iphone12promax-graphite.jpg', views:['images/iphone12promax-graphite.jpg','images/iphone12promax-graphite-face.jpg','images/iphone12promax-graphite-photo.jpg']},
-    {name:'Or', photo:'images/iphone12promax-or.jpg', views:['images/iphone12promax-or.jpg','images/iphone12promax-or-face.jpg','images/iphone12promax-or-photo.jpg']}
-  ]},
-  {id:51, variantGroup:'iphone12promax', brand:'iPhone', name:'iPhone 12 Pro Max', spec:'256 Go', original:1239, price:549, type:'phone', colors:[
-    {name:'Bleu Pacifique', photo:'images/iphone12promax-bleu.jpg', views:['images/iphone12promax-bleu.jpg','images/iphone12promax-bleu-face.jpg','images/iphone12promax-bleu-photo.jpg']},
-    {name:'Graphite', photo:'images/iphone12promax-graphite.jpg', views:['images/iphone12promax-graphite.jpg','images/iphone12promax-graphite-face.jpg','images/iphone12promax-graphite-photo.jpg']},
-    {name:'Or', photo:'images/iphone12promax-or.jpg', views:['images/iphone12promax-or.jpg','images/iphone12promax-or-face.jpg','images/iphone12promax-or-photo.jpg']}
-  ]},
-  {id:52, variantGroup:'iphone12promax', brand:'iPhone', name:'iPhone 12 Pro Max', spec:'512 Go', original:1439, price:649, type:'phone', colors:[
-    {name:'Bleu Pacifique', photo:'images/iphone12promax-bleu.jpg', views:['images/iphone12promax-bleu.jpg','images/iphone12promax-bleu-face.jpg','images/iphone12promax-bleu-photo.jpg']},
-    {name:'Graphite', photo:'images/iphone12promax-graphite.jpg', views:['images/iphone12promax-graphite.jpg','images/iphone12promax-graphite-face.jpg','images/iphone12promax-graphite-photo.jpg']},
-    {name:'Or', photo:'images/iphone12promax-or.jpg', views:['images/iphone12promax-or.jpg','images/iphone12promax-or-face.jpg','images/iphone12promax-or-photo.jpg']}
-  ]},
   {id:5, brand:'Samsung', name:'Galaxy A54', spec:'128 Go', original:420, price:249, type:'phone'},
   {id:6, brand:'Samsung', name:'Galaxy S22', spec:'128 Go', original:700, price:389, type:'phone'},
   {id:7, brand:'Samsung', name:'Galaxy S23', spec:'256 Go', original:900, price:549, type:'phone'},
@@ -304,6 +340,14 @@ const PRODUCT_INFO = {
   'iPhone 14': {
     desc: "L'iPhone 14 mise sur la fiabilité : puce A15 Bionic au top, appareil photo principal amélioré en basse lumière et nouvelles fonctions de sécurité comme la Détection des accidents. Un excellent équilibre performance / prix.",
     specs: [['Écran','6,1" OLED Super Retina XDR'],['Puce','A15 Bionic (5 cœurs GPU)'],['Appareil photo','Double 12 Mpx + Photonic Engine'],['Autonomie','Jusqu\'à 20 h de lecture vidéo'],['Réseau','5G'],['Sécurité','Face ID · Détection des accidents'],['Système','iOS']]
+  },
+  'iPhone 14 Pro': {
+    desc: "L'iPhone 14 Pro introduit la Dynamic Island, l'écran Always-On et la puce A16 Bionic. Son capteur principal 48 Mpx capture des photos d'un détail impressionnant, même en basse lumière, avec le nouveau Photonic Engine.",
+    specs: [['\u00c9cran','6,1\" OLED Super Retina XDR \u00b7 ProMotion 120 Hz \u00b7 Dynamic Island'],['Puce','A16 Bionic'],['Appareil photo','Pro : 48 Mpx + ultra grand-angle + t\u00e9l\u00e9objectif'],['Autonomie','Jusqu\'\u00e0 23 h de lecture vid\u00e9o'],['S\u00e9curit\u00e9','Face ID \u00b7 D\u00e9tection des accidents'],['Connectique','Lightning'],['R\u00e9seau','5G'],['Syst\u00e8me','iOS']]
+  },
+  'iPhone 14 Pro Max': {
+    desc: "L'iPhone 14 Pro Max combine le plus grand \u00e9cran Pro, la Dynamic Island, l'\u00e9cran Always-On et la puce A16 Bionic. Son syst\u00e8me photo Pro 48 Mpx avec t\u00e9l\u00e9objectif offre une flexibilit\u00e9 photo in\u00e9gal\u00e9e et une autonomie except pour toute une journ\u00e9e intensive.",
+    specs: [['\u00c9cran','6,7\" OLED Super Retina XDR \u00b7 ProMotion 120 Hz \u00b7 Dynamic Island'],['Puce','A16 Bionic'],['Appareil photo','Pro : 48 Mpx + ultra grand-angle + t\u00e9l\u00e9objectif'],['Autonomie','Jusqu\'\u00e0 29 h de lecture vid\u00e9o'],['S\u00e9curit\u00e9','Face ID \u00b7 D\u00e9tection des accidents'],['Connectique','Lightning'],['R\u00e9seau','5G'],['Syst\u00e8me','iOS']]
   },
   'iPhone 15': {
     desc: "L'iPhone 15 passe à l'USB-C et à la Dynamic Island. Sa puce A16 Bionic et son capteur principal 48 Mpx offrent des photos très détaillées avec un zoom 2x de qualité optique.",
@@ -389,7 +433,7 @@ const COLOR_HEX = {
   'Sarcelle':'#8FB3B0', 'Outremer':'#6B7DD6', 'Titane sable':'#C9B79C',
   'Sauge':'#9CAE8B', 'Lavande':'#C7BEDC', 'Brume':'#C5CED6',
   'Bleu intense':'#33415C', 'Orange cosmique':'#D8703B',
-  'Bleu Pacifique':'#38566B'
+  'Bleu Pacifique':'#38566B', 'Noir sidéral':'#3A3A3C', 'Violet intense':'#4E4159'
 };
 
 function productInfo(p){ return PRODUCT_INFO[p.name] || {desc:'', specs:[]}; }
