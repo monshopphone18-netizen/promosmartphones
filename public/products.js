@@ -1,7 +1,23 @@
 // products.js — données partagées entre le catalogue (index.html) et les fiches (produit.html)
 
 const PRODUCTS = [
-  {id:1, brand:'iPhone', name:'iPhone 12', spec:'64 Go', original:600, price:329, type:'phone', colors:[
+  {id:1, variantGroup:'iphone12', brand:'iPhone', name:'iPhone 12', spec:'64 Go', original:600, price:329, type:'phone', colors:[
+    {name:'Violet', photo:'images/iphone12-violet.jpg', views:['images/iphone12-violet.jpg','images/iphone12-violet-face.jpg','images/iphone12-violet-photo.jpg']},
+    {name:'Noir', photo:'images/iphone12-noir.jpg', views:['images/iphone12-noir.jpg','images/iphone12-noir-face.jpg','images/iphone12-noir-photo.jpg']},
+    {name:'Blanc', photo:'images/iphone12-blanc.jpg', views:['images/iphone12-blanc.jpg','images/iphone12-blanc-face.jpg','images/iphone12-blanc-photo.jpg']},
+    {name:'Bleu', photo:'images/iphone12-bleu.jpg', views:['images/iphone12-bleu.jpg','images/iphone12-bleu-face.jpg','images/iphone12-bleu-photo.jpg']},
+    {name:'Rouge', photo:'images/iphone12-rouge.jpg', views:['images/iphone12-rouge.jpg','images/iphone12-rouge-face.jpg','images/iphone12-rouge-photo.jpg']},
+    {name:'Vert', photo:'images/iphone12-vert.jpg', hex:'#B9CBAE', views:['images/iphone12-vert.jpg','images/iphone12-vert-face.jpg','images/iphone12-vert-photo.jpg']}
+  ]},
+  {id:34, variantGroup:'iphone12', brand:'iPhone', name:'iPhone 12', spec:'128 Go', original:660, price:369, type:'phone', colors:[
+    {name:'Violet', photo:'images/iphone12-violet.jpg', views:['images/iphone12-violet.jpg','images/iphone12-violet-face.jpg','images/iphone12-violet-photo.jpg']},
+    {name:'Noir', photo:'images/iphone12-noir.jpg', views:['images/iphone12-noir.jpg','images/iphone12-noir-face.jpg','images/iphone12-noir-photo.jpg']},
+    {name:'Blanc', photo:'images/iphone12-blanc.jpg', views:['images/iphone12-blanc.jpg','images/iphone12-blanc-face.jpg','images/iphone12-blanc-photo.jpg']},
+    {name:'Bleu', photo:'images/iphone12-bleu.jpg', views:['images/iphone12-bleu.jpg','images/iphone12-bleu-face.jpg','images/iphone12-bleu-photo.jpg']},
+    {name:'Rouge', photo:'images/iphone12-rouge.jpg', views:['images/iphone12-rouge.jpg','images/iphone12-rouge-face.jpg','images/iphone12-rouge-photo.jpg']},
+    {name:'Vert', photo:'images/iphone12-vert.jpg', hex:'#B9CBAE', views:['images/iphone12-vert.jpg','images/iphone12-vert-face.jpg','images/iphone12-vert-photo.jpg']}
+  ]},
+  {id:35, variantGroup:'iphone12', brand:'iPhone', name:'iPhone 12', spec:'256 Go', original:760, price:429, type:'phone', colors:[
     {name:'Violet', photo:'images/iphone12-violet.jpg', views:['images/iphone12-violet.jpg','images/iphone12-violet-face.jpg','images/iphone12-violet-photo.jpg']},
     {name:'Noir', photo:'images/iphone12-noir.jpg', views:['images/iphone12-noir.jpg','images/iphone12-noir-face.jpg','images/iphone12-noir-photo.jpg']},
     {name:'Blanc', photo:'images/iphone12-blanc.jpg', views:['images/iphone12-blanc.jpg','images/iphone12-blanc-face.jpg','images/iphone12-blanc-photo.jpg']},
@@ -47,7 +63,23 @@ const PRODUCTS = [
     {name:'Argent', photo:'images/iphone13promax-argent.jpg', views:['images/iphone13promax-argent.jpg','images/iphone13promax-argent-face.jpg','images/iphone13promax-argent-photo.jpg']},
     {name:'Vert alpin', photo:'images/iphone13promax-vert.jpg', views:['images/iphone13promax-vert.jpg','images/iphone13promax-vert-face.jpg','images/iphone13promax-vert-photo.jpg']}
   ]},
-  {id:3, brand:'iPhone', name:'iPhone 14', spec:'128 Go', original:849, price:519, type:'phone', colors:[
+  {id:3, variantGroup:'iphone14', brand:'iPhone', name:'iPhone 14', spec:'128 Go', original:849, price:519, type:'phone', colors:[
+    {name:'Violet', photo:'images/iphone14-violet.jpg', views:['images/iphone14-violet.jpg','images/iphone14-violet-face.jpg','images/iphone14-violet-photo.jpg']},
+    {name:'Minuit', photo:'images/iphone14-minuit.jpg', views:['images/iphone14-minuit.jpg','images/iphone14-minuit-face.jpg','images/iphone14-minuit-photo.jpg']},
+    {name:'Lumière stellaire', photo:'images/iphone14-starlight.jpg', views:['images/iphone14-starlight.jpg','images/iphone14-starlight-face.jpg','images/iphone14-starlight-photo.jpg']},
+    {name:'Bleu', photo:'images/iphone14-bleu.jpg', views:['images/iphone14-bleu.jpg','images/iphone14-bleu-face.jpg','images/iphone14-bleu-photo.jpg']},
+    {name:'Rouge', photo:'images/iphone14-rouge.jpg', views:['images/iphone14-rouge.jpg','images/iphone14-rouge-face.jpg','images/iphone14-rouge-photo.jpg']},
+    {name:'Jaune', photo:'images/iphone14-jaune.jpg', views:['images/iphone14-jaune.jpg','images/iphone14-jaune-face.jpg','images/iphone14-jaune-photo.jpg']}
+  ]},
+  {id:36, variantGroup:'iphone14', brand:'iPhone', name:'iPhone 14', spec:'256 Go', original:949, price:579, type:'phone', colors:[
+    {name:'Violet', photo:'images/iphone14-violet.jpg', views:['images/iphone14-violet.jpg','images/iphone14-violet-face.jpg','images/iphone14-violet-photo.jpg']},
+    {name:'Minuit', photo:'images/iphone14-minuit.jpg', views:['images/iphone14-minuit.jpg','images/iphone14-minuit-face.jpg','images/iphone14-minuit-photo.jpg']},
+    {name:'Lumière stellaire', photo:'images/iphone14-starlight.jpg', views:['images/iphone14-starlight.jpg','images/iphone14-starlight-face.jpg','images/iphone14-starlight-photo.jpg']},
+    {name:'Bleu', photo:'images/iphone14-bleu.jpg', views:['images/iphone14-bleu.jpg','images/iphone14-bleu-face.jpg','images/iphone14-bleu-photo.jpg']},
+    {name:'Rouge', photo:'images/iphone14-rouge.jpg', views:['images/iphone14-rouge.jpg','images/iphone14-rouge-face.jpg','images/iphone14-rouge-photo.jpg']},
+    {name:'Jaune', photo:'images/iphone14-jaune.jpg', views:['images/iphone14-jaune.jpg','images/iphone14-jaune-face.jpg','images/iphone14-jaune-photo.jpg']}
+  ]},
+  {id:37, variantGroup:'iphone14', brand:'iPhone', name:'iPhone 14', spec:'512 Go', original:1149, price:699, type:'phone', colors:[
     {name:'Violet', photo:'images/iphone14-violet.jpg', views:['images/iphone14-violet.jpg','images/iphone14-violet-face.jpg','images/iphone14-violet-photo.jpg']},
     {name:'Minuit', photo:'images/iphone14-minuit.jpg', views:['images/iphone14-minuit.jpg','images/iphone14-minuit-face.jpg','images/iphone14-minuit-photo.jpg']},
     {name:'Lumière stellaire', photo:'images/iphone14-starlight.jpg', views:['images/iphone14-starlight.jpg','images/iphone14-starlight-face.jpg','images/iphone14-starlight-photo.jpg']},
@@ -153,6 +185,21 @@ const PRODUCTS = [
     {name:'Blanc', photo:'images/iphone17-blanc.jpg', views:['images/iphone17-blanc.jpg','images/iphone17-blanc-face.jpg','images/iphone17-blanc-photo.jpg']},
     {name:'Noir', photo:'images/iphone17-noir.jpg', views:['images/iphone17-noir.jpg','images/iphone17-noir-face.jpg','images/iphone17-noir-photo.jpg']}
   ]},
+  {id:38, variantGroup:'iphone17pro', brand:'iPhone', name:'iPhone 17 Pro', spec:'256 Go', original:1329, price:869, type:'phone', colors:[
+    {name:'Bleu intense', photo:'images/iphone17pro-bleu.jpg', views:['images/iphone17pro-bleu.jpg','images/iphone17pro-bleu-face.jpg','images/iphone17pro-bleu-cote.jpg']},
+    {name:'Orange cosmique', photo:'images/iphone17pro-orange.jpg', views:['images/iphone17pro-orange.jpg','images/iphone17pro-orange-cote.jpg']},
+    {name:'Argent', photo:'images/iphone17pro-argent.jpg', views:['images/iphone17pro-argent.jpg','images/iphone17pro-argent-cote.jpg']}
+  ]},
+  {id:39, variantGroup:'iphone17pro', brand:'iPhone', name:'iPhone 17 Pro', spec:'512 Go', original:1559, price:1019, type:'phone', colors:[
+    {name:'Bleu intense', photo:'images/iphone17pro-bleu.jpg', views:['images/iphone17pro-bleu.jpg','images/iphone17pro-bleu-face.jpg','images/iphone17pro-bleu-cote.jpg']},
+    {name:'Orange cosmique', photo:'images/iphone17pro-orange.jpg', views:['images/iphone17pro-orange.jpg','images/iphone17pro-orange-cote.jpg']},
+    {name:'Argent', photo:'images/iphone17pro-argent.jpg', views:['images/iphone17pro-argent.jpg','images/iphone17pro-argent-cote.jpg']}
+  ]},
+  {id:40, variantGroup:'iphone17pro', brand:'iPhone', name:'iPhone 17 Pro', spec:'1 To', original:1789, price:1179, type:'phone', colors:[
+    {name:'Bleu intense', photo:'images/iphone17pro-bleu.jpg', views:['images/iphone17pro-bleu.jpg','images/iphone17pro-bleu-face.jpg','images/iphone17pro-bleu-cote.jpg']},
+    {name:'Orange cosmique', photo:'images/iphone17pro-orange.jpg', views:['images/iphone17pro-orange.jpg','images/iphone17pro-orange-cote.jpg']},
+    {name:'Argent', photo:'images/iphone17pro-argent.jpg', views:['images/iphone17pro-argent.jpg','images/iphone17pro-argent-cote.jpg']}
+  ]},
   {id:5, brand:'Samsung', name:'Galaxy A54', spec:'128 Go', original:420, price:249, type:'phone'},
   {id:6, brand:'Samsung', name:'Galaxy S22', spec:'128 Go', original:700, price:389, type:'phone'},
   {id:7, brand:'Samsung', name:'Galaxy S23', spec:'256 Go', original:900, price:549, type:'phone'},
@@ -207,6 +254,10 @@ const PRODUCT_INFO = {
     desc: "L'iPhone 17 place la barre encore plus haut avec un écran ProMotion 120 Hz plus grand, la puissante puce A19 et un double appareil photo 48 Mpx. Design coloré, verre renforcé Ceramic Shield et USB-C : le tout dans un modèle standard plus abouti que jamais.",
     specs: [['Écran','6,3" OLED Super Retina XDR · ProMotion 120 Hz'],['Puce','A19'],['Appareil photo','Double Fusion 48 Mpx + ultra grand-angle 48 Mpx'],['Autonomie','Jusqu\'à 24 h de lecture vidéo'],['Protection','Ceramic Shield'],['Connectique','USB-C'],['Réseau','5G'],['Système','iOS']]
   },
+  'iPhone 17 Pro': {
+    desc: "L'iPhone 17 Pro introduit un nouveau châssis en aluminium avec plateau caméra intégral, la puce A19 Pro pour des performances soutenues, et un système photo Pro triple 48 Mpx avec téléobjectif optique amélioré. Un bond en avant pour la photo comme pour le jeu.",
+    specs: [['Écran','6,3" OLED Super Retina XDR · ProMotion 120 Hz'],['Puce','A19 Pro'],['Châssis','Aluminium · plateau caméra intégral'],['Appareil photo','Pro : triple 48 Mpx + téléobjectif'],['Autonomie','Jusqu\'à 27 h de lecture vidéo'],['Protection','Ceramic Shield 2'],['Connectique','USB-C (USB 3)'],['Réseau','5G'],['Système','iOS']]
+  },
   'Galaxy A54': {
     desc: "Le Galaxy A54 offre l'essentiel d'un smartphone moderne à prix doux : grand écran Super AMOLED 120 Hz, batterie longue durée et triple capteur photo 50 Mpx.",
     specs: [['Écran','6,4" Super AMOLED 120 Hz'],['Processeur','Exynos 1380'],['Appareil photo','Triple, principal 50 Mpx'],['Batterie','5000 mAh'],['Réseau','5G'],['Système','Android']]
@@ -257,7 +308,8 @@ const COLOR_HEX = {
   'Bleu Sierra':'#A9C0D2', 'Vert alpin':'#4A5D4E', 'Jaune':'#F2E2A0',
   'Titane noir':'#3B3B3D', 'Titane bleu':'#4A5568', 'Titane naturel':'#C7BEB2', 'Titane blanc':'#E8E6E0',
   'Sarcelle':'#8FB3B0', 'Outremer':'#6B7DD6', 'Titane sable':'#C9B79C',
-  'Sauge':'#9CAE8B', 'Lavande':'#C7BEDC', 'Brume':'#C5CED6'
+  'Sauge':'#9CAE8B', 'Lavande':'#C7BEDC', 'Brume':'#C5CED6',
+  'Bleu intense':'#33415C', 'Orange cosmique':'#D8703B'
 };
 
 function productInfo(p){ return PRODUCT_INFO[p.name] || {desc:'', specs:[]}; }
