@@ -397,6 +397,21 @@ const PRODUCTS = [
   {id:12, brand:'Mac', name:'MacBook Pro M1', spec:'512 Go SSD · 16 Go RAM', original:1700, price:1099, type:'laptop'},
   {id:13, brand:'Mac', name:'Mac Mini M2', spec:'256 Go SSD · 8 Go RAM', original:800, price:499, type:'desktop'},
   {id:14, brand:'Mac', name:'iMac 24" M1', spec:'256 Go SSD · 8 Go RAM', original:1500, price:899, type:'desktop'},
+  {id:75, variantGroup:'macbookneo', brand:'Mac', name:'MacBook Neo', spec:'256 Go SSD · 8 Go RAM', original:799, price:479, type:'laptop', colors:[
+    {name:'Argent', photo:'images/macbookneo-argent.jpg', views:['images/macbookneo-argent.jpg','images/macbookneo-argent-clavier.jpg','images/macbookneo-argent-cote.jpg']},
+    {name:'Indigo', photo:'images/macbookneo-indigo.jpg', views:['images/macbookneo-indigo.jpg','images/macbookneo-indigo-clavier.jpg','images/macbookneo-indigo-cote.jpg']},
+    {name:'Jaune agrume', photo:'images/macbookneo-jauneagrume.jpg', views:['images/macbookneo-jauneagrume.jpg','images/macbookneo-jauneagrume-clavier.jpg','images/macbookneo-jauneagrume-cote.jpg']},
+    {name:'Rose poudre', photo:'images/macbookneo-rosepoudre.jpg', views:['images/macbookneo-rosepoudre.jpg','images/macbookneo-rosepoudre-clavier.jpg','images/macbookneo-rosepoudre-cote.jpg']}
+  ]},
+  {id:76, variantGroup:'macbookneo', brand:'Mac', name:'MacBook Neo', spec:'512 Go SSD · 8 Go RAM', original:929, price:559, type:'laptop', colors:[
+    {name:'Argent', photo:'images/macbookneo-argent.jpg', views:['images/macbookneo-argent.jpg','images/macbookneo-argent-clavier.jpg','images/macbookneo-argent-cote.jpg']},
+    {name:'Indigo', photo:'images/macbookneo-indigo.jpg', views:['images/macbookneo-indigo.jpg','images/macbookneo-indigo-clavier.jpg','images/macbookneo-indigo-cote.jpg']},
+    {name:'Jaune agrume', photo:'images/macbookneo-jauneagrume.jpg', views:['images/macbookneo-jauneagrume.jpg','images/macbookneo-jauneagrume-clavier.jpg','images/macbookneo-jauneagrume-cote.jpg']},
+    {name:'Rose poudre', photo:'images/macbookneo-rosepoudre.jpg', views:['images/macbookneo-rosepoudre.jpg','images/macbookneo-rosepoudre-clavier.jpg','images/macbookneo-rosepoudre-cote.jpg']}
+  ]},
+  {id:77, brand:'Mac', name:'MacBook Pro M5', spec:'1 To SSD · 16 Go RAM', original:2199, price:1429, type:'laptop', colors:[
+    {name:'Noir sidéral', photo:'images/macbookprom5-noir.jpg', views:['images/macbookprom5-noir.jpg','images/macbookprom5-noir-cote.jpg']}
+  ]},
 ];
 
 // Descriptions + caractéristiques techniques, par modèle (partagées entre capacités)
@@ -524,6 +539,14 @@ const PRODUCT_INFO = {
   'iMac 24" M1': {
     desc: "L'iMac 24\" M1 est un tout-en-un élégant avec un superbe écran 4,5K Retina. Parfait pour toute la famille : design fin, couleurs vives et puce M1 rapide.",
     specs: [['Puce','Apple M1'],['Écran','24" 4,5K Retina'],['Mémoire','8 Go RAM unifiée'],['Stockage','SSD 256 Go'],['Webcam','FaceTime HD 1080p'],['Système','macOS']]
+  },
+  'MacBook Neo': {
+    desc: "Le MacBook Neo réinvente l'ordinateur portable abordable d'Apple : ultra fin, ultra léger, avec un écran Liquid Retina éclatant et des coloris pop pour se démarquer. Silencieux (sans ventilateur) et endurant, il est parfait pour la bureautique, le web et un usage créatif léger au quotidien.",
+    specs: [['Puce','Apple M4'],['Écran','13,6" Liquid Retina'],['Mémoire','8 Go RAM unifiée'],['Autonomie','Jusqu\'à 18 h'],['Connectique','USB-C · MagSafe'],['Système','macOS']]
+  },
+  'MacBook Pro M5': {
+    desc: "Le MacBook Pro M5 pousse les performances au maximum grâce à la puce Apple M5 et son GPU nouvelle génération. Écran Liquid Retina XDR, châssis en aluminium robuste et autonomie exceptionnelle : la référence pour les créatifs et développeurs les plus exigeants.",
+    specs: [['Puce','Apple M5 (CPU 10 cœurs · GPU 10 cœurs)'],['Écran','14,2" Liquid Retina XDR'],['Mémoire','16 Go RAM unifiée'],['Stockage','SSD 1 To'],['Autonomie','Jusqu\'à 24 h'],['Connectique','Thunderbolt 5 · MagSafe · HDMI'],['Système','macOS']]
   }
 };
 
@@ -539,7 +562,8 @@ const COLOR_HEX = {
   'Bleu intense':'#33415C', 'Orange cosmique':'#D8703B',
   'Bleu Pacifique':'#38566B', 'Noir sidéral':'#3A3A3C', 'Violet intense':'#4E4159',
   'Gris':'#B7B7B2', 'Bleu foncé':'#1E3A5F',
-  'Or rose':'#D9AFA0', 'Mauve':'#6E6288'
+  'Or rose':'#D9AFA0', 'Mauve':'#6E6288',
+  'Indigo':'#4A5FA5', 'Jaune agrume':'#D9E05B', 'Rose poudre':'#F0C4D4'
 };
 
 function productInfo(p){ return PRODUCT_INFO[p.name] || {desc:'', specs:[]}; }

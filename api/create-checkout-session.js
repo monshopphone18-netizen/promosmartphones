@@ -86,6 +86,9 @@ const PRODUCTS = {
   72: { name: 'Galaxy Z Fold 7 · 256 Go',          price: 1249 },
   73: { name: 'Galaxy Z Fold 7 · 512 Go',          price: 1329 },
   74: { name: 'Galaxy Z Fold 7 · 1 To',            price: 1459 },
+  75: { name: 'MacBook Neo · 256 Go',              price: 479  },
+  76: { name: 'MacBook Neo · 512 Go',              price: 559  },
+  77: { name: 'MacBook Pro M5 · 1 To',             price: 1429 },
 };
 
 module.exports = async (req, res) => {
