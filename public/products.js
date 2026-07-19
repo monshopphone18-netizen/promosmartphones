@@ -388,9 +388,6 @@ const PRODUCTS = [
     {name:'Noir', photo:'images/galaxyzfold7-noir.jpg', views:['images/galaxyzfold7-noir.jpg','images/galaxyzfold7-noir-face.jpg','images/galaxyzfold7-noir-interieur.jpg']},
     {name:'Vert', photo:'images/galaxyzfold7-vert.jpg', views:['images/galaxyzfold7-vert.jpg','images/galaxyzfold7-vert-deplier.jpg']}
   ]},
-  {id:10, brand:'Mac', name:'MacBook Air M1', spec:'256 Go SSD · 8 Go RAM', original:1200, price:749, type:'laptop'},
-  {id:11, brand:'Mac', name:'MacBook Air M2', spec:'256 Go SSD · 8 Go RAM', original:1500, price:999, type:'laptop'},
-  {id:12, brand:'Mac', name:'MacBook Pro M1', spec:'512 Go SSD · 16 Go RAM', original:1700, price:1099, type:'laptop'},
   {id:13, brand:'Mac', name:'Mac Mini M2', spec:'256 Go SSD · 8 Go RAM', original:800, price:499, type:'desktop'},
   {id:14, brand:'Mac', name:'iMac 24" M1', spec:'256 Go SSD · 8 Go RAM', original:1500, price:899, type:'desktop'},
   {id:75, variantGroup:'macbookneo', brand:'Mac', name:'MacBook Neo', spec:'256 Go SSD · 8 Go RAM', original:799, price:479, type:'laptop', colors:[
@@ -415,6 +412,20 @@ const PRODUCTS = [
   ]},
   {id:79, brand:'Apple', name:'AirPods Pro 2', spec:'Boîtier de charge MagSafe', original:219, price:139, type:'accessory', colors:[
     {name:'Blanc', photo:'images/airpodspro2.jpg', views:['images/airpodspro2.jpg','images/airpodspro2-face.jpg','images/airpodspro2-boite.jpg']}
+  ]},
+  {id:80, brand:'Apple', name:'AirPods Max', spec:'Réduction de bruit active', original:388, price:249, type:'accessory', colors:[
+    {name:'Argent', photo:'images/airpodsmax-argent.jpg', views:['images/airpodsmax-argent.jpg','images/airpodsmax-argent-face.jpg']},
+    {name:'Mauve', photo:'images/airpodsmax-mauve.jpg', views:['images/airpodsmax-mauve.jpg','images/airpodsmax-mauve-face.jpg']},
+    {name:'Minuit', photo:'images/airpodsmax-minuit.jpg', views:['images/airpodsmax-minuit.jpg','images/airpodsmax-minuit-face.jpg']},
+    {name:'Orange', photo:'images/airpodsmax-orange.jpg', views:['images/airpodsmax-orange.jpg','images/airpodsmax-orange-face.jpg']}
+  ]},
+  {id:81, brand:'Apple', name:'Apple Watch Ultra 2', spec:'49 mm · GPS + Cellular', original:799, price:519, type:'watch', colors:[
+    {name:'Titane noir', photo:'images/watchultra2-titanenaturel.jpg', views:['images/watchultra2-titanenaturel.jpg','images/watchultra2-titanenaturel-bracelet1.jpg']},
+    {name:'Titane naturel', photo:'images/watchultra2-titanenaturel-2.jpg', views:['images/watchultra2-titanenaturel-2.jpg','images/watchultra2-titanenaturel-bracelet2.jpg']}
+  ]},
+  {id:82, brand:'Apple', name:'Apple Watch Ultra 3', spec:'49 mm · GPS + Cellular', original:899, price:589, type:'watch', colors:[
+    {name:'Titane naturel', photo:'images/watchultra3-naturel.jpg', views:['images/watchultra3-naturel.jpg','images/watchultra3-naturel-face.jpg']},
+    {name:'Titane noir', photo:'images/watchultra3-noir.jpg', views:['images/watchultra3-noir.jpg','images/watchultra3-noir-face.jpg']}
   ]},
 ];
 
@@ -508,18 +519,6 @@ const PRODUCT_INFO = {
     desc: "Le Galaxy Z Flip 6 se plie pour tenir dans n'importe quelle poche et se déplie sur un grand écran Dynamic AMOLED 2X 120 Hz. Écran externe FlexWindow pratique pour les notifications et selfies, puce Snapdragon 8 Gen 3 for Galaxy et coloris pop pour se démarquer.",
     specs: [['Écran principal','6,7" Dynamic AMOLED 2X 120 Hz pliable'],['Écran externe','3,4" Super AMOLED FlexWindow'],['Processeur','Snapdragon 8 Gen 3 for Galaxy'],['Appareil photo','Double 50 Mpx + ultra grand-angle'],['Batterie','4000 mAh · charge rapide 25 W'],['Réseau','5G'],['Système','Android']]
   },
-  'MacBook Air M1': {
-    desc: "Le MacBook Air M1 a marqué un tournant : silencieux (sans ventilateur), rapide et endurant. Idéal pour la bureautique, le web et les tâches créatives légères.",
-    specs: [['Puce','Apple M1 (8 cœurs CPU)'],['Écran','13,3" Retina'],['Mémoire','8 Go RAM unifiée'],['Stockage','SSD 256 Go'],['Autonomie','Jusqu\'à 18 h'],['Système','macOS']]
-  },
-  'MacBook Air M2': {
-    desc: "Plus fin et plus puissant, le MacBook Air M2 ajoute un écran Liquid Retina plus grand, la recharge MagSafe et la puce M2 pour un usage quotidien fluide et une grande autonomie.",
-    specs: [['Puce','Apple M2'],['Écran','13,6" Liquid Retina'],['Mémoire','8 Go RAM unifiée'],['Stockage','SSD 256 Go'],['Autonomie','Jusqu\'à 18 h'],['Recharge','MagSafe'],['Système','macOS']]
-  },
-  'MacBook Pro M1': {
-    desc: "Le MacBook Pro M1 combine la puce M1, un système de refroidissement actif pour tenir la charge, et 16 Go de RAM. Un vrai outil de travail pour les créatifs et développeurs.",
-    specs: [['Puce','Apple M1'],['Écran','13,3" Retina'],['Mémoire','16 Go RAM unifiée'],['Stockage','SSD 512 Go'],['Autonomie','Jusqu\'à 20 h'],['Système','macOS']]
-  },
   'Mac Mini M2': {
     desc: "Le Mac Mini M2 est un ordinateur de bureau compact et silencieux. Branchez votre écran, clavier et souris et profitez de la puissance de la puce M2. (Écran et périphériques non inclus.)",
     specs: [['Puce','Apple M2'],['Mémoire','8 Go RAM unifiée'],['Stockage','SSD 256 Go'],['Connectique','Thunderbolt 4, HDMI, USB-A'],['Réseau','Wi-Fi 6 · Gigabit Ethernet'],['Système','macOS']]
@@ -543,6 +542,18 @@ const PRODUCT_INFO = {
   'AirPods Pro 2': {
     desc: "Les AirPods Pro 2 offrent une réduction de bruit active deux fois plus performante, un son spatial personnalisé et un boîtier de charge MagSafe avec haut-parleur intégré. Le compagnon audio idéal pour tous vos appareils Apple.",
     specs: [['Réduction de bruit','Active, jusqu\'à 2x plus performante'],['Audio','Son spatial personnalisé'],['Autonomie','Jusqu\'à 6 h (30 h avec boîtier)'],['Étanchéité','IP54'],['Charge','MagSafe · USB-C · Qi'],['Compatibilité','iPhone, iPad, Mac']]
+  },
+  'AirPods Max': {
+    desc: "Les AirPods Max combinent un son haute-fidélité exceptionnel avec une réduction de bruit active de pointe. Coussinets en mousse à mémoire de forme, arceau en maille respirante et coloris élégants pour un confort et un style incomparables.",
+    specs: [['Audio','Haute-fidélité, driver dynamique 40 mm'],['Réduction de bruit','Active + mode Transparence'],['Audio','Son spatial personnalisé'],['Autonomie','Jusqu\'à 20 h'],['Charge','Lightning'],['Compatibilité','iPhone, iPad, Mac']]
+  },
+  'Apple Watch Ultra 2': {
+    desc: "L'Apple Watch Ultra 2 est conçue pour l'aventure : boîtier en titane robuste, écran le plus lumineux jamais vu sur une Apple Watch et autonomie jusqu'à 36 h. GPS double fréquence de précision et résistance à l'eau jusqu'à 100 m pour la plongée.",
+    specs: [['Boîtier','Titane 49 mm'],['Écran','Retina LTPO OLED Always-On'],['Puce','Apple S9'],['Autonomie','Jusqu\'à 36 h (72 h en mode Économie)'],['Étanchéité','100 m · EN13319'],['GPS','Double fréquence de précision'],['Système','watchOS']]
+  },
+  'Apple Watch Ultra 3': {
+    desc: "L'Apple Watch Ultra 3 repousse encore les limites avec la connectivité satellite intégrée, un écran encore plus lumineux et la puce Apple S10 nouvelle génération. Le compagnon ultime pour l'exploration, le sport intensif et la plongée.",
+    specs: [['Boîtier','Titane 49 mm'],['Écran','Retina LTPO OLED Always-On'],['Puce','Apple S10'],['Autonomie','Jusqu\'à 42 h (72 h en mode Économie)'],['Étanchéité','100 m · EN13319'],['Connectivité','Satellite intégrée · GPS double fréquence'],['Système','watchOS']]
   }
 };
 
@@ -560,7 +571,7 @@ const COLOR_HEX = {
   'Gris':'#B7B7B2', 'Bleu foncé':'#1E3A5F',
   'Or rose':'#D9AFA0', 'Mauve':'#6E6288',
   'Indigo':'#4A5FA5', 'Jaune agrume':'#D9E05B', 'Rose poudre':'#F0C4D4',
-  'Bleu ciel':'#A9C8DE'
+  'Bleu ciel':'#A9C8DE', 'Orange':'#E0763A'
 };
 
 function productInfo(p){ return PRODUCT_INFO[p.name] || {desc:'', specs:[]}; }
