@@ -304,6 +304,22 @@ const PRODUCTS = [
     {name:'Argent', photo:'images/iphone17promax-argent.jpg', views:['images/iphone17promax-argent.jpg','images/iphone17promax-argent-face.jpg','images/iphone17promax-argent-photo.jpg']}
   ]},
   {id:5, brand:'Samsung', name:'Galaxy A54', spec:'128 Go', original:420, price:249, type:'phone'},
+  {id:61, variantGroup:'galaxya56', brand:'Samsung', name:'Galaxy A56', spec:'128 Go', original:479, price:289, type:'phone', colors:[
+    {name:'Vert', photo:'images/galaxya56-vert.jpg', views:['images/galaxya56-vert.jpg','images/galaxya56-vert-face.jpg']},
+    {name:'Rose', photo:'images/galaxya56-rose.jpg', views:['images/galaxya56-rose.jpg','images/galaxya56-rose-derriere.jpg']},
+    {name:'Gris', photo:'images/galaxya56-gris.jpg', views:['images/galaxya56-gris.jpg','images/galaxya56-gris-derriere.jpg']}
+  ]},
+  {id:62, variantGroup:'galaxya56', brand:'Samsung', name:'Galaxy A56', spec:'256 Go', original:539, price:329, type:'phone', colors:[
+    {name:'Vert', photo:'images/galaxya56-vert.jpg', views:['images/galaxya56-vert.jpg','images/galaxya56-vert-face.jpg']},
+    {name:'Rose', photo:'images/galaxya56-rose.jpg', views:['images/galaxya56-rose.jpg','images/galaxya56-rose-derriere.jpg']},
+    {name:'Gris', photo:'images/galaxya56-gris.jpg', views:['images/galaxya56-gris.jpg','images/galaxya56-gris-derriere.jpg']}
+  ]},
+  {id:63, brand:'Samsung', name:'Galaxy S25+', spec:'256 Go', original:1156, price:699, type:'phone', colors:[
+    {name:'Argent', photo:'images/galaxys25plus-argent.jpg', views:['images/galaxys25plus-argent.jpg','images/galaxys25plus-argent-face.jpg','images/galaxys25plus-argent-photo.jpg']},
+    {name:'Bleu', photo:'images/galaxys25plus-bleu.jpg', views:['images/galaxys25plus-bleu.jpg','images/galaxys25plus-bleu-face.jpg','images/galaxys25plus-bleu-photo.jpg']},
+    {name:'Bleu foncé', photo:'images/galaxys25plus-bleufonce.jpg', views:['images/galaxys25plus-bleufonce.jpg','images/galaxys25plus-bleufonce-face.jpg','images/galaxys25plus-bleufonce-photo.jpg']},
+    {name:'Vert', photo:'images/galaxys25plus-vert.jpg', views:['images/galaxys25plus-vert.jpg','images/galaxys25plus-vert-face.jpg','images/galaxys25plus-vert-photo.jpg']}
+  ]},
   {id:6, brand:'Samsung', name:'Galaxy S22', spec:'128 Go', original:700, price:389, type:'phone'},
   {id:7, brand:'Samsung', name:'Galaxy S23', spec:'256 Go', original:900, price:549, type:'phone'},
   {id:8, brand:'Samsung', name:'Galaxy Z Flip 4', spec:'256 Go', original:850, price:459, type:'phone'},
@@ -385,6 +401,14 @@ const PRODUCT_INFO = {
     desc: "Le Galaxy A54 offre l'essentiel d'un smartphone moderne à prix doux : grand écran Super AMOLED 120 Hz, batterie longue durée et triple capteur photo 50 Mpx.",
     specs: [['Écran','6,4" Super AMOLED 120 Hz'],['Processeur','Exynos 1380'],['Appareil photo','Triple, principal 50 Mpx'],['Batterie','5000 mAh'],['Réseau','5G'],['Système','Android']]
   },
+  'Galaxy A56': {
+    desc: "Le Galaxy A56 5G modernise la gamme A avec un écran Super AMOLED 120 Hz lumineux, la puce Exynos 1580 et un triple capteur photo 50 Mpx stabilisé. Une autonomie confortable et une charge rapide 45 W pour un usage quotidien sans compromis.",
+    specs: [['Écran','6,7" Super AMOLED 120 Hz'],['Processeur','Exynos 1580'],['Appareil photo','Triple, principal 50 Mpx OIS'],['Batterie','5000 mAh · charge rapide 45 W'],['Réseau','5G'],['Système','Android']]
+  },
+  'Galaxy S25+': {
+    desc: "Le Galaxy S25+ est le haut de gamme Samsung par excellence : grand écran Dynamic AMOLED 2X 120 Hz, châssis en titane, puce Snapdragon 8 Elite for Galaxy et triple capteur photo 50 Mpx boosté par l'IA Galaxy. Puissance, autonomie et finitions premium réunies.",
+    specs: [['Écran','6,7" Dynamic AMOLED 2X 120 Hz'],['Processeur','Snapdragon 8 Elite for Galaxy'],['Châssis','Titane'],['Appareil photo','Triple 50 Mpx + ultra grand-angle + téléobjectif'],['Batterie','4900 mAh · charge rapide 45 W'],['Réseau','5G'],['Système','Android']]
+  },
   'Galaxy S22': {
     desc: "Compact et haut de gamme, le Galaxy S22 combine un écran Dynamic AMOLED 2X 120 Hz, la puissance du Snapdragon 8 Gen 1 et un triple appareil photo 50 Mpx très polyvalent.",
     specs: [['Écran','6,1" Dynamic AMOLED 2X 120 Hz'],['Processeur','Snapdragon 8 Gen 1'],['Appareil photo','Triple, principal 50 Mpx'],['Batterie','3700 mAh'],['Réseau','5G'],['Système','Android']]
@@ -433,7 +457,8 @@ const COLOR_HEX = {
   'Sarcelle':'#8FB3B0', 'Outremer':'#6B7DD6', 'Titane sable':'#C9B79C',
   'Sauge':'#9CAE8B', 'Lavande':'#C7BEDC', 'Brume':'#C5CED6',
   'Bleu intense':'#33415C', 'Orange cosmique':'#D8703B',
-  'Bleu Pacifique':'#38566B', 'Noir sidéral':'#3A3A3C', 'Violet intense':'#4E4159'
+  'Bleu Pacifique':'#38566B', 'Noir sidéral':'#3A3A3C', 'Violet intense':'#4E4159',
+  'Gris':'#B7B7B2', 'Bleu foncé':'#1E3A5F'
 };
 
 function productInfo(p){ return PRODUCT_INFO[p.name] || {desc:'', specs:[]}; }
