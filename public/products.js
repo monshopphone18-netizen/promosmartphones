@@ -87,7 +87,21 @@ const PRODUCTS = [
     {name:'Rouge', photo:'images/iphone14-rouge.jpg', views:['images/iphone14-rouge.jpg','images/iphone14-rouge-face.jpg','images/iphone14-rouge-photo.jpg']},
     {name:'Jaune', photo:'images/iphone14-jaune.jpg', views:['images/iphone14-jaune.jpg','images/iphone14-jaune-face.jpg','images/iphone14-jaune-photo.jpg']}
   ]},
-  {id:4, brand:'iPhone', name:'iPhone 15', spec:'256 Go', original:1150, price:799, type:'phone', colors:[
+  {id:45, variantGroup:'iphone15', brand:'iPhone', name:'iPhone 15', spec:'128 Go', original:1020, price:699, type:'phone', colors:[
+    {name:'Rose', photo:'images/iphone15-rose.jpg', views:['images/iphone15-rose.jpg','images/iphone15-rose-face.jpg','images/iphone15-rose-photo.jpg']},
+    {name:'Noir', photo:'images/iphone15-noir.jpg', views:['images/iphone15-noir.jpg','images/iphone15-noir-face.jpg','images/iphone15-noir-photo.jpg']},
+    {name:'Bleu', photo:'images/iphone15-bleu.jpg', views:['images/iphone15-bleu.jpg','images/iphone15-bleu-face.jpg','images/iphone15-bleu-photo.jpg']},
+    {name:'Vert', photo:'images/iphone15-vert.jpg', views:['images/iphone15-vert.jpg','images/iphone15-vert-face.jpg','images/iphone15-vert-photo.jpg']},
+    {name:'Jaune', photo:'images/iphone15-jaune.jpg', views:['images/iphone15-jaune.jpg','images/iphone15-jaune-face.jpg','images/iphone15-jaune-photo.jpg']}
+  ]},
+  {id:4, variantGroup:'iphone15', brand:'iPhone', name:'iPhone 15', spec:'256 Go', original:1150, price:799, type:'phone', colors:[
+    {name:'Rose', photo:'images/iphone15-rose.jpg', views:['images/iphone15-rose.jpg','images/iphone15-rose-face.jpg','images/iphone15-rose-photo.jpg']},
+    {name:'Noir', photo:'images/iphone15-noir.jpg', views:['images/iphone15-noir.jpg','images/iphone15-noir-face.jpg','images/iphone15-noir-photo.jpg']},
+    {name:'Bleu', photo:'images/iphone15-bleu.jpg', views:['images/iphone15-bleu.jpg','images/iphone15-bleu-face.jpg','images/iphone15-bleu-photo.jpg']},
+    {name:'Vert', photo:'images/iphone15-vert.jpg', views:['images/iphone15-vert.jpg','images/iphone15-vert-face.jpg','images/iphone15-vert-photo.jpg']},
+    {name:'Jaune', photo:'images/iphone15-jaune.jpg', views:['images/iphone15-jaune.jpg','images/iphone15-jaune-face.jpg','images/iphone15-jaune-photo.jpg']}
+  ]},
+  {id:46, variantGroup:'iphone15', brand:'iPhone', name:'iPhone 15', spec:'512 Go', original:1350, price:929, type:'phone', colors:[
     {name:'Rose', photo:'images/iphone15-rose.jpg', views:['images/iphone15-rose.jpg','images/iphone15-rose-face.jpg','images/iphone15-rose-photo.jpg']},
     {name:'Noir', photo:'images/iphone15-noir.jpg', views:['images/iphone15-noir.jpg','images/iphone15-noir-face.jpg','images/iphone15-noir-photo.jpg']},
     {name:'Bleu', photo:'images/iphone15-bleu.jpg', views:['images/iphone15-bleu.jpg','images/iphone15-bleu-face.jpg','images/iphone15-bleu-photo.jpg']},
@@ -220,6 +234,24 @@ const PRODUCTS = [
     {name:'Bleu intense', photo:'images/iphone17promax-bleu.jpg', views:['images/iphone17promax-bleu.jpg','images/iphone17promax-bleu-face.jpg','images/iphone17promax-bleu-photo.jpg']},
     {name:'Argent', photo:'images/iphone17promax-argent.jpg', views:['images/iphone17promax-argent.jpg','images/iphone17promax-argent-face.jpg','images/iphone17promax-argent-photo.jpg']}
   ]},
+  {id:47, variantGroup:'iphone12pro', brand:'iPhone', name:'iPhone 12 Pro', spec:'128 Go', original:1039, price:469, type:'phone', colors:[
+    {name:'Bleu Pacifique', photo:'images/iphone12pro-bleu.jpg', views:['images/iphone12pro-bleu.jpg','images/iphone12pro-bleu-face.jpg','images/iphone12pro-bleu-photo.jpg']},
+    {name:'Graphite', photo:'images/iphone12pro-graphite.jpg', views:['images/iphone12pro-graphite.jpg','images/iphone12pro-graphite-face.jpg','images/iphone12pro-graphite-photo.jpg']},
+    {name:'Argent', photo:'images/iphone12pro-argent.jpg', views:['images/iphone12pro-argent.jpg','images/iphone12pro-argent-face.jpg','images/iphone12pro-argent-photo.jpg']},
+    {name:'Or', photo:'images/iphone12pro-or.jpg', views:['images/iphone12pro-or.jpg','images/iphone12pro-or-face.jpg','images/iphone12pro-or-photo.jpg']}
+  ]},
+  {id:48, variantGroup:'iphone12pro', brand:'iPhone', name:'iPhone 12 Pro', spec:'256 Go', original:1139, price:529, type:'phone', colors:[
+    {name:'Bleu Pacifique', photo:'images/iphone12pro-bleu.jpg', views:['images/iphone12pro-bleu.jpg','images/iphone12pro-bleu-face.jpg','images/iphone12pro-bleu-photo.jpg']},
+    {name:'Graphite', photo:'images/iphone12pro-graphite.jpg', views:['images/iphone12pro-graphite.jpg','images/iphone12pro-graphite-face.jpg','images/iphone12pro-graphite-photo.jpg']},
+    {name:'Argent', photo:'images/iphone12pro-argent.jpg', views:['images/iphone12pro-argent.jpg','images/iphone12pro-argent-face.jpg','images/iphone12pro-argent-photo.jpg']},
+    {name:'Or', photo:'images/iphone12pro-or.jpg', views:['images/iphone12pro-or.jpg','images/iphone12pro-or-face.jpg','images/iphone12pro-or-photo.jpg']}
+  ]},
+  {id:49, variantGroup:'iphone12pro', brand:'iPhone', name:'iPhone 12 Pro', spec:'512 Go', original:1339, price:629, type:'phone', colors:[
+    {name:'Bleu Pacifique', photo:'images/iphone12pro-bleu.jpg', views:['images/iphone12pro-bleu.jpg','images/iphone12pro-bleu-face.jpg','images/iphone12pro-bleu-photo.jpg']},
+    {name:'Graphite', photo:'images/iphone12pro-graphite.jpg', views:['images/iphone12pro-graphite.jpg','images/iphone12pro-graphite-face.jpg','images/iphone12pro-graphite-photo.jpg']},
+    {name:'Argent', photo:'images/iphone12pro-argent.jpg', views:['images/iphone12pro-argent.jpg','images/iphone12pro-argent-face.jpg','images/iphone12pro-argent-photo.jpg']},
+    {name:'Or', photo:'images/iphone12pro-or.jpg', views:['images/iphone12pro-or.jpg','images/iphone12pro-or-face.jpg','images/iphone12pro-or-photo.jpg']}
+  ]},
   {id:5, brand:'Samsung', name:'Galaxy A54', spec:'128 Go', original:420, price:249, type:'phone'},
   {id:6, brand:'Samsung', name:'Galaxy S22', spec:'128 Go', original:700, price:389, type:'phone'},
   {id:7, brand:'Samsung', name:'Galaxy S23', spec:'256 Go', original:900, price:549, type:'phone'},
@@ -234,6 +266,10 @@ const PRODUCTS = [
 
 // Descriptions + caractéristiques techniques, par modèle (partagées entre capacités)
 const PRODUCT_INFO = {
+  'iPhone 12 Pro': {
+    desc: "L'iPhone 12 Pro allie un châssis en acier inoxydable, l'écran Super Retina XDR et la puce A14 Bionic. Son système photo Pro triple 12 Mpx avec scanner LiDAR et la 5G en font un excellent choix pour la photo et la vidéo.",
+    specs: [['\u00c9cran','6,1\" OLED Super Retina XDR'],['Puce','A14 Bionic'],['Ch\u00e2ssis','Acier inoxydable'],['Appareil photo','Pro : triple 12 Mpx + LiDAR'],['Autonomie','Jusqu\'\u00e0 17 h de lecture vid\u00e9o'],['R\u00e9seau','5G'],['S\u00e9curit\u00e9','Face ID'],['Syst\u00e8me','iOS']]
+  },
   'iPhone 12': {
     desc: "L'iPhone 12 inaugure le design à bords plats et l'écran Super Retina XDR OLED. Propulsé par la puce A14 Bionic et compatible 5G, il offre d'excellentes performances et un double appareil photo 12 Mpx pour des photos nettes de jour comme de nuit.",
     specs: [['Écran','6,1" OLED Super Retina XDR'],['Puce','A14 Bionic'],['Appareil photo','Double 12 Mpx (grand-angle + ultra grand-angle)'],['Autonomie','Jusqu\'à 17 h de lecture vidéo'],['Réseau','5G'],['Sécurité','Face ID'],['Système','iOS']]
@@ -333,7 +369,8 @@ const COLOR_HEX = {
   'Titane noir':'#3B3B3D', 'Titane bleu':'#4A5568', 'Titane naturel':'#C7BEB2', 'Titane blanc':'#E8E6E0',
   'Sarcelle':'#8FB3B0', 'Outremer':'#6B7DD6', 'Titane sable':'#C9B79C',
   'Sauge':'#9CAE8B', 'Lavande':'#C7BEDC', 'Brume':'#C5CED6',
-  'Bleu intense':'#33415C', 'Orange cosmique':'#D8703B'
+  'Bleu intense':'#33415C', 'Orange cosmique':'#D8703B',
+  'Bleu Pacifique':'#38566B'
 };
 
 function productInfo(p){ return PRODUCT_INFO[p.name] || {desc:'', specs:[]}; }
