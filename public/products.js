@@ -10,133 +10,133 @@ const PRODUCTS = [
     {name:'Vert', photo:'images/iphone12-vert.jpg', hex:'#B9CBAE', views:['images/iphone12-vert.jpg','images/iphone12-vert-face.jpg','images/iphone12-vert-photo.jpg']}
   ]},
   {id:2, variantGroup:'iphone13', brand:'iPhone', name:'iPhone 13', spec:'128 Go', original:699, price:419, type:'phone', colors:[
+    {name:'Bleu', photo:'images/iphone13-bleu.jpg', views:['images/iphone13-bleu.jpg','images/iphone13-bleu-face.jpg','images/iphone13-bleu-photo.jpg']},
     {name:'Minuit', photo:'images/iphone13-minuit.jpg', views:['images/iphone13-minuit.jpg','images/iphone13-minuit-face.jpg','images/iphone13-minuit-photo.jpg']},
     {name:'Rose', photo:'images/iphone13-rose.jpg', views:['images/iphone13-rose.jpg','images/iphone13-rose-face.jpg','images/iphone13-rose-photo.jpg']},
-    {name:'Bleu', photo:'images/iphone13-bleu.jpg', views:['images/iphone13-bleu.jpg','images/iphone13-bleu-face.jpg','images/iphone13-bleu-photo.jpg']},
     {name:'Rouge', photo:'images/iphone13-rouge.jpg', views:['images/iphone13-rouge.jpg','images/iphone13-rouge-face.jpg','images/iphone13-rouge-photo.jpg']},
     {name:'Lumière stellaire', photo:'images/iphone13-starlight.jpg', views:['images/iphone13-starlight.jpg','images/iphone13-starlight-face.jpg','images/iphone13-starlight-photo.jpg']},
     {name:'Vert', photo:'images/iphone13-vert.jpg', views:['images/iphone13-vert.jpg','images/iphone13-vert-face.jpg','images/iphone13-vert-photo.jpg']}
   ]},
   {id:15, variantGroup:'iphone13', brand:'iPhone', name:'iPhone 13', spec:'256 Go', original:799, price:479, type:'phone', colors:[
+    {name:'Bleu', photo:'images/iphone13-bleu.jpg', views:['images/iphone13-bleu.jpg','images/iphone13-bleu-face.jpg','images/iphone13-bleu-photo.jpg']},
     {name:'Minuit', photo:'images/iphone13-minuit.jpg', views:['images/iphone13-minuit.jpg','images/iphone13-minuit-face.jpg','images/iphone13-minuit-photo.jpg']},
     {name:'Rose', photo:'images/iphone13-rose.jpg', views:['images/iphone13-rose.jpg','images/iphone13-rose-face.jpg','images/iphone13-rose-photo.jpg']},
-    {name:'Bleu', photo:'images/iphone13-bleu.jpg', views:['images/iphone13-bleu.jpg','images/iphone13-bleu-face.jpg','images/iphone13-bleu-photo.jpg']},
     {name:'Rouge', photo:'images/iphone13-rouge.jpg', views:['images/iphone13-rouge.jpg','images/iphone13-rouge-face.jpg','images/iphone13-rouge-photo.jpg']},
     {name:'Lumière stellaire', photo:'images/iphone13-starlight.jpg', views:['images/iphone13-starlight.jpg','images/iphone13-starlight-face.jpg','images/iphone13-starlight-photo.jpg']},
     {name:'Vert', photo:'images/iphone13-vert.jpg', views:['images/iphone13-vert.jpg','images/iphone13-vert-face.jpg','images/iphone13-vert-photo.jpg']}
   ]},
   {id:16, variantGroup:'iphone13', brand:'iPhone', name:'iPhone 13', spec:'512 Go', original:999, price:599, type:'phone', colors:[
+    {name:'Bleu', photo:'images/iphone13-bleu.jpg', views:['images/iphone13-bleu.jpg','images/iphone13-bleu-face.jpg','images/iphone13-bleu-photo.jpg']},
     {name:'Minuit', photo:'images/iphone13-minuit.jpg', views:['images/iphone13-minuit.jpg','images/iphone13-minuit-face.jpg','images/iphone13-minuit-photo.jpg']},
     {name:'Rose', photo:'images/iphone13-rose.jpg', views:['images/iphone13-rose.jpg','images/iphone13-rose-face.jpg','images/iphone13-rose-photo.jpg']},
-    {name:'Bleu', photo:'images/iphone13-bleu.jpg', views:['images/iphone13-bleu.jpg','images/iphone13-bleu-face.jpg','images/iphone13-bleu-photo.jpg']},
     {name:'Rouge', photo:'images/iphone13-rouge.jpg', views:['images/iphone13-rouge.jpg','images/iphone13-rouge-face.jpg','images/iphone13-rouge-photo.jpg']},
     {name:'Lumière stellaire', photo:'images/iphone13-starlight.jpg', views:['images/iphone13-starlight.jpg','images/iphone13-starlight-face.jpg','images/iphone13-starlight-photo.jpg']},
     {name:'Vert', photo:'images/iphone13-vert.jpg', views:['images/iphone13-vert.jpg','images/iphone13-vert-face.jpg','images/iphone13-vert-photo.jpg']}
   ]},
   {id:17, variantGroup:'iphone13promax', brand:'iPhone', name:'iPhone 13 Pro Max', spec:'128 Go', original:849, price:509, type:'phone', colors:[
+    {name:'Bleu Sierra', photo:'images/iphone13promax-bleu.jpg', views:['images/iphone13promax-bleu.jpg','images/iphone13promax-bleu-face.jpg','images/iphone13promax-bleu-photo.jpg']},
     {name:'Graphite', photo:'images/iphone13promax-graphite.jpg', views:['images/iphone13promax-graphite.jpg','images/iphone13promax-graphite-face.jpg','images/iphone13promax-graphite-photo.jpg']},
     {name:'Or', photo:'images/iphone13promax-or.jpg', views:['images/iphone13promax-or.jpg','images/iphone13promax-or-face.jpg','images/iphone13promax-or-photo.jpg']},
     {name:'Argent', photo:'images/iphone13promax-argent.jpg', views:['images/iphone13promax-argent.jpg','images/iphone13promax-argent-face.jpg','images/iphone13promax-argent-photo.jpg']},
-    {name:'Bleu Sierra', photo:'images/iphone13promax-bleu.jpg', views:['images/iphone13promax-bleu.jpg','images/iphone13promax-bleu-face.jpg','images/iphone13promax-bleu-photo.jpg']},
     {name:'Vert alpin', photo:'images/iphone13promax-vert.jpg', views:['images/iphone13promax-vert.jpg','images/iphone13promax-vert-face.jpg','images/iphone13promax-vert-photo.jpg']}
   ]},
   {id:18, variantGroup:'iphone13promax', brand:'iPhone', name:'iPhone 13 Pro Max', spec:'256 Go', original:949, price:569, type:'phone', colors:[
+    {name:'Bleu Sierra', photo:'images/iphone13promax-bleu.jpg', views:['images/iphone13promax-bleu.jpg','images/iphone13promax-bleu-face.jpg','images/iphone13promax-bleu-photo.jpg']},
     {name:'Graphite', photo:'images/iphone13promax-graphite.jpg', views:['images/iphone13promax-graphite.jpg','images/iphone13promax-graphite-face.jpg','images/iphone13promax-graphite-photo.jpg']},
     {name:'Or', photo:'images/iphone13promax-or.jpg', views:['images/iphone13promax-or.jpg','images/iphone13promax-or-face.jpg','images/iphone13promax-or-photo.jpg']},
     {name:'Argent', photo:'images/iphone13promax-argent.jpg', views:['images/iphone13promax-argent.jpg','images/iphone13promax-argent-face.jpg','images/iphone13promax-argent-photo.jpg']},
-    {name:'Bleu Sierra', photo:'images/iphone13promax-bleu.jpg', views:['images/iphone13promax-bleu.jpg','images/iphone13promax-bleu-face.jpg','images/iphone13promax-bleu-photo.jpg']},
     {name:'Vert alpin', photo:'images/iphone13promax-vert.jpg', views:['images/iphone13promax-vert.jpg','images/iphone13promax-vert-face.jpg','images/iphone13promax-vert-photo.jpg']}
   ]},
   {id:3, brand:'iPhone', name:'iPhone 14', spec:'128 Go', original:849, price:519, type:'phone', colors:[
+    {name:'Violet', photo:'images/iphone14-violet.jpg', views:['images/iphone14-violet.jpg','images/iphone14-violet-face.jpg','images/iphone14-violet-photo.jpg']},
     {name:'Minuit', photo:'images/iphone14-minuit.jpg', views:['images/iphone14-minuit.jpg','images/iphone14-minuit-face.jpg','images/iphone14-minuit-photo.jpg']},
     {name:'Lumière stellaire', photo:'images/iphone14-starlight.jpg', views:['images/iphone14-starlight.jpg','images/iphone14-starlight-face.jpg','images/iphone14-starlight-photo.jpg']},
-    {name:'Violet', photo:'images/iphone14-violet.jpg', views:['images/iphone14-violet.jpg','images/iphone14-violet-face.jpg','images/iphone14-violet-photo.jpg']},
     {name:'Bleu', photo:'images/iphone14-bleu.jpg', views:['images/iphone14-bleu.jpg','images/iphone14-bleu-face.jpg','images/iphone14-bleu-photo.jpg']},
     {name:'Rouge', photo:'images/iphone14-rouge.jpg', views:['images/iphone14-rouge.jpg','images/iphone14-rouge-face.jpg','images/iphone14-rouge-photo.jpg']},
     {name:'Jaune', photo:'images/iphone14-jaune.jpg', views:['images/iphone14-jaune.jpg','images/iphone14-jaune-face.jpg','images/iphone14-jaune-photo.jpg']}
   ]},
   {id:4, brand:'iPhone', name:'iPhone 15', spec:'256 Go', original:1150, price:799, type:'phone', colors:[
-    {name:'Noir', photo:'images/iphone15-noir.jpg', views:['images/iphone15-noir.jpg','images/iphone15-noir-face.jpg','images/iphone15-noir-photo.jpg']},
     {name:'Rose', photo:'images/iphone15-rose.jpg', views:['images/iphone15-rose.jpg','images/iphone15-rose-face.jpg','images/iphone15-rose-photo.jpg']},
+    {name:'Noir', photo:'images/iphone15-noir.jpg', views:['images/iphone15-noir.jpg','images/iphone15-noir-face.jpg','images/iphone15-noir-photo.jpg']},
     {name:'Bleu', photo:'images/iphone15-bleu.jpg', views:['images/iphone15-bleu.jpg','images/iphone15-bleu-face.jpg','images/iphone15-bleu-photo.jpg']},
     {name:'Vert', photo:'images/iphone15-vert.jpg', views:['images/iphone15-vert.jpg','images/iphone15-vert-face.jpg','images/iphone15-vert-photo.jpg']},
     {name:'Jaune', photo:'images/iphone15-jaune.jpg', views:['images/iphone15-jaune.jpg','images/iphone15-jaune-face.jpg','images/iphone15-jaune-photo.jpg']}
   ]},
   {id:19, variantGroup:'iphone15pro', brand:'iPhone', name:'iPhone 15 Pro', spec:'128 Go', original:1150, price:749, type:'phone', colors:[
-    {name:'Titane noir', photo:'images/iphone15pro-noir.jpg', views:['images/iphone15pro-noir.jpg','images/iphone15pro-noir-face.jpg','images/iphone15pro-noir-photo.jpg']},
     {name:'Titane bleu', photo:'images/iphone15pro-bleu.jpg', views:['images/iphone15pro-bleu.jpg','images/iphone15pro-bleu-face.jpg','images/iphone15pro-bleu-photo.jpg']},
+    {name:'Titane noir', photo:'images/iphone15pro-noir.jpg', views:['images/iphone15pro-noir.jpg','images/iphone15pro-noir-face.jpg','images/iphone15pro-noir-photo.jpg']},
     {name:'Titane naturel', photo:'images/iphone15pro-naturel.jpg', views:['images/iphone15pro-naturel.jpg','images/iphone15pro-naturel-face.jpg','images/iphone15pro-naturel-photo.jpg']}
   ]},
   {id:20, variantGroup:'iphone15pro', brand:'iPhone', name:'iPhone 15 Pro', spec:'256 Go', original:1280, price:839, type:'phone', colors:[
-    {name:'Titane noir', photo:'images/iphone15pro-noir.jpg', views:['images/iphone15pro-noir.jpg','images/iphone15pro-noir-face.jpg','images/iphone15pro-noir-photo.jpg']},
     {name:'Titane bleu', photo:'images/iphone15pro-bleu.jpg', views:['images/iphone15pro-bleu.jpg','images/iphone15pro-bleu-face.jpg','images/iphone15pro-bleu-photo.jpg']},
+    {name:'Titane noir', photo:'images/iphone15pro-noir.jpg', views:['images/iphone15pro-noir.jpg','images/iphone15pro-noir-face.jpg','images/iphone15pro-noir-photo.jpg']},
     {name:'Titane naturel', photo:'images/iphone15pro-naturel.jpg', views:['images/iphone15pro-naturel.jpg','images/iphone15pro-naturel-face.jpg','images/iphone15pro-naturel-photo.jpg']}
   ]},
   {id:21, variantGroup:'iphone15pro', brand:'iPhone', name:'iPhone 15 Pro', spec:'512 Go', original:1510, price:989, type:'phone', colors:[
-    {name:'Titane noir', photo:'images/iphone15pro-noir.jpg', views:['images/iphone15pro-noir.jpg','images/iphone15pro-noir-face.jpg','images/iphone15pro-noir-photo.jpg']},
     {name:'Titane bleu', photo:'images/iphone15pro-bleu.jpg', views:['images/iphone15pro-bleu.jpg','images/iphone15pro-bleu-face.jpg','images/iphone15pro-bleu-photo.jpg']},
+    {name:'Titane noir', photo:'images/iphone15pro-noir.jpg', views:['images/iphone15pro-noir.jpg','images/iphone15pro-noir-face.jpg','images/iphone15pro-noir-photo.jpg']},
     {name:'Titane naturel', photo:'images/iphone15pro-naturel.jpg', views:['images/iphone15pro-naturel.jpg','images/iphone15pro-naturel-face.jpg','images/iphone15pro-naturel-photo.jpg']}
   ]},
   {id:22, variantGroup:'iphone15pro', brand:'iPhone', name:'iPhone 15 Pro', spec:'1 To', original:1740, price:1149, type:'phone', colors:[
-    {name:'Titane noir', photo:'images/iphone15pro-noir.jpg', views:['images/iphone15pro-noir.jpg','images/iphone15pro-noir-face.jpg','images/iphone15pro-noir-photo.jpg']},
     {name:'Titane bleu', photo:'images/iphone15pro-bleu.jpg', views:['images/iphone15pro-bleu.jpg','images/iphone15pro-bleu-face.jpg','images/iphone15pro-bleu-photo.jpg']},
+    {name:'Titane noir', photo:'images/iphone15pro-noir.jpg', views:['images/iphone15pro-noir.jpg','images/iphone15pro-noir-face.jpg','images/iphone15pro-noir-photo.jpg']},
     {name:'Titane naturel', photo:'images/iphone15pro-naturel.jpg', views:['images/iphone15pro-naturel.jpg','images/iphone15pro-naturel-face.jpg','images/iphone15pro-naturel-photo.jpg']}
   ]},
   {id:23, variantGroup:'iphone15promax', brand:'iPhone', name:'iPhone 15 Pro Max', spec:'256 Go', original:1259, price:859, type:'phone', colors:[
-    {name:'Titane noir', photo:'images/iphone15promax-noir.jpg', views:['images/iphone15promax-noir.jpg','images/iphone15promax-noir-face.jpg','images/iphone15promax-noir-photo.jpg']},
     {name:'Titane bleu', photo:'images/iphone15promax-bleu.jpg', views:['images/iphone15promax-bleu.jpg','images/iphone15promax-bleu-face.jpg','images/iphone15promax-bleu-photo.jpg']},
+    {name:'Titane noir', photo:'images/iphone15promax-noir.jpg', views:['images/iphone15promax-noir.jpg','images/iphone15promax-noir-face.jpg','images/iphone15promax-noir-photo.jpg']},
     {name:'Titane naturel', photo:'images/iphone15promax-naturel.jpg', views:['images/iphone15promax-naturel.jpg','images/iphone15promax-naturel-face.jpg','images/iphone15promax-naturel-photo.jpg']},
     {name:'Titane blanc', photo:'images/iphone15promax-blanc.jpg', views:['images/iphone15promax-blanc.jpg','images/iphone15promax-blanc-face.jpg','images/iphone15promax-blanc-photo.jpg']}
   ]},
   {id:24, variantGroup:'iphone15promax', brand:'iPhone', name:'iPhone 15 Pro Max', spec:'512 Go', original:1489, price:999, type:'phone', colors:[
-    {name:'Titane noir', photo:'images/iphone15promax-noir.jpg', views:['images/iphone15promax-noir.jpg','images/iphone15promax-noir-face.jpg','images/iphone15promax-noir-photo.jpg']},
     {name:'Titane bleu', photo:'images/iphone15promax-bleu.jpg', views:['images/iphone15promax-bleu.jpg','images/iphone15promax-bleu-face.jpg','images/iphone15promax-bleu-photo.jpg']},
+    {name:'Titane noir', photo:'images/iphone15promax-noir.jpg', views:['images/iphone15promax-noir.jpg','images/iphone15promax-noir-face.jpg','images/iphone15promax-noir-photo.jpg']},
     {name:'Titane naturel', photo:'images/iphone15promax-naturel.jpg', views:['images/iphone15promax-naturel.jpg','images/iphone15promax-naturel-face.jpg','images/iphone15promax-naturel-photo.jpg']},
     {name:'Titane blanc', photo:'images/iphone15promax-blanc.jpg', views:['images/iphone15promax-blanc.jpg','images/iphone15promax-blanc-face.jpg','images/iphone15promax-blanc-photo.jpg']}
   ]},
   {id:25, variantGroup:'iphone15promax', brand:'iPhone', name:'iPhone 15 Pro Max', spec:'1 To', original:1719, price:1179, type:'phone', colors:[
-    {name:'Titane noir', photo:'images/iphone15promax-noir.jpg', views:['images/iphone15promax-noir.jpg','images/iphone15promax-noir-face.jpg','images/iphone15promax-noir-photo.jpg']},
     {name:'Titane bleu', photo:'images/iphone15promax-bleu.jpg', views:['images/iphone15promax-bleu.jpg','images/iphone15promax-bleu-face.jpg','images/iphone15promax-bleu-photo.jpg']},
+    {name:'Titane noir', photo:'images/iphone15promax-noir.jpg', views:['images/iphone15promax-noir.jpg','images/iphone15promax-noir-face.jpg','images/iphone15promax-noir-photo.jpg']},
     {name:'Titane naturel', photo:'images/iphone15promax-naturel.jpg', views:['images/iphone15promax-naturel.jpg','images/iphone15promax-naturel-face.jpg','images/iphone15promax-naturel-photo.jpg']},
     {name:'Titane blanc', photo:'images/iphone15promax-blanc.jpg', views:['images/iphone15promax-blanc.jpg','images/iphone15promax-blanc-face.jpg','images/iphone15promax-blanc-photo.jpg']}
   ]},
   {id:26, variantGroup:'iphone16', brand:'iPhone', name:'iPhone 16', spec:'128 Go', original:869, price:569, type:'phone', colors:[
+    {name:'Outremer', photo:'images/iphone16-outremer.jpg', views:['images/iphone16-outremer.jpg','images/iphone16-outremer-face.jpg','images/iphone16-outremer-photo.jpg']},
     {name:'Noir', photo:'images/iphone16-noir.jpg', views:['images/iphone16-noir.jpg','images/iphone16-noir-face.jpg','images/iphone16-noir-photo.jpg']},
     {name:'Blanc', photo:'images/iphone16-blanc.jpg', views:['images/iphone16-blanc.jpg','images/iphone16-blanc-face.jpg','images/iphone16-blanc-photo.jpg']},
-    {name:'Outremer', photo:'images/iphone16-outremer.jpg', views:['images/iphone16-outremer.jpg','images/iphone16-outremer-face.jpg','images/iphone16-outremer-photo.jpg']},
     {name:'Sarcelle', photo:'images/iphone16-sarcelle.jpg', views:['images/iphone16-sarcelle.jpg','images/iphone16-sarcelle-face.jpg','images/iphone16-sarcelle-photo.jpg']},
     {name:'Rose', photo:'images/iphone16-rose.jpg', views:['images/iphone16-rose.jpg','images/iphone16-rose-face.jpg','images/iphone16-rose-photo.jpg']}
   ]},
   {id:27, variantGroup:'iphone16', brand:'iPhone', name:'iPhone 16', spec:'256 Go', original:999, price:649, type:'phone', colors:[
+    {name:'Outremer', photo:'images/iphone16-outremer.jpg', views:['images/iphone16-outremer.jpg','images/iphone16-outremer-face.jpg','images/iphone16-outremer-photo.jpg']},
     {name:'Noir', photo:'images/iphone16-noir.jpg', views:['images/iphone16-noir.jpg','images/iphone16-noir-face.jpg','images/iphone16-noir-photo.jpg']},
     {name:'Blanc', photo:'images/iphone16-blanc.jpg', views:['images/iphone16-blanc.jpg','images/iphone16-blanc-face.jpg','images/iphone16-blanc-photo.jpg']},
-    {name:'Outremer', photo:'images/iphone16-outremer.jpg', views:['images/iphone16-outremer.jpg','images/iphone16-outremer-face.jpg','images/iphone16-outremer-photo.jpg']},
     {name:'Sarcelle', photo:'images/iphone16-sarcelle.jpg', views:['images/iphone16-sarcelle.jpg','images/iphone16-sarcelle-face.jpg','images/iphone16-sarcelle-photo.jpg']},
     {name:'Rose', photo:'images/iphone16-rose.jpg', views:['images/iphone16-rose.jpg','images/iphone16-rose-face.jpg','images/iphone16-rose-photo.jpg']}
   ]},
   {id:28, variantGroup:'iphone16', brand:'iPhone', name:'iPhone 16', spec:'512 Go', original:1229, price:799, type:'phone', colors:[
+    {name:'Outremer', photo:'images/iphone16-outremer.jpg', views:['images/iphone16-outremer.jpg','images/iphone16-outremer-face.jpg','images/iphone16-outremer-photo.jpg']},
     {name:'Noir', photo:'images/iphone16-noir.jpg', views:['images/iphone16-noir.jpg','images/iphone16-noir-face.jpg','images/iphone16-noir-photo.jpg']},
     {name:'Blanc', photo:'images/iphone16-blanc.jpg', views:['images/iphone16-blanc.jpg','images/iphone16-blanc-face.jpg','images/iphone16-blanc-photo.jpg']},
-    {name:'Outremer', photo:'images/iphone16-outremer.jpg', views:['images/iphone16-outremer.jpg','images/iphone16-outremer-face.jpg','images/iphone16-outremer-photo.jpg']},
     {name:'Sarcelle', photo:'images/iphone16-sarcelle.jpg', views:['images/iphone16-sarcelle.jpg','images/iphone16-sarcelle-face.jpg','images/iphone16-sarcelle-photo.jpg']},
     {name:'Rose', photo:'images/iphone16-rose.jpg', views:['images/iphone16-rose.jpg','images/iphone16-rose-face.jpg','images/iphone16-rose-photo.jpg']}
   ]},
   {id:29, variantGroup:'iphone16promax', brand:'iPhone', name:'iPhone 16 Pro Max', spec:'256 Go', original:1419, price:929, type:'phone', colors:[
+    {name:'Titane sable', photo:'images/iphone16promax-sable.jpg', views:['images/iphone16promax-sable.jpg','images/iphone16promax-sable-face.jpg','images/iphone16promax-sable-photo.jpg']},
     {name:'Titane noir', photo:'images/iphone16promax-noir.jpg', views:['images/iphone16promax-noir.jpg','images/iphone16promax-noir-face.jpg','images/iphone16promax-noir-photo.jpg']},
     {name:'Titane naturel', photo:'images/iphone16promax-naturel.jpg', views:['images/iphone16promax-naturel.jpg','images/iphone16promax-naturel-face.jpg','images/iphone16promax-naturel-photo.jpg']},
-    {name:'Titane sable', photo:'images/iphone16promax-sable.jpg', views:['images/iphone16promax-sable.jpg','images/iphone16promax-sable-face.jpg','images/iphone16promax-sable-photo.jpg']},
     {name:'Titane blanc', photo:'images/iphone16promax-blanc.jpg', views:['images/iphone16promax-blanc.jpg','images/iphone16promax-blanc-face.jpg','images/iphone16promax-blanc-photo.jpg']}
   ]},
   {id:30, variantGroup:'iphone16promax', brand:'iPhone', name:'iPhone 16 Pro Max', spec:'512 Go', original:1649, price:1069, type:'phone', colors:[
+    {name:'Titane sable', photo:'images/iphone16promax-sable.jpg', views:['images/iphone16promax-sable.jpg','images/iphone16promax-sable-face.jpg','images/iphone16promax-sable-photo.jpg']},
     {name:'Titane noir', photo:'images/iphone16promax-noir.jpg', views:['images/iphone16promax-noir.jpg','images/iphone16promax-noir-face.jpg','images/iphone16promax-noir-photo.jpg']},
     {name:'Titane naturel', photo:'images/iphone16promax-naturel.jpg', views:['images/iphone16promax-naturel.jpg','images/iphone16promax-naturel-face.jpg','images/iphone16promax-naturel-photo.jpg']},
-    {name:'Titane sable', photo:'images/iphone16promax-sable.jpg', views:['images/iphone16promax-sable.jpg','images/iphone16promax-sable-face.jpg','images/iphone16promax-sable-photo.jpg']},
     {name:'Titane blanc', photo:'images/iphone16promax-blanc.jpg', views:['images/iphone16promax-blanc.jpg','images/iphone16promax-blanc-face.jpg','images/iphone16promax-blanc-photo.jpg']}
   ]},
   {id:31, variantGroup:'iphone16promax', brand:'iPhone', name:'iPhone 16 Pro Max', spec:'1 To', original:1879, price:1219, type:'phone', colors:[
+    {name:'Titane sable', photo:'images/iphone16promax-sable.jpg', views:['images/iphone16promax-sable.jpg','images/iphone16promax-sable-face.jpg','images/iphone16promax-sable-photo.jpg']},
     {name:'Titane noir', photo:'images/iphone16promax-noir.jpg', views:['images/iphone16promax-noir.jpg','images/iphone16promax-noir-face.jpg','images/iphone16promax-noir-photo.jpg']},
     {name:'Titane naturel', photo:'images/iphone16promax-naturel.jpg', views:['images/iphone16promax-naturel.jpg','images/iphone16promax-naturel-face.jpg','images/iphone16promax-naturel-photo.jpg']},
-    {name:'Titane sable', photo:'images/iphone16promax-sable.jpg', views:['images/iphone16promax-sable.jpg','images/iphone16promax-sable-face.jpg','images/iphone16promax-sable-photo.jpg']},
     {name:'Titane blanc', photo:'images/iphone16promax-blanc.jpg', views:['images/iphone16promax-blanc.jpg','images/iphone16promax-blanc-face.jpg','images/iphone16promax-blanc-photo.jpg']}
   ]},
   {id:32, variantGroup:'iphone17', brand:'iPhone', name:'iPhone 17', spec:'256 Go', original:969, price:669, type:'phone', colors:[
