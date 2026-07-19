@@ -200,6 +200,26 @@ const PRODUCTS = [
     {name:'Orange cosmique', photo:'images/iphone17pro-orange.jpg', views:['images/iphone17pro-orange.jpg','images/iphone17pro-orange-cote.jpg']},
     {name:'Argent', photo:'images/iphone17pro-argent.jpg', views:['images/iphone17pro-argent.jpg','images/iphone17pro-argent-cote.jpg']}
   ]},
+  {id:41, variantGroup:'iphone17promax', brand:'iPhone', name:'iPhone 17 Pro Max', spec:'256 Go', original:1479, price:999, type:'phone', colors:[
+    {name:'Orange cosmique', photo:'images/iphone17promax-orange.jpg', views:['images/iphone17promax-orange.jpg','images/iphone17promax-orange-face.jpg','images/iphone17promax-orange-photo.jpg']},
+    {name:'Bleu intense', photo:'images/iphone17promax-bleu.jpg', views:['images/iphone17promax-bleu.jpg','images/iphone17promax-bleu-face.jpg','images/iphone17promax-bleu-photo.jpg']},
+    {name:'Argent', photo:'images/iphone17promax-argent.jpg', views:['images/iphone17promax-argent.jpg','images/iphone17promax-argent-face.jpg','images/iphone17promax-argent-photo.jpg']}
+  ]},
+  {id:42, variantGroup:'iphone17promax', brand:'iPhone', name:'iPhone 17 Pro Max', spec:'512 Go', original:1709, price:1149, type:'phone', colors:[
+    {name:'Orange cosmique', photo:'images/iphone17promax-orange.jpg', views:['images/iphone17promax-orange.jpg','images/iphone17promax-orange-face.jpg','images/iphone17promax-orange-photo.jpg']},
+    {name:'Bleu intense', photo:'images/iphone17promax-bleu.jpg', views:['images/iphone17promax-bleu.jpg','images/iphone17promax-bleu-face.jpg','images/iphone17promax-bleu-photo.jpg']},
+    {name:'Argent', photo:'images/iphone17promax-argent.jpg', views:['images/iphone17promax-argent.jpg','images/iphone17promax-argent-face.jpg','images/iphone17promax-argent-photo.jpg']}
+  ]},
+  {id:43, variantGroup:'iphone17promax', brand:'iPhone', name:'iPhone 17 Pro Max', spec:'1 To', original:1939, price:1299, type:'phone', colors:[
+    {name:'Orange cosmique', photo:'images/iphone17promax-orange.jpg', views:['images/iphone17promax-orange.jpg','images/iphone17promax-orange-face.jpg','images/iphone17promax-orange-photo.jpg']},
+    {name:'Bleu intense', photo:'images/iphone17promax-bleu.jpg', views:['images/iphone17promax-bleu.jpg','images/iphone17promax-bleu-face.jpg','images/iphone17promax-bleu-photo.jpg']},
+    {name:'Argent', photo:'images/iphone17promax-argent.jpg', views:['images/iphone17promax-argent.jpg','images/iphone17promax-argent-face.jpg','images/iphone17promax-argent-photo.jpg']}
+  ]},
+  {id:44, variantGroup:'iphone17promax', brand:'iPhone', name:'iPhone 17 Pro Max', spec:'2 To', original:2399, price:1599, type:'phone', colors:[
+    {name:'Orange cosmique', photo:'images/iphone17promax-orange.jpg', views:['images/iphone17promax-orange.jpg','images/iphone17promax-orange-face.jpg','images/iphone17promax-orange-photo.jpg']},
+    {name:'Bleu intense', photo:'images/iphone17promax-bleu.jpg', views:['images/iphone17promax-bleu.jpg','images/iphone17promax-bleu-face.jpg','images/iphone17promax-bleu-photo.jpg']},
+    {name:'Argent', photo:'images/iphone17promax-argent.jpg', views:['images/iphone17promax-argent.jpg','images/iphone17promax-argent-face.jpg','images/iphone17promax-argent-photo.jpg']}
+  ]},
   {id:5, brand:'Samsung', name:'Galaxy A54', spec:'128 Go', original:420, price:249, type:'phone'},
   {id:6, brand:'Samsung', name:'Galaxy S22', spec:'128 Go', original:700, price:389, type:'phone'},
   {id:7, brand:'Samsung', name:'Galaxy S23', spec:'256 Go', original:900, price:549, type:'phone'},
@@ -257,6 +277,10 @@ const PRODUCT_INFO = {
   'iPhone 17 Pro': {
     desc: "L'iPhone 17 Pro introduit un nouveau châssis en aluminium avec plateau caméra intégral, la puce A19 Pro pour des performances soutenues, et un système photo Pro triple 48 Mpx avec téléobjectif optique amélioré. Un bond en avant pour la photo comme pour le jeu.",
     specs: [['Écran','6,3" OLED Super Retina XDR · ProMotion 120 Hz'],['Puce','A19 Pro'],['Châssis','Aluminium · plateau caméra intégral'],['Appareil photo','Pro : triple 48 Mpx + téléobjectif'],['Autonomie','Jusqu\'à 27 h de lecture vidéo'],['Protection','Ceramic Shield 2'],['Connectique','USB-C (USB 3)'],['Réseau','5G'],['Système','iOS']]
+  },
+  'iPhone 17 Pro Max': {
+    desc: "L'iPhone 17 Pro Max, c'est le summum : le plus grand écran, la puce A19 Pro, un châssis en aluminium avec plateau caméra intégral et un système photo Pro triple 48 Mpx avec le meilleur téléobjectif jamais vu sur iPhone. Une autonomie exceptionnelle pour tenir toute la journée et plus encore.",
+    specs: [['Écran','6,9" OLED Super Retina XDR · ProMotion 120 Hz'],['Puce','A19 Pro'],['Châssis','Aluminium · plateau caméra intégral'],['Appareil photo','Pro : triple 48 Mpx + téléobjectif longue portée'],['Autonomie','Jusqu\'à 37 h de lecture vidéo'],['Protection','Ceramic Shield 2'],['Connectique','USB-C (USB 3)'],['Réseau','5G'],['Système','iOS']]
   },
   'Galaxy A54': {
     desc: "Le Galaxy A54 offre l'essentiel d'un smartphone moderne à prix doux : grand écran Super AMOLED 120 Hz, batterie longue durée et triple capteur photo 50 Mpx.",
