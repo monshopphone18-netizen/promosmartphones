@@ -408,6 +408,81 @@ const PRODUCTS = [
     {name:'Lumière stellaire', photo:'images/macbookair26-starlight.jpg', views:['images/macbookair26-starlight.jpg','images/macbookair26-starlight-face.jpg','images/macbookair26-starlight-cote.jpg']},
     {name:'Minuit', photo:'images/macbookair26-minuit.jpg', views:['images/macbookair26-minuit.jpg','images/macbookair26-minuit-face.jpg','images/macbookair26-minuit-clavier.jpg']}
   ]},
+  {id:83, variantGroup:'ipad11', brand:'Apple', name:'iPad 11 (2025, A16)', spec:'128 Go · WiFi', original:509, price:309, type:'tablet', colors:[
+    {name:'Argent', photo:'images/ipad11-argent.jpg', views:['images/ipad11-argent.jpg']},
+    {name:'Bleu', photo:'images/ipad11-bleu.jpg', views:['images/ipad11-bleu.jpg']},
+    {name:'Rose', photo:'images/ipad11-rose.jpg', views:['images/ipad11-rose.jpg']}
+  ]},
+  {id:85, variantGroup:'ipad11', brand:'Apple', name:'iPad 11 (2025, A16)', spec:'256 Go · WiFi', original:639, price:389, type:'tablet', colors:[
+    {name:'Argent', photo:'images/ipad11-argent.jpg', views:['images/ipad11-argent.jpg']},
+    {name:'Bleu', photo:'images/ipad11-bleu.jpg', views:['images/ipad11-bleu.jpg']},
+    {name:'Rose', photo:'images/ipad11-rose.jpg', views:['images/ipad11-rose.jpg']}
+  ]},
+  {id:86, variantGroup:'ipad11', brand:'Apple', name:'iPad 11 (2025, A16)', spec:'512 Go · WiFi', original:869, price:519, type:'tablet', colors:[
+    {name:'Argent', photo:'images/ipad11-argent.jpg', views:['images/ipad11-argent.jpg']},
+    {name:'Bleu', photo:'images/ipad11-bleu.jpg', views:['images/ipad11-bleu.jpg']},
+    {name:'Rose', photo:'images/ipad11-rose.jpg', views:['images/ipad11-rose.jpg']}
+  ]},
+  {id:84, variantGroup:'ipadair7', brand:'Apple', name:'iPad Air 7 (2025, M3)', spec:'11" · 128 Go · WiFi', original:819, price:489, type:'tablet', colors:[
+    {name:'Bleu', photo:'images/ipadair7-bleu.jpg', views:['images/ipadair7-bleu.jpg','images/ipadair7-bleu-face.jpg']},
+    {name:'Gris sidéral', photo:'images/ipadair7-grissideral.jpg', views:['images/ipadair7-grissideral.jpg','images/ipadair7-grissideral-face.jpg']},
+    {name:'Lumière stellaire', photo:'images/ipadair7-starlight.jpg', views:['images/ipadair7-starlight.jpg','images/ipadair7-starlight-face.jpg']},
+    {name:'Mauve', photo:'images/ipadair7-mauve.jpg', views:['images/ipadair7-mauve.jpg','images/ipadair7-mauve-face.jpg']}
+  ]},
+  {id:87, variantGroup:'ipadair7', brand:'Apple', name:'iPad Air 7 (2025, M3)', spec:'11" · 256 Go · WiFi', original:949, price:569, type:'tablet', colors:[
+    {name:'Bleu', photo:'images/ipadair7-bleu.jpg', views:['images/ipadair7-bleu.jpg','images/ipadair7-bleu-face.jpg']},
+    {name:'Gris sidéral', photo:'images/ipadair7-grissideral.jpg', views:['images/ipadair7-grissideral.jpg','images/ipadair7-grissideral-face.jpg']},
+    {name:'Lumière stellaire', photo:'images/ipadair7-starlight.jpg', views:['images/ipadair7-starlight.jpg','images/ipadair7-starlight-face.jpg']},
+    {name:'Mauve', photo:'images/ipadair7-mauve.jpg', views:['images/ipadair7-mauve.jpg','images/ipadair7-mauve-face.jpg']}
+  ]},
+  {id:88, variantGroup:'ipadair7', brand:'Apple', name:'iPad Air 7 (2025, M3)', spec:'11" · 512 Go · WiFi', original:1179, price:709, type:'tablet', colors:[
+    {name:'Bleu', photo:'images/ipadair7-bleu.jpg', views:['images/ipadair7-bleu.jpg','images/ipadair7-bleu-face.jpg']},
+    {name:'Gris sidéral', photo:'images/ipadair7-grissideral.jpg', views:['images/ipadair7-grissideral.jpg','images/ipadair7-grissideral-face.jpg']},
+    {name:'Lumière stellaire', photo:'images/ipadair7-starlight.jpg', views:['images/ipadair7-starlight.jpg','images/ipadair7-starlight-face.jpg']},
+    {name:'Mauve', photo:'images/ipadair7-mauve.jpg', views:['images/ipadair7-mauve.jpg','images/ipadair7-mauve-face.jpg']}
+  ]},
+  {id:89, variantGroup:'ipadair7', brand:'Apple', name:'iPad Air 7 (2025, M3)', spec:'11" · 1 To · WiFi', original:1409, price:849, type:'tablet', colors:[
+    {name:'Bleu', photo:'images/ipadair7-bleu.jpg', views:['images/ipadair7-bleu.jpg','images/ipadair7-bleu-face.jpg']},
+    {name:'Gris sidéral', photo:'images/ipadair7-grissideral.jpg', views:['images/ipadair7-grissideral.jpg','images/ipadair7-grissideral-face.jpg']},
+    {name:'Lumière stellaire', photo:'images/ipadair7-starlight.jpg', views:['images/ipadair7-starlight.jpg','images/ipadair7-starlight-face.jpg']},
+    {name:'Mauve', photo:'images/ipadair7-mauve.jpg', views:['images/ipadair7-mauve.jpg','images/ipadair7-mauve-face.jpg']}
+  ]},
+  {id:90, variantGroup:'ipadair7', brand:'Apple', name:'iPad Air 7 (2025, M3)', spec:'13" · 128 Go · WiFi', original:1019, price:609, type:'tablet', colors:[
+    {name:'Bleu', photo:'images/ipadair7-bleu.jpg', views:['images/ipadair7-bleu.jpg','images/ipadair7-bleu-face.jpg']},
+    {name:'Gris sidéral', photo:'images/ipadair7-grissideral.jpg', views:['images/ipadair7-grissideral.jpg','images/ipadair7-grissideral-face.jpg']},
+    {name:'Lumière stellaire', photo:'images/ipadair7-starlight.jpg', views:['images/ipadair7-starlight.jpg','images/ipadair7-starlight-face.jpg']},
+    {name:'Mauve', photo:'images/ipadair7-mauve.jpg', views:['images/ipadair7-mauve.jpg','images/ipadair7-mauve-face.jpg']}
+  ]},
+  {id:91, variantGroup:'ipadair7', brand:'Apple', name:'iPad Air 7 (2025, M3)', spec:'13" · 256 Go · WiFi', original:1149, price:689, type:'tablet', colors:[
+    {name:'Bleu', photo:'images/ipadair7-bleu.jpg', views:['images/ipadair7-bleu.jpg','images/ipadair7-bleu-face.jpg']},
+    {name:'Gris sidéral', photo:'images/ipadair7-grissideral.jpg', views:['images/ipadair7-grissideral.jpg','images/ipadair7-grissideral-face.jpg']},
+    {name:'Lumière stellaire', photo:'images/ipadair7-starlight.jpg', views:['images/ipadair7-starlight.jpg','images/ipadair7-starlight-face.jpg']},
+    {name:'Mauve', photo:'images/ipadair7-mauve.jpg', views:['images/ipadair7-mauve.jpg','images/ipadair7-mauve-face.jpg']}
+  ]},
+  {id:92, variantGroup:'ipadair7', brand:'Apple', name:'iPad Air 7 (2025, M3)', spec:'13" · 512 Go · WiFi', original:1379, price:829, type:'tablet', colors:[
+    {name:'Bleu', photo:'images/ipadair7-bleu.jpg', views:['images/ipadair7-bleu.jpg','images/ipadair7-bleu-face.jpg']},
+    {name:'Gris sidéral', photo:'images/ipadair7-grissideral.jpg', views:['images/ipadair7-grissideral.jpg','images/ipadair7-grissideral-face.jpg']},
+    {name:'Lumière stellaire', photo:'images/ipadair7-starlight.jpg', views:['images/ipadair7-starlight.jpg','images/ipadair7-starlight-face.jpg']},
+    {name:'Mauve', photo:'images/ipadair7-mauve.jpg', views:['images/ipadair7-mauve.jpg','images/ipadair7-mauve-face.jpg']}
+  ]},
+  {id:93, variantGroup:'ipadair7', brand:'Apple', name:'iPad Air 7 (2025, M3)', spec:'13" · 1 To · WiFi', original:1609, price:969, type:'tablet', colors:[
+    {name:'Bleu', photo:'images/ipadair7-bleu.jpg', views:['images/ipadair7-bleu.jpg','images/ipadair7-bleu-face.jpg']},
+    {name:'Gris sidéral', photo:'images/ipadair7-grissideral.jpg', views:['images/ipadair7-grissideral.jpg','images/ipadair7-grissideral-face.jpg']},
+    {name:'Lumière stellaire', photo:'images/ipadair7-starlight.jpg', views:['images/ipadair7-starlight.jpg','images/ipadair7-starlight-face.jpg']},
+    {name:'Mauve', photo:'images/ipadair7-mauve.jpg', views:['images/ipadair7-mauve.jpg','images/ipadair7-mauve-face.jpg']}
+  ]},
+  {id:94, variantGroup:'ipadpro', brand:'Apple', name:'iPad Pro (2025, M5)', spec:'11" · 256 Go · WiFi', original:1119, price:669, type:'tablet', colors:[
+    {name:'Argent', photo:'images/ipadpro-argent.jpg', views:['images/ipadpro-argent.jpg','images/ipadpro-argent-face.jpg']}
+  ]},
+  {id:95, variantGroup:'ipadpro', brand:'Apple', name:'iPad Pro (2025, M5)', spec:'11" · 512 Go · WiFi', original:1249, price:749, type:'tablet', colors:[
+    {name:'Argent', photo:'images/ipadpro-argent.jpg', views:['images/ipadpro-argent.jpg','images/ipadpro-argent-face.jpg']}
+  ]},
+  {id:96, variantGroup:'ipadpro', brand:'Apple', name:'iPad Pro (2025, M5)', spec:'13" · 256 Go · WiFi', original:1319, price:789, type:'tablet', colors:[
+    {name:'Argent', photo:'images/ipadpro-argent.jpg', views:['images/ipadpro-argent.jpg','images/ipadpro-argent-face.jpg']}
+  ]},
+  {id:97, variantGroup:'ipadpro', brand:'Apple', name:'iPad Pro (2025, M5)', spec:'13" · 512 Go · WiFi', original:1449, price:869, type:'tablet', colors:[
+    {name:'Argent', photo:'images/ipadpro-argent.jpg', views:['images/ipadpro-argent.jpg','images/ipadpro-argent-face.jpg']}
+  ]},
   {id:79, brand:'Apple', name:'AirPods Pro 2', spec:'Boîtier de charge MagSafe', original:219, price:139, type:'accessory', colors:[
     {name:'Blanc', photo:'images/airpodspro2.jpg', views:['images/airpodspro2.jpg','images/airpodspro2-face.jpg','images/airpodspro2-boite.jpg']}
   ]},
@@ -424,17 +499,6 @@ const PRODUCTS = [
   {id:82, brand:'Apple', name:'Apple Watch Ultra 3', spec:'49 mm · GPS + Cellular', original:899, price:589, type:'watch', colors:[
     {name:'Titane naturel', photo:'images/watchultra3-naturel.jpg', views:['images/watchultra3-naturel.jpg','images/watchultra3-naturel-face.jpg']},
     {name:'Titane noir', photo:'images/watchultra3-noir.jpg', views:['images/watchultra3-noir.jpg','images/watchultra3-noir-face.jpg']}
-  ]},
-  {id:83, brand:'Apple', name:'iPad 11 (2025, A16)', spec:'128 Go · WiFi', original:509, price:309, type:'tablet', colors:[
-    {name:'Argent', photo:'images/ipad11-argent.jpg', views:['images/ipad11-argent.jpg']},
-    {name:'Bleu', photo:'images/ipad11-bleu.jpg', views:['images/ipad11-bleu.jpg']},
-    {name:'Rose', photo:'images/ipad11-rose.jpg', views:['images/ipad11-rose.jpg']}
-  ]},
-  {id:84, brand:'Apple', name:'iPad Air 7 (2025, M3)', spec:'128 Go · WiFi', original:819, price:489, type:'tablet', colors:[
-    {name:'Bleu', photo:'images/ipadair7-bleu.jpg', views:['images/ipadair7-bleu.jpg','images/ipadair7-bleu-face.jpg']},
-    {name:'Gris sidéral', photo:'images/ipadair7-grissideral.jpg', views:['images/ipadair7-grissideral.jpg','images/ipadair7-grissideral-face.jpg']},
-    {name:'Lumière stellaire', photo:'images/ipadair7-starlight.jpg', views:['images/ipadair7-starlight.jpg','images/ipadair7-starlight-face.jpg']},
-    {name:'Mauve', photo:'images/ipadair7-mauve.jpg', views:['images/ipadair7-mauve.jpg','images/ipadair7-mauve-face.jpg']}
   ]},
 ];
 
@@ -561,8 +625,12 @@ const PRODUCT_INFO = {
     specs: [['Écran','11" Liquid Retina'],['Puce','Apple A16'],['Connectique','USB-C'],['Appareil photo','12 Mpx'],['Accessoires','Compatible Apple Pencil (USB-C)'],['Système','iPadOS']]
   },
   'iPad Air 7 (2025, M3)': {
-    desc: "L'iPad Air 7 passe à la puce Apple M3, offrant une puissance digne d'un ordinateur portable dans un format ultra fin. Écran Liquid Retina 11\", compatibilité Apple Pencil Pro et Magic Keyboard : parfait pour la création comme pour la productivité.",
-    specs: [['Écran','11" Liquid Retina'],['Puce','Apple M3'],['Connectique','USB-C (USB 3)'],['Appareil photo','12 Mpx'],['Accessoires','Compatible Apple Pencil Pro · Magic Keyboard'],['Système','iPadOS']]
+    desc: "L'iPad Air 7 passe à la puce Apple M3, offrant une puissance digne d'un ordinateur portable dans un format ultra fin. Disponible en 11\" et 13\", compatible Apple Pencil Pro et Magic Keyboard : parfait pour la création comme pour la productivité.",
+    specs: [['Écran','Liquid Retina 11\" ou 13\"'],['Puce','Apple M3'],['Connectique','USB-C (USB 3)'],['Appareil photo','12 Mpx'],['Accessoires','Compatible Apple Pencil Pro · Magic Keyboard'],['Système','iPadOS']]
+  },
+  'iPad Pro (2025, M5)': {
+    desc: "L'iPad Pro adopte la puce Apple M5 pour des performances dignes d'une station de travail. Écran Ultra Retina XDR éblouissant, châssis en aluminium ultra fin disponible en 11\" et 13\", compatible Apple Pencil Pro et Magic Keyboard : la tablette la plus puissante jamais conçue par Apple.",
+    specs: [['Écran','Ultra Retina XDR 11\" ou 13\"'],['Puce','Apple M5'],['Connectique','Thunderbolt / USB 4'],['Appareil photo','12 Mpx + LiDAR'],['Accessoires','Compatible Apple Pencil Pro · Magic Keyboard'],['Système','iPadOS']]
   }
 };
 

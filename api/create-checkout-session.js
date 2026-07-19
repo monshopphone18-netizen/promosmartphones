@@ -85,8 +85,21 @@ const PRODUCTS = {
   80: { name: 'AirPods Max',                       price: 249  },
   81: { name: 'Apple Watch Ultra 2',                price: 519  },
   82: { name: 'Apple Watch Ultra 3',                price: 589  },
-  83: { name: 'iPad 11 (2025, A16) · 128 Go',       price: 309  },
-  84: { name: 'iPad Air 7 (2025, M3) · 128 Go',     price: 489  },
+  83: { name: 'iPad 11 (2025, A16) · 128 Go · WiFi',        price: 309  },
+  85: { name: 'iPad 11 (2025, A16) · 256 Go · WiFi',        price: 389  },
+  86: { name: 'iPad 11 (2025, A16) · 512 Go · WiFi',        price: 519  },
+  84: { name: 'iPad Air 7 (2025, M3) · 11" · 128 Go · WiFi', price: 489  },
+  87: { name: 'iPad Air 7 (2025, M3) · 11" · 256 Go · WiFi', price: 569  },
+  88: { name: 'iPad Air 7 (2025, M3) · 11" · 512 Go · WiFi', price: 709  },
+  89: { name: 'iPad Air 7 (2025, M3) · 11" · 1 To · WiFi',   price: 849  },
+  90: { name: 'iPad Air 7 (2025, M3) · 13" · 128 Go · WiFi', price: 609  },
+  91: { name: 'iPad Air 7 (2025, M3) · 13" · 256 Go · WiFi', price: 689  },
+  92: { name: 'iPad Air 7 (2025, M3) · 13" · 512 Go · WiFi', price: 829  },
+  93: { name: 'iPad Air 7 (2025, M3) · 13" · 1 To · WiFi',   price: 969  },
+  94: { name: 'iPad Pro (2025, M5) · 11" · 256 Go · WiFi',   price: 669  },
+  95: { name: 'iPad Pro (2025, M5) · 11" · 512 Go · WiFi',   price: 749  },
+  96: { name: 'iPad Pro (2025, M5) · 13" · 256 Go · WiFi',   price: 789  },
+  97: { name: 'iPad Pro (2025, M5) · 13" · 512 Go · WiFi',   price: 869  },
 };
 
 module.exports = async (req, res) => {
