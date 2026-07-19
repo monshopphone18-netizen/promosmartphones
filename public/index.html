@@ -190,6 +190,9 @@
   .subtotal-row{display:flex;justify-content:space-between;font-size:14px;color:var(--slate);margin-bottom:6px;}
   .total-row{display:flex;justify-content:space-between;font-size:18px;font-weight:600;margin-bottom:16px;}
   .total-row .mono{font-family:'IBM Plex Mono',monospace;}
+  .cgv-row{display:flex;align-items:flex-start;gap:8px;font-size:12.5px;color:var(--slate);margin-bottom:14px;line-height:1.4;}
+  .cgv-row input{margin-top:2px;flex-shrink:0;}
+  .cgv-row a{color:var(--ink);text-decoration:underline;}
   .btn-checkout{width:100%;background:var(--ink);color:var(--paper);border:none;border-radius:10px;padding:15px;font-weight:600;font-size:15px;display:flex;align-items:center;justify-content:center;gap:8px;}
   .btn-checkout:disabled{opacity:0.4;cursor:not-allowed;}
   .checkout-error{background:rgba(193,68,58,0.12);border:1px solid var(--red);color:var(--red);font-size:13px;border-radius:8px;padding:10px 12px;margin-top:10px;display:none;}
@@ -357,6 +360,10 @@
   <div class="drawer-foot">
     <div class="subtotal-row"><span>Articles</span><span class="mono" id="itemCount">0</span></div>
     <div class="total-row"><span>Total</span><span class="mono" id="cartTotal">0 €</span></div>
+    <label class="cgv-row">
+      <input type="checkbox" id="cgvAccept" onchange="updateCartUI()">
+      <span>J'accepte les <a href="cgv.html" target="_blank">conditions générales de vente</a> et la <a href="confidentialite.html" target="_blank">politique de confidentialité</a>.</span>
+    </label>
     <button class="btn-checkout" id="checkoutBtn" onclick="goToStripeCheckout()" disabled>
       <span id="checkoutLabel">Payer en toute sécurité</span>
       <span class="spinner" id="checkoutSpinner"></span>
