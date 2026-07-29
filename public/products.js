@@ -483,7 +483,7 @@ const PRODUCTS = [
   {id:97, variantGroup:'ipadpro', brand:'Apple', name:'iPad Pro (2025, M5)', spec:'13" · 512 Go · WiFi', original:1449, price:869, type:'tablet', colors:[
     {name:'Argent', photo:'images/ipadpro-argent.jpg', views:['images/ipadpro-argent.jpg','images/ipadpro-argent-face.jpg']}
   ]},
-  {id:79, brand:'Apple', name:'AirPods Pro 2', spec:'Boîtier de charge MagSafe', original:219, price:49, type:'accessory', colors:[
+  {id:79, brand:'Apple', name:'AirPods Pro 2', spec:'Boîtier de charge MagSafe', original:219, price:139, type:'accessory', colors:[
     {name:'Blanc', photo:'images/airpodspro2.jpg', views:['images/airpodspro2.jpg','images/airpodspro2-face.jpg','images/airpodspro2-boite.jpg']}
   ]},
   {id:80, brand:'Apple', name:'AirPods Max', spec:'Réduction de bruit active', original:388, price:249, type:'accessory', colors:[
