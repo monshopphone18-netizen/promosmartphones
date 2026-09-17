@@ -424,7 +424,6 @@ const PRODUCTS = [
     {name:'Blanc stellaire', photo:'images/iphoneduo-blanc.jpg', views:['images/iphoneduo-blanc.jpg']},
     {name:'Ciel nocturne', photo:'images/iphoneduo-nuit.jpg', views:['images/iphoneduo-nuit.jpg']}
   ]},
-  ]},
   {id:83, variantGroup:'ipad11', brand:'Apple', name:'iPad 11 (2025, A16)', spec:'128 Go · WiFi', original:509, price:309, type:'tablet', colors:[
     {name:'Argent', photo:'images/ipad11-argent.jpg', views:['images/ipad11-argent.jpg']},
     {name:'Bleu', photo:'images/ipad11-bleu.jpg', views:['images/ipad11-bleu.jpg']},
