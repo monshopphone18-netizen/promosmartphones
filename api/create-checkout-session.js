@@ -100,6 +100,10 @@ const PRODUCTS = {
   95: { name: 'iPad Pro (2025, M5) · 11" · 512 Go · WiFi',   price: 749  },
   96: { name: 'iPad Pro (2025, M5) · 13" · 256 Go · WiFi',   price: 789  },
   97: { name: 'iPad Pro (2025, M5) · 13" · 512 Go · WiFi',   price: 869  },
+  98:  { name: 'iPhone Duo · 256 Go (précommande)',          price: 2339 },
+  99:  { name: 'iPhone Duo · 512 Go (précommande)',          price: 2589 },
+  100: { name: 'iPhone Duo · 1 To (précommande)',            price: 3089 },
+  101: { name: 'iPhone Duo · 2 To (précommande)',            price: 3839 },
 };
 
 module.exports = async (req, res) => {
