@@ -407,6 +407,7 @@ const PRODUCTS = [
     {name:'Bleu ciel', photo:'images/macbookair26-bleuciel.jpg', views:['images/macbookair26-bleuciel.jpg','images/macbookair26-bleuciel-face.jpg','images/macbookair26-bleuciel-cote.jpg']},
     {name:'Lumière stellaire', photo:'images/macbookair26-starlight.jpg', views:['images/macbookair26-starlight.jpg','images/macbookair26-starlight-face.jpg','images/macbookair26-starlight-cote.jpg']},
     {name:'Minuit', photo:'images/macbookair26-minuit.jpg', views:['images/macbookair26-minuit.jpg','images/macbookair26-minuit-face.jpg','images/macbookair26-minuit-clavier.jpg']}
+  ]},
   {id:98, variantGroup:'iphoneduo', brand:'iPhone', name:'iPhone Duo', spec:'256 Go · Précommande, livraison dès le 23 oct.', original:2339, price:2339, type:'phone', colors:[
     {name:'Blanc stellaire', photo:'images/iphoneduo-blanc.jpg', views:['images/iphoneduo-blanc.jpg']},
     {name:'Ciel nocturne', photo:'images/iphoneduo-nuit.jpg', views:['images/iphoneduo-nuit.jpg']}
