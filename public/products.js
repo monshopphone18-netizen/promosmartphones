@@ -520,6 +520,10 @@ const PRODUCTS = [
 
 // Descriptions + caractéristiques techniques, par modèle (partagées entre capacités)
 const PRODUCT_INFO = {
+    'iPhone Duo': {
+    desc: "Le premier iPhone pliant d'Apple : un écran extérieur de 5,4\" et un grand écran intérieur de 7,6\" OLED 120 Hz qui se replie dans un format compact. Précommande au prix officiel constructeur — livraison à partir du 23 octobre 2026, dès la sortie du produit.",
+    specs: [['Écran','5,4" extérieur · 7,6" intérieur, OLED 120 Hz'],['Puce','A20 Pro'],['Appareil photo','Fusion 48 Mpx + ultra grand-angle + téléobjectif optique x2 12 Mpx'],['Autonomie',"Jusqu'à 31 h de lecture vidéo (écran intérieur), 44 h (écran extérieur)"],['Disponibilité',"Précommande le 16 oct., livraison dès le 23 oct. 2026"]]
+  },
   'iPhone 12 Pro Max': {
     desc: "L'iPhone 12 Pro Max, c'est le grand format Pro : \u00e9cran 6,7\" Super Retina XDR, ch\u00e2ssis en acier inoxydable, puce A14 Bionic et un syst\u00e8me photo Pro triple 12 Mpx avec stabilisation par d\u00e9calage de capteur et scanner LiDAR. Excellent pour la photo et la vid\u00e9o.",
     specs: [['\u00c9cran','6,7\" OLED Super Retina XDR'],['Puce','A14 Bionic'],['Ch\u00e2ssis','Acier inoxydable'],['Appareil photo','Pro : triple 12 Mpx + LiDAR'],['Autonomie','Jusqu\'\u00e0 20 h de lecture vid\u00e9o'],['R\u00e9seau','5G'],['S\u00e9curit\u00e9','Face ID'],['Syst\u00e8me','iOS']]
