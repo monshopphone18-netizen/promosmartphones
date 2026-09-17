@@ -407,6 +407,22 @@ const PRODUCTS = [
     {name:'Bleu ciel', photo:'images/macbookair26-bleuciel.jpg', views:['images/macbookair26-bleuciel.jpg','images/macbookair26-bleuciel-face.jpg','images/macbookair26-bleuciel-cote.jpg']},
     {name:'Lumière stellaire', photo:'images/macbookair26-starlight.jpg', views:['images/macbookair26-starlight.jpg','images/macbookair26-starlight-face.jpg','images/macbookair26-starlight-cote.jpg']},
     {name:'Minuit', photo:'images/macbookair26-minuit.jpg', views:['images/macbookair26-minuit.jpg','images/macbookair26-minuit-face.jpg','images/macbookair26-minuit-clavier.jpg']}
+  {id:98, variantGroup:'iphoneduo', brand:'iPhone', name:'iPhone Duo', spec:'256 Go · Précommande, livraison dès le 23 oct.', original:2339, price:2339, type:'phone', colors:[
+    {name:'Blanc stellaire', photo:'images/iphoneduo-blanc.jpg', views:['images/iphoneduo-blanc.jpg']},
+    {name:'Ciel nocturne', photo:'images/iphoneduo-nuit.jpg', views:['images/iphoneduo-nuit.jpg']}
+  ]},
+  {id:99, variantGroup:'iphoneduo', brand:'iPhone', name:'iPhone Duo', spec:'512 Go · Précommande, livraison dès le 23 oct.', original:2589, price:2589, type:'phone', colors:[
+    {name:'Blanc stellaire', photo:'images/iphoneduo-blanc.jpg', views:['images/iphoneduo-blanc.jpg']},
+    {name:'Ciel nocturne', photo:'images/iphoneduo-nuit.jpg', views:['images/iphoneduo-nuit.jpg']}
+  ]},
+  {id:100, variantGroup:'iphoneduo', brand:'iPhone', name:'iPhone Duo', spec:'1 To · Précommande, livraison dès le 23 oct.', original:3089, price:3089, type:'phone', colors:[
+    {name:'Blanc stellaire', photo:'images/iphoneduo-blanc.jpg', views:['images/iphoneduo-blanc.jpg']},
+    {name:'Ciel nocturne', photo:'images/iphoneduo-nuit.jpg', views:['images/iphoneduo-nuit.jpg']}
+  ]},
+  {id:101, variantGroup:'iphoneduo', brand:'iPhone', name:'iPhone Duo', spec:'2 To · Précommande, livraison dès le 23 oct.', original:3839, price:3839, type:'phone', colors:[
+    {name:'Blanc stellaire', photo:'images/iphoneduo-blanc.jpg', views:['images/iphoneduo-blanc.jpg']},
+    {name:'Ciel nocturne', photo:'images/iphoneduo-nuit.jpg', views:['images/iphoneduo-nuit.jpg']}
+  ]},
   ]},
   {id:83, variantGroup:'ipad11', brand:'Apple', name:'iPad 11 (2025, A16)', spec:'128 Go · WiFi', original:509, price:309, type:'tablet', colors:[
     {name:'Argent', photo:'images/ipad11-argent.jpg', views:['images/ipad11-argent.jpg']},
