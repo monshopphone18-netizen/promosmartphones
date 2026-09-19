@@ -423,6 +423,7 @@ const PRODUCTS = [
   {id:101, variantGroup:'iphoneduo', brand:'iPhone', name:'iPhone Duo', spec:'2 To · Précommande, livraison dès le 23 oct.', desc:'Le premier iPhone pliant d\'Apple : un grand écran intérieur qui se replie dans un format compact. Précommande au prix officiel constructeur — livraison à partir du 23 octobre 2026, dès la sortie du produit.', original:3839, price:3839, type:'phone', colors:[
     {name:'Blanc stellaire', photo:'images/iphoneduo-blanc.jpg', views:['images/iphoneduo-blanc.jpg']},
     {name:'Ciel nocturne', photo:'images/iphoneduo-nuit.jpg', views:['images/iphoneduo-nuit.jpg']}
+  ]},
       {id:102, variantGroup:'iphone18pro', brand:'iPhone', name:'iPhone 18 Pro', spec:'256 Go', original:1479, price:1479, type:'phone', colors:[
     {name:'Noir', photo:'images/iphone18pro-noir.jpg', views:['images/iphone18pro-noir.jpg']},
     {name:'Argent', photo:'images/iphone18pro-argent.jpg', views:['images/iphone18pro-argent.jpg']},
