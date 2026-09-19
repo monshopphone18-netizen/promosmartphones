@@ -303,6 +303,46 @@ const PRODUCTS = [
     {name:'Bleu intense', photo:'images/iphone17promax-bleu.jpg', views:['images/iphone17promax-bleu.jpg','images/iphone17promax-bleu-face.jpg','images/iphone17promax-bleu-photo.jpg']},
     {name:'Argent', photo:'images/iphone17promax-argent.jpg', views:['images/iphone17promax-argent.jpg','images/iphone17promax-argent-face.jpg','images/iphone17promax-argent-photo.jpg']}
   ]},
+    {id:102, variantGroup:'iphone18pro', brand:'iPhone', name:'iPhone 18 Pro', spec:'256 Go', original:1479, price:1479, type:'phone', colors:[
+    {name:'Noir', photo:'images/iphone18pro-noir.jpg', views:['images/iphone18pro-noir.jpg']},
+    {name:'Argent', photo:'images/iphone18pro-argent.jpg', views:['images/iphone18pro-argent.jpg']},
+    {name:'Glacier', photo:'images/iphone18pro-glacier.jpg', views:['images/iphone18pro-glacier.jpg']},
+    {name:'Bordeaux', photo:'images/iphone18pro-bordeaux.jpg', views:['images/iphone18pro-bordeaux.jpg']}
+  ]},
+  {id:103, variantGroup:'iphone18pro', brand:'iPhone', name:'iPhone 18 Pro', spec:'512 Go', original:1729, price:1729, type:'phone', colors:[
+    {name:'Noir', photo:'images/iphone18pro-noir.jpg', views:['images/iphone18pro-noir.jpg']},
+    {name:'Argent', photo:'images/iphone18pro-argent.jpg', views:['images/iphone18pro-argent.jpg']},
+    {name:'Glacier', photo:'images/iphone18pro-glacier.jpg', views:['images/iphone18pro-glacier.jpg']},
+    {name:'Bordeaux', photo:'images/iphone18pro-bordeaux.jpg', views:['images/iphone18pro-bordeaux.jpg']}
+  ]},
+  {id:104, variantGroup:'iphone18pro', brand:'iPhone', name:'iPhone 18 Pro', spec:'1 To', original:2229, price:2229, type:'phone', colors:[
+    {name:'Noir', photo:'images/iphone18pro-noir.jpg', views:['images/iphone18pro-noir.jpg']},
+    {name:'Argent', photo:'images/iphone18pro-argent.jpg', views:['images/iphone18pro-argent.jpg']},
+    {name:'Glacier', photo:'images/iphone18pro-glacier.jpg', views:['images/iphone18pro-glacier.jpg']},
+    {name:'Bordeaux', photo:'images/iphone18pro-bordeaux.jpg', views:['images/iphone18pro-bordeaux.jpg']}
+  ]},
+  {id:105, variantGroup:'iphone18pro', brand:'iPhone', name:'iPhone 18 Pro', spec:'2 To', original:2979, price:2979, type:'phone', colors:[
+    {name:'Noir', photo:'images/iphone18pro-noir.jpg', views:['images/iphone18pro-noir.jpg']},
+    {name:'Argent', photo:'images/iphone18pro-argent.jpg', views:['images/iphone18pro-argent.jpg']},
+    {name:'Glacier', photo:'images/iphone18pro-glacier.jpg', views:['images/iphone18pro-glacier.jpg']},
+    {name:'Bordeaux', photo:'images/iphone18pro-bordeaux.jpg', views:['images/iphone18pro-bordeaux.jpg']}
+  ]},
+  {id:98, variantGroup:'iphoneduo', brand:'iPhone', name:'iPhone Duo', spec:'256 Go · Précommande, livraison dès le 23 oct.', desc:'Le premier iPhone pliant d\'Apple : un grand écran intérieur qui se replie dans un format compact. Précommande au prix officiel constructeur — livraison à partir du 23 octobre 2026, dès la sortie du produit.', original:2339, price:2339, type:'phone', colors:[
+    {name:'Blanc stellaire', photo:'images/iphoneduo-blanc.jpg', views:['images/iphoneduo-blanc.jpg']},
+    {name:'Ciel nocturne', photo:'images/iphoneduo-nuit.jpg', views:['images/iphoneduo-nuit.jpg']}
+  ]},
+  {id:99, variantGroup:'iphoneduo', brand:'iPhone', name:'iPhone Duo', spec:'512 Go · Précommande, livraison dès le 23 oct.', desc:'Le premier iPhone pliant d\'Apple : un grand écran intérieur qui se replie dans un format compact. Précommande au prix officiel constructeur — livraison à partir du 23 octobre 2026, dès la sortie du produit.', original:2589, price:2589, type:'phone', colors:[
+    {name:'Blanc stellaire', photo:'images/iphoneduo-blanc.jpg', views:['images/iphoneduo-blanc.jpg']},
+    {name:'Ciel nocturne', photo:'images/iphoneduo-nuit.jpg', views:['images/iphoneduo-nuit.jpg']}
+  ]},
+  {id:100, variantGroup:'iphoneduo', brand:'iPhone', name:'iPhone Duo', spec:'1 To · Précommande, livraison dès le 23 oct.', desc:'Le premier iPhone pliant d\'Apple : un grand écran intérieur qui se replie dans un format compact. Précommande au prix officiel constructeur — livraison à partir du 23 octobre 2026, dès la sortie du produit.', original:3089, price:3089, type:'phone', colors:[
+    {name:'Blanc stellaire', photo:'images/iphoneduo-blanc.jpg', views:['images/iphoneduo-blanc.jpg']},
+    {name:'Ciel nocturne', photo:'images/iphoneduo-nuit.jpg', views:['images/iphoneduo-nuit.jpg']}
+  ]},
+  {id:101, variantGroup:'iphoneduo', brand:'iPhone', name:'iPhone Duo', spec:'2 To · Précommande, livraison dès le 23 oct.', desc:'Le premier iPhone pliant d\'Apple : un grand écran intérieur qui se replie dans un format compact. Précommande au prix officiel constructeur — livraison à partir du 23 octobre 2026, dès la sortie du produit.', original:3839, price:3839, type:'phone', colors:[
+    {name:'Blanc stellaire', photo:'images/iphoneduo-blanc.jpg', views:['images/iphoneduo-blanc.jpg']},
+    {name:'Ciel nocturne', photo:'images/iphoneduo-nuit.jpg', views:['images/iphoneduo-nuit.jpg']}
+  ]},
   {id:61, variantGroup:'galaxya56', brand:'Samsung', name:'Galaxy A56', spec:'128 Go', original:479, price:299, type:'phone', colors:[
     {name:'Vert', photo:'images/galaxya56-vert.jpg', views:['images/galaxya56-vert.jpg','images/galaxya56-vert-face.jpg']},
     {name:'Rose', photo:'images/galaxya56-rose.jpg', views:['images/galaxya56-rose.jpg','images/galaxya56-rose-derriere.jpg']},
@@ -407,46 +447,6 @@ const PRODUCTS = [
     {name:'Bleu ciel', photo:'images/macbookair26-bleuciel.jpg', views:['images/macbookair26-bleuciel.jpg','images/macbookair26-bleuciel-face.jpg','images/macbookair26-bleuciel-cote.jpg']},
     {name:'Lumière stellaire', photo:'images/macbookair26-starlight.jpg', views:['images/macbookair26-starlight.jpg','images/macbookair26-starlight-face.jpg','images/macbookair26-starlight-cote.jpg']},
     {name:'Minuit', photo:'images/macbookair26-minuit.jpg', views:['images/macbookair26-minuit.jpg','images/macbookair26-minuit-face.jpg','images/macbookair26-minuit-clavier.jpg']}
-  ]},
-    {id:98, variantGroup:'iphoneduo', brand:'iPhone', name:'iPhone Duo', spec:'256 Go · Précommande, livraison dès le 23 oct.', desc:'Le premier iPhone pliant d\'Apple : un grand écran intérieur qui se replie dans un format compact. Précommande au prix officiel constructeur — livraison à partir du 23 octobre 2026, dès la sortie du produit.', original:2339, price:2339, type:'phone', colors:[
-    {name:'Blanc stellaire', photo:'images/iphoneduo-blanc.jpg', views:['images/iphoneduo-blanc.jpg']},
-    {name:'Ciel nocturne', photo:'images/iphoneduo-nuit.jpg', views:['images/iphoneduo-nuit.jpg']}
-  ]},
-  {id:99, variantGroup:'iphoneduo', brand:'iPhone', name:'iPhone Duo', spec:'512 Go · Précommande, livraison dès le 23 oct.', desc:'Le premier iPhone pliant d\'Apple : un grand écran intérieur qui se replie dans un format compact. Précommande au prix officiel constructeur — livraison à partir du 23 octobre 2026, dès la sortie du produit.', original:2589, price:2589, type:'phone', colors:[
-    {name:'Blanc stellaire', photo:'images/iphoneduo-blanc.jpg', views:['images/iphoneduo-blanc.jpg']},
-    {name:'Ciel nocturne', photo:'images/iphoneduo-nuit.jpg', views:['images/iphoneduo-nuit.jpg']}
-  ]},
-  {id:100, variantGroup:'iphoneduo', brand:'iPhone', name:'iPhone Duo', spec:'1 To · Précommande, livraison dès le 23 oct.', desc:'Le premier iPhone pliant d\'Apple : un grand écran intérieur qui se replie dans un format compact. Précommande au prix officiel constructeur — livraison à partir du 23 octobre 2026, dès la sortie du produit.', original:3089, price:3089, type:'phone', colors:[
-    {name:'Blanc stellaire', photo:'images/iphoneduo-blanc.jpg', views:['images/iphoneduo-blanc.jpg']},
-    {name:'Ciel nocturne', photo:'images/iphoneduo-nuit.jpg', views:['images/iphoneduo-nuit.jpg']}
-  ]},
-  {id:101, variantGroup:'iphoneduo', brand:'iPhone', name:'iPhone Duo', spec:'2 To · Précommande, livraison dès le 23 oct.', desc:'Le premier iPhone pliant d\'Apple : un grand écran intérieur qui se replie dans un format compact. Précommande au prix officiel constructeur — livraison à partir du 23 octobre 2026, dès la sortie du produit.', original:3839, price:3839, type:'phone', colors:[
-    {name:'Blanc stellaire', photo:'images/iphoneduo-blanc.jpg', views:['images/iphoneduo-blanc.jpg']},
-    {name:'Ciel nocturne', photo:'images/iphoneduo-nuit.jpg', views:['images/iphoneduo-nuit.jpg']}
-  ]},
-      {id:102, variantGroup:'iphone18pro', brand:'iPhone', name:'iPhone 18 Pro', spec:'256 Go', original:1479, price:1479, type:'phone', colors:[
-    {name:'Noir', photo:'images/iphone18pro-noir.jpg', views:['images/iphone18pro-noir.jpg']},
-    {name:'Argent', photo:'images/iphone18pro-argent.jpg', views:['images/iphone18pro-argent.jpg']},
-    {name:'Glacier', photo:'images/iphone18pro-glacier.jpg', views:['images/iphone18pro-glacier.jpg']},
-    {name:'Bordeaux', photo:'images/iphone18pro-bordeaux.jpg', views:['images/iphone18pro-bordeaux.jpg']}
-  ]},
-  {id:103, variantGroup:'iphone18pro', brand:'iPhone', name:'iPhone 18 Pro', spec:'512 Go', original:1729, price:1729, type:'phone', colors:[
-    {name:'Noir', photo:'images/iphone18pro-noir.jpg', views:['images/iphone18pro-noir.jpg']},
-    {name:'Argent', photo:'images/iphone18pro-argent.jpg', views:['images/iphone18pro-argent.jpg']},
-    {name:'Glacier', photo:'images/iphone18pro-glacier.jpg', views:['images/iphone18pro-glacier.jpg']},
-    {name:'Bordeaux', photo:'images/iphone18pro-bordeaux.jpg', views:['images/iphone18pro-bordeaux.jpg']}
-  ]},
-  {id:104, variantGroup:'iphone18pro', brand:'iPhone', name:'iPhone 18 Pro', spec:'1 To', original:2229, price:2229, type:'phone', colors:[
-    {name:'Noir', photo:'images/iphone18pro-noir.jpg', views:['images/iphone18pro-noir.jpg']},
-    {name:'Argent', photo:'images/iphone18pro-argent.jpg', views:['images/iphone18pro-argent.jpg']},
-    {name:'Glacier', photo:'images/iphone18pro-glacier.jpg', views:['images/iphone18pro-glacier.jpg']},
-    {name:'Bordeaux', photo:'images/iphone18pro-bordeaux.jpg', views:['images/iphone18pro-bordeaux.jpg']}
-  ]},
-  {id:105, variantGroup:'iphone18pro', brand:'iPhone', name:'iPhone 18 Pro', spec:'2 To', original:2979, price:2979, type:'phone', colors:[
-    {name:'Noir', photo:'images/iphone18pro-noir.jpg', views:['images/iphone18pro-noir.jpg']},
-    {name:'Argent', photo:'images/iphone18pro-argent.jpg', views:['images/iphone18pro-argent.jpg']},
-    {name:'Glacier', photo:'images/iphone18pro-glacier.jpg', views:['images/iphone18pro-glacier.jpg']},
-    {name:'Bordeaux', photo:'images/iphone18pro-bordeaux.jpg', views:['images/iphone18pro-bordeaux.jpg']}
   ]},
   {id:83, variantGroup:'ipad11', brand:'Apple', name:'iPad 11 (2025, A16)', spec:'128 Go · WiFi', original:509, price:309, type:'tablet', colors:[
     {name:'Argent', photo:'images/ipad11-argent.jpg', views:['images/ipad11-argent.jpg']},
