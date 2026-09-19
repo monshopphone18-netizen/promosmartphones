@@ -108,6 +108,10 @@ const PRODUCTS = {
   103: { name: 'iPhone 18 Pro · 512 Go', price: 1729 },
   104: { name: 'iPhone 18 Pro · 1 To',   price: 2229 },
   105: { name: 'iPhone 18 Pro · 2 To',   price: 2979 },
+  106: { name: 'iPhone 18 Pro Max · 256 Go', price: 1629 },
+  107: { name: 'iPhone 18 Pro Max · 512 Go', price: 1879 },
+  108: { name: 'iPhone 18 Pro Max · 1 To',   price: 2379 },
+  109: { name: 'iPhone 18 Pro Max · 2 To',   price: 3129 },
 };
 
 module.exports = async (req, res) => {
