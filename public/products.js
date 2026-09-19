@@ -544,6 +544,10 @@ const PRODUCTS = [
 
 // Descriptions + caractéristiques techniques, par modèle (partagées entre capacités)
 const PRODUCT_INFO = {
+    'iPhone 18 Pro': {
+    desc: "L'iPhone 18 Pro allie un écran Super Retina XDR OLED de 6,3\" et la puissance de la puce A20 Pro. Son système photo Pro Fusion 48 Mpx à ouverture variable et sa certification IP68 en font un choix taillé pour la photo comme pour la robustesse.",
+    specs: [['Écran','6,3" Super Retina XDR OLED, 2622x1206'],['Puce','A20 Pro'],['Appareil photo','Pro Fusion 48 Mpx, ouverture variable, OIS 2e génération'],['Étanchéité','IP68 (6 m, 30 min)']]
+  },
     'iPhone Duo': {
     desc: "Le premier iPhone pliant d'Apple : un écran extérieur de 5,4\" et un grand écran intérieur de 7,6\" OLED 120 Hz qui se replie dans un format compact. Précommande au prix officiel constructeur — livraison à partir du 23 octobre 2026, dès la sortie du produit.",
     specs: [['Écran','5,4" extérieur · 7,6" intérieur, OLED 120 Hz'],['Puce','A20 Pro'],['Appareil photo','Fusion 48 Mpx + ultra grand-angle + téléobjectif optique x2 12 Mpx'],['Autonomie',"Jusqu'à 31 h de lecture vidéo (écran intérieur), 44 h (écran extérieur)"],['Disponibilité',"Précommande le 16 oct., livraison dès le 23 oct. 2026"]]
