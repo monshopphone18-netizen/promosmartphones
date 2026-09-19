@@ -104,6 +104,10 @@ const PRODUCTS = {
   99:  { name: 'iPhone Duo · 512 Go (précommande)',          price: 2589 },
   100: { name: 'iPhone Duo · 1 To (précommande)',            price: 3089 },
   101: { name: 'iPhone Duo · 2 To (précommande)',            price: 3839 },
+  102: { name: 'iPhone 18 Pro · 256 Go', price: 1479 },
+  103: { name: 'iPhone 18 Pro · 512 Go', price: 1729 },
+  104: { name: 'iPhone 18 Pro · 1 To',   price: 2229 },
+  105: { name: 'iPhone 18 Pro · 2 To',   price: 2979 },
 };
 
 module.exports = async (req, res) => {
