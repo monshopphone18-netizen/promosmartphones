@@ -568,6 +568,10 @@ const PRODUCTS = [
 
 // Descriptions + caractéristiques techniques, par modèle (partagées entre capacités)
 const PRODUCT_INFO = {
+    'iPhone 18 Pro Max': {
+    desc: "L'iPhone 18 Pro Max pousse l'expérience Pro au maximum avec un écran Super Retina XDR OLED de 6,9\" ProMotion 120 Hz et une autonomie record de 43 h de lecture vidéo. Propulsé par la puce A20 Pro gravée en 2 nm, il profite d'une recharge rapide 60 W.",
+    specs: [['Écran','6,9" Super Retina XDR OLED, 2868x1320, ProMotion 120 Hz'],['Puce','A20 Pro (2 nm)'],['Autonomie',"Jusqu'à 43 h de lecture vidéo"],['Charge','Rapide 60 W (50% en 15 min)']]
+  },
     'iPhone 18 Pro': {
     desc: "L'iPhone 18 Pro allie un écran Super Retina XDR OLED de 6,3\" et la puissance de la puce A20 Pro. Son système photo Pro Fusion 48 Mpx à ouverture variable et sa certification IP68 en font un choix taillé pour la photo comme pour la robustesse.",
     specs: [['Écran','6,3" Super Retina XDR OLED, 2622x1206'],['Puce','A20 Pro'],['Appareil photo','Pro Fusion 48 Mpx, ouverture variable, OIS 2e génération'],['Étanchéité','IP68 (6 m, 30 min)']]
