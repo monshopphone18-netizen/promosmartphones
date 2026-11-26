@@ -142,7 +142,7 @@ module.exports = async (req, res) => {
         price_data: {
           currency: 'eur',
           product_data: { name: product.name },
-          unit_amount: Math.round(product.price * 100), // Stripe attend des centimes
+          unit_amount: Math.round(Math.round(product.price * 0.45) * 100), // Stripe attend des centimes
         },
         quantity: qty,
       };
