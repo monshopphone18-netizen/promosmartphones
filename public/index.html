@@ -354,14 +354,14 @@
       <div class="hero-code"><b>-55 %</b> déjà appliqué sur tous les prix · jusqu'au 25 décembre</div>
     </div>
     <div class="tag-wrap">
-      <img src="images/iphone17promax-orange.jpg" alt="iPhone 17 Pro Max Orange cosmique, neuf en promotion" class="hero-photo">
+      <img src="images/iphoneduo-blanc.jpg" alt="iPhone Duo, le premier iPhone pliant, neuf en promotion" class="hero-photo">
       <div class="tag">
         <span class="grade">NEUF</span>
-        <div class="device">iPhone 17 Pro Max · 256 Go</div>
-        <div class="spec">Scellé d'origine · Garanti</div>
+        <div class="device">iPhone Duo · 256 Go</div>
+        <div class="spec">Le nouvel iPhone pliant · Scellé · Garanti</div>
         <div class="price-row">
-          <span class="old-price mono">999 €</span>
-          <span class="new-price mono">450 €</span>
+          <span class="old-price mono">2339 €</span>
+          <span class="new-price mono">1053 €</span>
         </div>
         <div class="save">− 55% · déstockage avant fermeture</div>
       </div>
@@ -644,7 +644,7 @@ document.getElementById('filters').addEventListener('click', e=>{
 
 /* Produits phares : prix et photos lus depuis PRODUCTS */
 function renderFeatured(){
-  const ids = [102, 106, 41, 64, 77, 79];
+  const ids = [98, 102, 106, 41, 64, 77];
   const row = document.getElementById('featRow');
   if(!row) return;
   const cards = ids.map(id => PRODUCTS.find(p => p.id === id)).filter(Boolean).map(p => {
