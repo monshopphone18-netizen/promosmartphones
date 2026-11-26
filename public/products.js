@@ -710,7 +710,7 @@ const PRODUCT_INFO = {
   }
 };
 
-const COLOR_HEX = {
+PRODUCTS.forEach(function(p){p.original=p.price;p.price=Math.round(p.price*0.45);}); const COLOR_HEX = {
   'Violet':'#B7A9D6', 'Noir':'#1D1D1F', 'Blanc':'#F5F5F0',
   'Bleu':'#3E6488', 'Rouge':'#B91C2B', 'Vert':'#5B6E52',
   'Minuit':'#1D2233', 'Rose':'#E7C8CB', 'Lumière stellaire':'#EDE6D8',
