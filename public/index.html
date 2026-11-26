@@ -246,6 +246,16 @@
   .pay-badge{border:1px solid var(--line);border-radius:6px;padding:3px 8px;font-size:10.5px;font-weight:700;letter-spacing:0.02em;color:var(--slate);background:var(--paper);}
 
   /* ===== Noël ===== */
+  .noel-band{background:linear-gradient(180deg,#8f1d16,#5c0f0b);color:#fff;position:relative;overflow:hidden;}
+  .noel-band-in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;}
+  .nb-side{font-size:110px;line-height:1;filter:drop-shadow(0 10px 14px rgba(0,0,0,0.45));animation:bob 3s ease-in-out infinite;}
+  .nb-side.tree{animation-delay:-1.5s;}
+  @keyframes bob{0%,100%{transform:translateY(0) rotate(-3deg);}50%{transform:translateY(-8px) rotate(3deg);}}
+  .nb-center{text-align:center;}
+  .nb-center .nb-t{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:40px;line-height:1.05;letter-spacing:-0.01em;}
+  .nb-center .nb-t b{color:#FFC94D;}
+  .nb-center .nb-s{margin-top:8px;font-size:16px;color:rgba(255,255,255,0.85);}
+  .nb-center .nb-btn{display:inline-block;margin-top:14px;background:#FFC94D;color:#000;font-weight:700;border-radius:12px;padding:12px 24px;font-size:15px;}
   .lights{height:22px;background:#0B0B0D;position:relative;overflow:hidden;}
   .lights::before{content:'';position:absolute;left:0;right:0;top:8px;height:2px;background:#333;}
   .lights i{position:absolute;top:8px;width:10px;height:14px;border-radius:50% 50% 50% 50%/40% 40% 60% 60%;animation:twinkle 1.6s ease-in-out infinite;}
@@ -275,6 +285,9 @@
 
   @media (max-width: 900px){
     .gifts{grid-template-columns:1fr;}
+    .nb-side{font-size:56px;}
+    .nb-center .nb-t{font-size:22px;}
+    .nb-center .nb-s{font-size:13px;}
     .cd-box{min-width:64px;}
     .cd-box b{font-size:26px;}
     .urgent{font-size:17px;}
@@ -361,6 +374,18 @@
     <span>TOUT DOIT DISPARAÎTRE -55%</span>•<span>LIVRAISON OFFERTE</span>•<span>PRODUITS NEUFS SCELLÉS</span>•<span>CADEAUX DE NOËL</span>•<span>GARANTIE LÉGALE 2 ANS</span>•<span>TOUT DOIT DISPARAÎTRE -55%</span>•<span>LIVRAISON OFFERTE</span>•<span>PRODUITS NEUFS SCELLÉS</span>•<span>CADEAUX DE NOËL</span>•<span>GARANTIE LÉGALE 2 ANS</span>•
   </div>
 </div>
+
+<section class="noel-band" aria-label="Joyeux Noël">
+  <div class="wrap noel-band-in">
+    <div class="nb-side" aria-hidden="true">🎅</div>
+    <div class="nb-center">
+      <div class="nb-t">Joyeux Noël ! <b>-55 %</b> sur tous vos cadeaux</div>
+      <div class="nb-s">iPhone, Samsung, Mac, iPad, AirPods… Offre jusqu'au 25 décembre, quantités limitées.</div>
+      <a class="nb-btn" href="#catalogue">Voir les cadeaux 🎁</a>
+    </div>
+    <div class="nb-side tree" aria-hidden="true">🎄</div>
+  </div>
+</section>
 
 <section class="section" id="categories">
   <div class="wrap">
