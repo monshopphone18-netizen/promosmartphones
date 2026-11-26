@@ -40,72 +40,117 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#14191D;
-    --paper:#EDEAE2;
-    --paper-2:#E3DFD3;
-    --amber:#F5A527;
-    --green:#279965;
+    --ink:#0B0B0D;
+    --paper:#F4F2EE;
+    --paper-2:#E9E6DF;
+    --amber:#FF6A00;
+    --green:#1FA45F;
     --slate:#5C6670;
-    --red:#C1443A;
+    --red:#D6372B;
     --card:#FFFFFF;
     --line: rgba(20,25,29,0.12);
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
   body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
   h1,h2,h3,.display{font-family:'Space Grotesk',sans-serif;}
   .mono{font-family:'IBM Plex Mono',monospace;}
   a{color:inherit;text-decoration:none;}
   button{font-family:inherit;cursor:pointer;}
   .wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
-  header.site{position:sticky;top:0;z-index:40;background:rgba(237,234,226,0.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
-  #catalogue,#comment,#contact{scroll-margin-top:84px;}
+
+  /* Bandeau Black Friday */
+  .bf-banner{background:var(--amber);color:#000;text-align:center;padding:10px 14px;font-weight:700;font-size:14px;line-height:1.35;}
+
+  /* En-tête sombre */
+  header.site{position:sticky;top:0;z-index:40;background:rgba(11,11,13,0.94);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,0.08);color:#fff;}
+  #catalogue,#comment,#contact,#categories{scroll-margin-top:84px;}
   .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0;}
   .brand{display:flex;align-items:center;gap:8px;font-weight:700;font-size:18px;letter-spacing:-0.01em;white-space:nowrap;}
-  .brand .dot{width:8px;height:8px;border-radius:50%;background:var(--amber);display:inline-block;}
-  .navlinks{display:flex;gap:28px;font-size:14px;font-weight:500;color:var(--slate);}
-  .navlinks a:hover{color:var(--ink);}
-  .cart-btn{display:flex;align-items:center;gap:8px;background:var(--ink);color:var(--paper);border:none;border-radius:999px;padding:10px 18px;font-size:14px;font-weight:600;}
-  .cart-count{background:var(--amber);color:var(--ink);border-radius:999px;min-width:20px;height:20px;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;padding:0 5px;}
+  .brand .dot{width:9px;height:9px;border-radius:50%;background:var(--amber);display:inline-block;}
+  .navlinks{display:flex;gap:28px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.65);}
+  .navlinks a:hover{color:#fff;}
+  .cart-btn{display:flex;align-items:center;gap:8px;background:var(--amber);color:#000;border:none;border-radius:999px;padding:10px 18px;font-size:14px;font-weight:700;}
+  .cart-count{background:#000;color:#fff;border-radius:999px;min-width:20px;height:20px;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;padding:0 5px;}
 
-  .hero{position:relative;padding:72px 0 64px;overflow:hidden;}
-  .hero-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:48px;align-items:center;}
-  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--green);border:1px solid var(--green);border-radius:999px;padding:5px 12px;margin-bottom:18px;}
-  .hero h1{font-size:56px;line-height:1.02;letter-spacing:-0.02em;margin:0 0 20px;}
+  /* Hero */
+  .hero{position:relative;padding:72px 0 80px;overflow:hidden;background:#0B0B0D;color:#fff;}
+  .hero::before{content:'';position:absolute;right:-10%;top:-20%;width:70%;height:140%;background:radial-gradient(closest-side,rgba(255,106,0,0.35),rgba(255,106,0,0));pointer-events:none;}
+  .hero-grid{position:relative;display:grid;grid-template-columns:1.1fr 0.9fr;gap:48px;align-items:center;}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#000;background:var(--amber);border-radius:999px;padding:6px 14px;margin-bottom:20px;font-weight:600;}
+  .hero h1{font-size:64px;line-height:1;letter-spacing:-0.025em;margin:0 0 20px;}
   .hero h1 .accent{color:var(--amber);}
-  .hero p.lead{font-size:17px;color:var(--slate);max-width:440px;margin:0 0 28px;line-height:1.5;}
-  .hero-ctas{display:flex;gap:14px;}
-  .btn-primary{background:var(--ink);color:var(--paper);border:none;border-radius:10px;padding:14px 24px;font-weight:600;font-size:15px;}
-  .btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:14px 24px;font-weight:600;font-size:15px;}
+  .hero p.lead{font-size:18px;color:rgba(255,255,255,0.7);max-width:480px;margin:0 0 30px;line-height:1.5;}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn-primary{background:var(--amber);color:#000;border:none;border-radius:12px;padding:16px 28px;font-weight:700;font-size:16px;}
+  .btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.3);border-radius:12px;padding:16px 28px;font-weight:600;font-size:16px;}
+  .hero-code{margin-top:26px;display:inline-flex;align-items:center;gap:12px;border:1px dashed var(--amber);border-radius:12px;padding:10px 16px;font-size:14px;color:rgba(255,255,255,0.8);}
+  .hero-code b{font-family:'IBM Plex Mono',monospace;color:var(--amber);font-size:16px;letter-spacing:0.04em;}
 
   .tag-wrap{position:relative;display:flex;justify-content:center;}
-  .hero-photo{width:100%;max-width:440px;border-radius:20px;display:block;box-shadow:0 30px 60px -24px rgba(20,25,29,0.35);object-fit:cover;}
-  .tag{position:absolute;left:-18px;bottom:-22px;background:var(--card);border-radius:14px;padding:28px 26px 24px;width:280px;box-shadow:0 24px 48px -20px rgba(20,25,29,0.35);transform:rotate(4deg);border:1px solid var(--line);}
-  .tag::before{content:'';position:absolute;top:-14px;left:50%;transform:translateX(-50%);width:2px;height:20px;background:var(--slate);}
-  .tag::after{content:'';position:absolute;top:-16px;left:50%;transform:translateX(-50%);width:14px;height:14px;border-radius:50%;border:2px solid var(--slate);background:var(--paper);}
-  .tag-hole{position:absolute;top:14px;right:14px;width:16px;height:16px;border-radius:50%;background:var(--paper);border:1px dashed var(--slate);}
-  .tag .grade{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;background:var(--green);color:#fff;padding:3px 9px;border-radius:6px;margin-bottom:14px;}
-  .tag .device{font-weight:600;font-size:18px;margin-bottom:2px;}
-  .tag .spec{font-size:13px;color:var(--slate);margin-bottom:16px;}
-  .tag .price-row{display:flex;align-items:baseline;gap:10px;border-top:1px dashed var(--line);padding-top:14px;}
+  .hero-photo{width:100%;max-width:440px;border-radius:24px;display:block;box-shadow:0 30px 70px -20px rgba(255,106,0,0.45);object-fit:cover;}
+  .tag{position:absolute;left:-18px;bottom:-22px;background:var(--card);color:var(--ink);border-radius:14px;padding:26px 24px 22px;width:270px;box-shadow:0 24px 48px -20px rgba(0,0,0,0.6);transform:rotate(4deg);}
+  .tag .grade{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;background:var(--green);color:#fff;padding:3px 9px;border-radius:6px;margin-bottom:12px;}
+  .tag .device{font-weight:600;font-size:17px;margin-bottom:2px;}
+  .tag .spec{font-size:13px;color:var(--slate);margin-bottom:14px;}
+  .tag .price-row{display:flex;align-items:baseline;gap:10px;border-top:1px dashed var(--line);padding-top:12px;}
   .tag .old-price{font-family:'IBM Plex Mono',monospace;font-size:14px;color:var(--slate);text-decoration:line-through;}
-  .tag .new-price{font-family:'IBM Plex Mono',monospace;font-size:26px;font-weight:600;color:var(--ink);}
-  .tag .save{font-size:11px;color:var(--red);font-weight:600;margin-top:6px;}
+  .tag .new-price{font-family:'IBM Plex Mono',monospace;font-size:28px;font-weight:600;color:var(--ink);}
+  .tag .save{font-size:11px;color:var(--red);font-weight:700;margin-top:6px;}
 
-  .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper-2);}
-  .trust-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:22px 0;}
-  .trust-item{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--slate);}
-  .trust-item svg{flex-shrink:0;color:var(--green);}
+  /* Bandeau défilant */
+  .marquee{background:var(--amber);color:#000;overflow:hidden;white-space:nowrap;border-top:1px solid #000;border-bottom:1px solid #000;}
+  .marquee-track{display:inline-block;padding:12px 0;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;letter-spacing:0.04em;animation:slide 28s linear infinite;}
+  .marquee-track span{margin:0 26px;}
+  @keyframes slide{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 
-  .section{padding:64px 0;}
+  .section{padding:72px 0;}
   .section-head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:32px;flex-wrap:wrap;gap:16px;}
-  .section-head h2{font-size:32px;margin:0;letter-spacing:-0.01em;}
-  .filters{display:flex;gap:8px;}
-  .filter-btn{background:transparent;border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:13px;font-weight:600;color:var(--slate);}
-  .filter-btn.active{background:var(--ink);color:var(--paper);border-color:var(--ink);}
+  .section-head h2{font-size:36px;margin:0;letter-spacing:-0.02em;}
+  .section-head p{margin:6px 0 0;color:var(--slate);font-size:15px;}
+
+  /* Catégories */
+  .cats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .cat{position:relative;border-radius:20px;background:#fff;border:1px solid var(--line);overflow:hidden;height:230px;display:flex;align-items:flex-end;padding:20px;text-align:left;transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease;}
+  .cat:hover{transform:translateY(-4px);box-shadow:0 20px 40px -24px rgba(0,0,0,0.5);border-color:var(--amber);}
+  .cat img{position:absolute;right:14px;top:14px;height:78%;max-width:55%;object-fit:contain;}
+  .cat .cat-name{position:relative;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:26px;line-height:1.1;}
+  .cat .cat-sub{position:relative;display:block;font-size:13px;color:var(--slate);margin-top:4px;font-family:'Inter',sans-serif;font-weight:500;}
+  .cat .cat-arrow{position:absolute;left:20px;top:18px;width:34px;height:34px;border-radius:50%;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;}
+
+  /* Produits phares */
+  .featured{background:#0B0B0D;color:#fff;}
+  .featured .section-head p{color:rgba(255,255,255,0.6);}
+  .feat-row{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:14px;-webkit-overflow-scrolling:touch;}
+  .feat-row::-webkit-scrollbar{height:6px;}
+  .feat-row::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.2);border-radius:3px;}
+  .feat{flex:0 0 280px;scroll-snap-align:start;background:#fff;color:var(--ink);border-radius:20px;padding:18px;display:flex;flex-direction:column;position:relative;}
+  .feat .feat-badge{position:absolute;top:14px;left:14px;background:var(--amber);color:#000;font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:11px;padding:4px 9px;border-radius:6px;z-index:2;}
+  .feat .feat-img{height:220px;display:flex;align-items:center;justify-content:center;margin-bottom:10px;}
+  .feat .feat-img img{max-width:100%;max-height:100%;object-fit:contain;}
+  .feat .feat-brand{font-family:'IBM Plex Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:var(--slate);}
+  .feat .feat-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px;margin:2px 0 8px;}
+  .feat .feat-price{font-family:'IBM Plex Mono',monospace;font-size:14px;color:var(--slate);margin-bottom:14px;}
+  .feat .feat-price b{font-size:22px;color:var(--ink);}
+  .feat .feat-btn{margin-top:auto;display:block;text-align:center;background:var(--ink);color:#fff;border-radius:10px;padding:12px;font-weight:700;font-size:14px;}
+  .feat .feat-btn:hover{background:var(--amber);color:#000;}
+
+  /* Réassurance */
+  .reassure{background:var(--paper-2);}
+  .reassure-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+  .rea{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px 20px;}
+  .rea .ico{width:46px;height:46px;border-radius:12px;background:var(--ink);color:var(--amber);display:flex;align-items:center;justify-content:center;margin-bottom:14px;}
+  .rea h3{font-size:17px;margin:0 0 6px;}
+  .rea p{font-size:13.5px;color:var(--slate);margin:0;line-height:1.5;}
+
+  /* Catalogue */
+  .filters{display:flex;gap:8px;flex-wrap:wrap;}
+  .filter-btn{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:13px;font-weight:600;color:var(--slate);}
+  .filter-btn.active{background:var(--amber);color:#000;border-color:var(--amber);}
 
   .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;position:relative;transition:transform .15s ease, box-shadow .15s ease;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;position:relative;transition:transform .15s ease, box-shadow .15s ease;}
   .card:hover{transform:translateY(-3px);box-shadow:0 16px 32px -22px rgba(20,25,29,0.4);}
   .card-badge{position:absolute;top:14px;left:14px;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;background:var(--green);color:#fff;padding:3px 8px;border-radius:6px;z-index:2;}
   .card-illustration{height:120px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;position:relative;}
@@ -145,15 +190,13 @@
   .card-new{font-family:'IBM Plex Mono',monospace;font-size:20px;font-weight:600;}
   .card-detail{margin-top:auto;display:block;text-align:center;background:transparent;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:10px;font-weight:600;font-size:13px;width:100%;transition:border-color .15s ease, background .15s ease;}
   .card-detail:hover{border-color:var(--ink);background:var(--paper-2);}
-  .card-add{margin-top:8px;background:var(--ink);color:var(--paper);border:none;border-radius:8px;padding:11px;font-weight:600;font-size:13.5px;width:100%;transition:background .15s ease;}
-  .card-add:hover{background:#000;}
-  .card-add.added{background:var(--green);}
+  .card-add{margin-top:8px;background:var(--ink);color:#fff;border:none;border-radius:8px;padding:11px;font-weight:600;font-size:13.5px;width:100%;transition:background .15s ease;}
+  .card-add:hover{background:var(--amber);color:#000;}
+  .card-add.added{background:var(--green);color:#fff;}
 
   .how{background:var(--ink);color:var(--paper);}
   .how .section-head h2{color:var(--paper);}
   .how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
-  .how-wrap{display:grid;grid-template-columns:0.8fr 1.2fr;gap:40px;align-items:start;}
-  .how-photo{width:100%;border-radius:16px;box-shadow:0 24px 48px -20px rgba(20,25,29,0.3);object-fit:cover;position:sticky;top:24px;}
   .how-item{border:1px solid rgba(237,234,226,0.15);border-radius:14px;padding:24px;}
   .how-item .num{font-family:'IBM Plex Mono',monospace;color:var(--amber);font-size:13px;margin-bottom:10px;}
   .how-item h3{font-size:18px;margin:0 0 8px;}
@@ -193,34 +236,75 @@
   .cgv-row{display:flex;align-items:flex-start;gap:8px;font-size:12.5px;color:var(--slate);margin-bottom:14px;line-height:1.4;}
   .cgv-row input{margin-top:2px;flex-shrink:0;}
   .cgv-row a{color:var(--ink);text-decoration:underline;}
-  .btn-checkout{width:100%;background:var(--ink);color:var(--paper);border:none;border-radius:10px;padding:15px;font-weight:600;font-size:15px;display:flex;align-items:center;justify-content:center;gap:8px;}
+  .btn-checkout{width:100%;background:var(--amber);color:#000;border:none;border-radius:10px;padding:15px;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;gap:8px;}
   .btn-checkout:disabled{opacity:0.4;cursor:not-allowed;}
   .checkout-error{background:rgba(193,68,58,0.12);border:1px solid var(--red);color:var(--red);font-size:13px;border-radius:8px;padding:10px 12px;margin-top:10px;display:none;}
-  .spinner{width:16px;height:16px;border:2px solid rgba(237,234,226,0.4);border-top-color:var(--paper);border-radius:50%;animation:spin .7s linear infinite;display:none;}
+  .spinner{width:16px;height:16px;border:2px solid rgba(0,0,0,0.3);border-top-color:#000;border-radius:50%;animation:spin .7s linear infinite;display:none;}
   @keyframes spin{to{transform:rotate(360deg);}}
   .secure-note{display:flex;align-items:center;gap:6px;justify-content:center;font-size:11.5px;color:var(--slate);margin-top:10px;}
   .payment-badges{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:10px;flex-wrap:wrap;}
   .pay-badge{border:1px solid var(--line);border-radius:6px;padding:3px 8px;font-size:10.5px;font-weight:700;letter-spacing:0.02em;color:var(--slate);background:var(--paper);}
 
+  /* ===== Noël ===== */
+  .lights{height:22px;background:#0B0B0D;position:relative;overflow:hidden;}
+  .lights::before{content:'';position:absolute;left:0;right:0;top:8px;height:2px;background:#333;}
+  .lights i{position:absolute;top:8px;width:10px;height:14px;border-radius:50% 50% 50% 50%/40% 40% 60% 60%;animation:twinkle 1.6s ease-in-out infinite;}
+  @keyframes twinkle{0%,100%{opacity:1;filter:brightness(1.3);}50%{opacity:0.35;filter:brightness(0.8);}}
+  .snow{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:1;}
+  .snow span{position:absolute;top:-12px;color:#fff;opacity:0.85;animation:fall linear infinite;}
+  @keyframes fall{to{transform:translateY(calc(100vh + 40px)) translateX(30px);}}
+  .hero-grid{z-index:2;}
+  .noel-kicker{display:inline-block;background:var(--red);color:#fff;font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:18px;}
+  .hero h1 .gold{color:#FFC94D;}
+  .urgent{margin:0 0 22px;font-size:20px;font-weight:700;color:#FFC94D;font-family:'Space Grotesk',sans-serif;}
+  .countdown{display:flex;gap:10px;margin:0 0 26px;}
+  .cd-box{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.18);border-radius:14px;padding:10px 0;min-width:78px;text-align:center;}
+  .cd-box b{display:block;font-family:'Space Grotesk',sans-serif;font-size:34px;line-height:1;color:#fff;}
+  .cd-box span{font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.6);}
+  .cd-label{font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-bottom:8px;font-family:'IBM Plex Mono',monospace;}
+  .gifts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .gift{position:relative;border-radius:20px;padding:26px 24px;text-align:left;border:none;color:#fff;overflow:hidden;min-height:170px;display:flex;flex-direction:column;justify-content:flex-end;transition:transform .15s ease;}
+  .gift:hover{transform:translateY(-4px);}
+  .gift .g-ico{position:absolute;top:16px;right:20px;font-size:44px;}
+  .gift .g-t{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:24px;line-height:1.1;}
+  .gift .g-s{font-size:13px;opacity:0.85;margin-top:4px;}
+  .gift.g1{background:linear-gradient(135deg,#B3261E,#7a1510);}
+  .gift.g2{background:linear-gradient(135deg,#1c6b45,#0f3d27);}
+  .gift.g3{background:linear-gradient(135deg,#1f1f24,#000);border:1px solid #FFC94D;}
+  .feat .feat-stock{font-size:12px;font-weight:700;color:var(--red);margin:-6px 0 10px;}
+
   @media (max-width: 900px){
+    .gifts{grid-template-columns:1fr;}
+    .cd-box{min-width:64px;}
+    .cd-box b{font-size:26px;}
+    .urgent{font-size:17px;}
+    .hero{padding:48px 0 64px;}
     .hero-grid{grid-template-columns:1fr;}
     .tag-wrap{margin-top:20px;}
-    .hero h1{font-size:38px;}
-    .trust-inner{grid-template-columns:repeat(2,1fr);}
+    .tag{left:0;}
+    .hero h1{font-size:40px;}
+    .cats{grid-template-columns:repeat(2,1fr);}
+    .cat{height:190px;}
+    .cat .cat-name{font-size:20px;}
+    .reassure-grid{grid-template-columns:repeat(2,1fr);}
     .grid{grid-template-columns:repeat(2,1fr);}
     .how-grid{grid-template-columns:1fr;}
-    .how-wrap{grid-template-columns:1fr;}
-    .how-photo{position:static;max-width:320px;margin:0 auto 8px;}
     .navlinks{display:none;}
+    .section{padding:52px 0;}
+    .section-head h2{font-size:28px;}
   }
 </style>
 </head>
-<body><div style="background:#ff6a00;color:#000;text-align:center;padding:10px 14px;font-weight:700;font-size:14px">🖤 BLACK FRIDAY : -20 % sur tout le site avec le code BLACKFRIDAY20 · jusqu'au 30 novembre</div>
+<body>
+
+<div class="bf-banner">🎄 NOËL EXCEPTIONNEL · DÉSTOCKAGE MASSIF AVANT FERMETURE : -55 % sur TOUT le catalogue · Livraison offerte · Jusqu'au 25 décembre</div>
+<div class="lights" id="lights" aria-hidden="true"></div>
 
 <header class="site">
   <div class="wrap nav">
     <div class="brand"><span class="dot"></span>PromoSmartphones</div>
     <nav class="navlinks">
+      <a href="#categories">Catégories</a>
       <a href="#catalogue">Catalogue</a>
       <a href="#comment">Garantie &amp; authenticité</a>
       <a href="a-propos.html">Qui sommes-nous</a>
@@ -236,41 +320,97 @@
 </header>
 
 <section class="hero">
+  <div class="snow" id="snow" aria-hidden="true"></div>
   <div class="wrap hero-grid">
     <div>
-      <div class="eyebrow">● Vente de déstockage</div>
-      <h1>La bonne tech,<br>au prix <span class="accent">net.</span></h1>
-      <p class="lead">iPhone, Samsung et Mac neufs, en déstockage à prix cassés pour un temps limité. Livraison gratuite en France &amp; Europe, paiement sécurisé par carte.</p>
+      <div class="noel-kicker">🎄 Noël exceptionnel · Déstockage avant fermeture</div>
+      <h1>Tout doit <span class="accent">disparaître</span> : <span class="gold">-55 %</span> sur tout.</h1>
+      <div class="urgent">À saisir sans trop tarder : quantités limitées !</div>
+      <div class="cd-label">Fin de l'offre dans</div>
+      <div class="countdown" id="countdown">
+        <div class="cd-box"><b id="cdD">--</b><span>jours</span></div>
+        <div class="cd-box"><b id="cdH">--</b><span>heures</span></div>
+        <div class="cd-box"><b id="cdM">--</b><span>min</span></div>
+        <div class="cd-box"><b id="cdS">--</b><span>sec</span></div>
+      </div>
+      <p class="lead">Profitez-en pour faire vos cadeaux de Noël ! iPhone, Samsung, Mac, iPad : produits neufs et scellés, livraison offerte et rapide, garantie légale 2 ans.</p>
       <div class="hero-ctas">
         <a href="#catalogue"><button class="btn-primary">Voir le catalogue</button></a>
-        <a href="#comment"><button class="btn-ghost">Comment ça marche</button></a>
+        <a href="#categories"><button class="btn-ghost">Parcourir les catégories</button></a>
       </div>
+      <div class="hero-code"><b>-55 %</b> déjà appliqué sur tous les prix · jusqu'au 25 décembre</div>
     </div>
     <div class="tag-wrap">
       <img src="images/iphone17promax-orange.jpg" alt="iPhone 17 Pro Max Orange cosmique, neuf en promotion" class="hero-photo">
       <div class="tag">
-        <div class="tag-hole"></div>
         <span class="grade">NEUF</span>
         <div class="device">iPhone 17 Pro Max · 256 Go</div>
         <div class="spec">Scellé d'origine · Garanti</div>
         <div class="price-row">
-          <span class="old-price mono">1479 €</span>
-          <span class="new-price mono">999 €</span>
+          <span class="old-price mono">999 €</span>
+          <span class="new-price mono">450 €</span>
         </div>
-        <div class="save">− 32% · déstockage</div>
+        <div class="save">− 55% · déstockage avant fermeture</div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="trust">
-  <div class="wrap trust-inner">
-    <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>Produit neuf scellé d'origine</div>
-    <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/></svg>Garantie légale 2 ans</div>
-    <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2"/><path d="M19 10h4v5h-4z"/><circle cx="6" cy="20" r="1.6"/><circle cx="17" cy="20" r="1.6"/></svg>Livraison gratuite France &amp; UE</div>
-    <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>Paiement sécurisé par carte bancaire</div>
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>TOUT DOIT DISPARAÎTRE -55%</span>•<span>LIVRAISON OFFERTE</span>•<span>PRODUITS NEUFS SCELLÉS</span>•<span>CADEAUX DE NOËL</span>•<span>GARANTIE LÉGALE 2 ANS</span>•<span>TOUT DOIT DISPARAÎTRE -55%</span>•<span>LIVRAISON OFFERTE</span>•<span>PRODUITS NEUFS SCELLÉS</span>•<span>CADEAUX DE NOËL</span>•<span>GARANTIE LÉGALE 2 ANS</span>•
   </div>
 </div>
+
+<section class="section" id="categories">
+  <div class="wrap">
+    <div class="section-head">
+      <div><h2>Choisis ta catégorie</h2><p>Tout le catalogue, du smartphone à l'accessoire.</p></div>
+    </div>
+    <div class="cats">
+      <button class="cat" onclick="goCat('iPhone')"><span class="cat-arrow">→</span><span class="cat-name">iPhone<span class="cat-sub">17, 18 Pro, Duo…</span></span><img src="images/iphone17promax-orange.jpg" alt="iPhone"></button>
+      <button class="cat" onclick="goCat('Samsung')"><span class="cat-arrow">→</span><span class="cat-name">Samsung<span class="cat-sub">Galaxy S25, A56…</span></span><img src="images/galaxys25ultra-noir.jpg" alt="Samsung Galaxy"></button>
+      <button class="cat" onclick="goCat('Mac')"><span class="cat-arrow">→</span><span class="cat-name">Mac<span class="cat-sub">MacBook Air, Pro, Neo</span></span><img src="images/macbookprom5-noir.jpg" alt="MacBook"></button>
+      <button class="cat" onclick="goCat('iPad')"><span class="cat-arrow">→</span><span class="cat-name">iPad<span class="cat-sub">iPad, Air, Pro</span></span><img src="images/ipadair7-bleu.jpg" alt="iPad"></button>
+      <button class="cat" onclick="goCat('AirPods')"><span class="cat-arrow">→</span><span class="cat-name">AirPods<span class="cat-sub">Pro 2, Max…</span></span><img src="images/airpodspro2.jpg" alt="AirPods"></button>
+      <button class="cat" onclick="goCat('AppleWatch')"><span class="cat-arrow">→</span><span class="cat-name">Apple Watch<span class="cat-sub">Ultra, Series</span></span><img src="images/watchultra2-titanenaturel.jpg" alt="Apple Watch"></button>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <div><h2>🎁 Idées cadeaux de Noël</h2><p>Trouve le bon cadeau selon ton budget.</p></div>
+    </div>
+    <div class="gifts">
+      <button class="gift g1" onclick="goCat('AirPods')"><span class="g-ico">🎧</span><span class="g-t">Petits prix, grand effet</span><span class="g-s">AirPods, accessoires…</span></button>
+      <button class="gift g2" onclick="goCat('iPad')"><span class="g-ico">🎁</span><span class="g-t">Le cadeau malin</span><span class="g-s">iPad, tablettes, Samsung…</span></button>
+      <button class="gift g3" onclick="goCat('iPhone')"><span class="g-ico">⭐</span><span class="g-t">Le grand cadeau</span><span class="g-s">iPhone 18 Pro, 17 Pro Max…</span></button>
+    </div>
+  </div>
+</section>
+
+<section class="section featured">
+  <div class="wrap">
+    <div class="section-head">
+      <div><h2>Produits phares</h2><p>Les modèles les plus recherchés du moment.</p></div>
+    </div>
+    <div class="feat-row" id="featRow"></div>
+  </div>
+</section>
+
+<section class="section reassure">
+  <div class="wrap">
+    <div class="section-head"><div><h2>Achète en confiance</h2><p>Les mêmes garanties qu'un achat neuf classique.</p></div></div>
+    <div class="reassure-grid">
+      <div class="rea"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg></div><h3>100 % neuf</h3><p>Produits scellés d'origine, jamais déballés, avec tous les accessoires constructeur.</p></div>
+      <div class="rea"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/></svg></div><h3>Garantie 2 ans</h3><p>Garantie légale de conformité de 2 ans incluse sur tous les produits.</p></div>
+      <div class="rea"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2"/><path d="M19 10h4v5h-4z"/><circle cx="6" cy="20" r="1.6"/><circle cx="17" cy="20" r="1.6"/></svg></div><h3>Livraison offerte</h3><p>Livraison gratuite sans minimum d'achat, en France et en Europe.</p></div>
+      <div class="rea"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div><h3>Paiement sécurisé</h3><p>Carte bancaire via Stripe. 14 jours pour changer d'avis.</p></div>
+    </div>
+  </div>
+</section>
 
 <section class="section" id="catalogue">
   <div class="wrap">
@@ -460,16 +600,99 @@ function renderGrid(){
 function changeColor(key, colorName){ selectedColor[key] = colorName; renderGrid(); }
 function changeStorage(key, id){ selectedVariant[key] = id; renderGrid(); }
 
+function setFilter(f){
+  currentFilter = f;
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.toggle('active', b.dataset.f===f));
+  renderGrid();
+}
+function goCat(f){
+  setFilter(f);
+  const el = document.getElementById('catalogue');
+  if(el) el.scrollIntoView({behavior:'smooth'});
+}
+
 document.getElementById('filters').addEventListener('click', e=>{
   const btn = e.target.closest('.filter-btn');
   if(!btn) return;
-  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  currentFilter = btn.dataset.f;
-  renderGrid();
+  setFilter(btn.dataset.f);
 });
 
+/* Produits phares : prix et photos lus depuis PRODUCTS */
+function renderFeatured(){
+  const ids = [102, 106, 41, 64, 77, 79];
+  const row = document.getElementById('featRow');
+  if(!row) return;
+  const cards = ids.map(id => PRODUCTS.find(p => p.id === id)).filter(Boolean).map(p => {
+    const photo = (p.colors && p.colors[0] && p.colors[0].photo) || '';
+    const group = p.variantGroup ? PRODUCTS.filter(x => x.variantGroup === p.variantGroup) : [p];
+    const min = Math.min.apply(null, group.map(x => x.price));
+    const pct = discountPct(p);
+    const badge = pct > 0 ? '-' + pct + '%' : 'NOUVEAU';
+    return `<div class="feat">
+      <span class="feat-badge">${badge}</span>
+      <div class="feat-img">${photo ? `<img src="${photo}" alt="${p.name}">` : ''}</div>
+      <div class="feat-brand">${p.brand}</div>
+      <div class="feat-name">${p.name}</div>
+      <div class="feat-price">dès <b>${min} €</b></div>
+      <div class="feat-stock">🔥 Stock limité</div>
+      <a class="feat-btn" href="produit.html?id=${p.id}">Voir le produit</a>
+    </div>`;
+  }).join('');
+  row.innerHTML = cards;
+}
+
+/* Guirlande lumineuse */
+(function(){
+  const box = document.getElementById('lights');
+  if(!box) return;
+  const colors = ['#FF3B30','#FFC94D','#34C759','#FF6A00','#4DA3FF'];
+  const n = Math.ceil(window.innerWidth / 38);
+  for(let i=0;i<n;i++){
+    const b = document.createElement('i');
+    b.style.left = (i*38+10)+'px';
+    b.style.background = colors[i%colors.length];
+    b.style.animationDelay = (i%5)*0.3+'s';
+    box.appendChild(b);
+  }
+})();
+
+/* Neige */
+(function(){
+  const box = document.getElementById('snow');
+  if(!box) return;
+  for(let i=0;i<40;i++){
+    const s = document.createElement('span');
+    s.textContent = '❄';
+    s.style.left = Math.random()*100+'%';
+    s.style.fontSize = (8+Math.random()*14)+'px';
+    s.style.animationDuration = (7+Math.random()*9)+'s';
+    s.style.animationDelay = (-Math.random()*12)+'s';
+    s.style.opacity = 0.4+Math.random()*0.5;
+    box.appendChild(s);
+  }
+})();
+
+/* Compte à rebours jusqu'au 25 décembre 2026, 23h59 */
+(function(){
+  const end = new Date(2026, 11, 25, 23, 59, 59).getTime();
+  const p = n => String(n).padStart(2,'0');
+  function tick(){
+    let d = end - Date.now();
+    if(d < 0) d = 0;
+    const days = Math.floor(d/86400000);
+    const h = Math.floor(d%86400000/3600000);
+    const m = Math.floor(d%3600000/60000);
+    const s = Math.floor(d%60000/1000);
+    document.getElementById('cdD').textContent = p(days);
+    document.getElementById('cdH').textContent = p(h);
+    document.getElementById('cdM').textContent = p(m);
+    document.getElementById('cdS').textContent = p(s);
+  }
+  tick(); setInterval(tick, 1000);
+})();
+
 renderGrid();
+renderFeatured();
 updateCartUI();
 
 </script>
