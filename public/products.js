@@ -351,19 +351,19 @@ const PRODUCTS = [
     {name:'Glacier', photo:'images/iphone18pro-glacier.jpg', views:['images/iphone18pro-glacier.jpg']},
     {name:'Bourgogne', photo:'images/iphone18pro-bordeaux.jpg', views:['images/iphone18pro-bordeaux.jpg']}
   ]},
-  {id:98, variantGroup:'iphoneduo', brand:'iPhone', name:'iPhone Duo', spec:'256 Go · Précommande, livraison dès le 23 oct.', desc:'Le premier iPhone pliant d\'Apple : un grand écran intérieur qui se replie dans un format compact. Précommande au prix officiel constructeur — livraison à partir du 23 octobre 2026, dès la sortie du produit.', original:2339, price:2339, type:'phone', colors:[
+  {id:98, variantGroup:'iphoneduo', brand:'iPhone', name:'iPhone Duo', spec:'256 Go ', desc:'Le premier iPhone pliant d\'Apple : un grand écran intérieur qui se replie dans un format compact. Disponible au prix officiel constructeur — livraison offerte.', original:2339, price:2339, type:'phone', colors:[
     {name:'Blanc stellaire', photo:'images/iphoneduo-blanc.jpg', views:['images/iphoneduo-blanc.jpg']},
     {name:'Ciel nocturne', photo:'images/iphoneduo-nuit.jpg', views:['images/iphoneduo-nuit.jpg']}
   ]},
-  {id:99, variantGroup:'iphoneduo', brand:'iPhone', name:'iPhone Duo', spec:'512 Go · Précommande, livraison dès le 23 oct.', desc:'Le premier iPhone pliant d\'Apple : un grand écran intérieur qui se replie dans un format compact. Précommande au prix officiel constructeur — livraison à partir du 23 octobre 2026, dès la sortie du produit.', original:2589, price:2589, type:'phone', colors:[
+  {id:99, variantGroup:'iphoneduo', brand:'iPhone', name:'iPhone Duo', spec:'512 Go ', desc:'Le premier iPhone pliant d\'Apple : un grand écran intérieur qui se replie dans un format compact. Disponible au prix officiel constructeur — livraison offerte.', original:2589, price:2589, type:'phone', colors:[
     {name:'Blanc stellaire', photo:'images/iphoneduo-blanc.jpg', views:['images/iphoneduo-blanc.jpg']},
     {name:'Ciel nocturne', photo:'images/iphoneduo-nuit.jpg', views:['images/iphoneduo-nuit.jpg']}
   ]},
-  {id:100, variantGroup:'iphoneduo', brand:'iPhone', name:'iPhone Duo', spec:'1 To · Précommande, livraison dès le 23 oct.', desc:'Le premier iPhone pliant d\'Apple : un grand écran intérieur qui se replie dans un format compact. Précommande au prix officiel constructeur — livraison à partir du 23 octobre 2026, dès la sortie du produit.', original:3089, price:3089, type:'phone', colors:[
+  {id:100, variantGroup:'iphoneduo', brand:'iPhone', name:'iPhone Duo', spec:'1 To ', desc:'Le premier iPhone pliant d\'Apple : un grand écran intérieur qui se replie dans un format compact. Disponible au prix officiel constructeur — livraison offerte.', original:3089, price:3089, type:'phone', colors:[
     {name:'Blanc stellaire', photo:'images/iphoneduo-blanc.jpg', views:['images/iphoneduo-blanc.jpg']},
     {name:'Ciel nocturne', photo:'images/iphoneduo-nuit.jpg', views:['images/iphoneduo-nuit.jpg']}
   ]},
-  {id:101, variantGroup:'iphoneduo', brand:'iPhone', name:'iPhone Duo', spec:'2 To · Précommande, livraison dès le 23 oct.', desc:'Le premier iPhone pliant d\'Apple : un grand écran intérieur qui se replie dans un format compact. Précommande au prix officiel constructeur — livraison à partir du 23 octobre 2026, dès la sortie du produit.', original:3839, price:3839, type:'phone', colors:[
+  {id:101, variantGroup:'iphoneduo', brand:'iPhone', name:'iPhone Duo', spec:'2 To ', desc:'Le premier iPhone pliant d\'Apple : un grand écran intérieur qui se replie dans un format compact. Disponible au prix officiel constructeur — livraison offerte.', original:3839, price:3839, type:'phone', colors:[
     {name:'Blanc stellaire', photo:'images/iphoneduo-blanc.jpg', views:['images/iphoneduo-blanc.jpg']},
     {name:'Ciel nocturne', photo:'images/iphoneduo-nuit.jpg', views:['images/iphoneduo-nuit.jpg']}
   ]},
@@ -577,8 +577,8 @@ const PRODUCT_INFO = {
     specs: [['Écran','6,3" Super Retina XDR OLED, 2622x1206'],['Puce','A20 Pro'],['Appareil photo','Pro Fusion 48 Mpx, ouverture variable, OIS 2e génération'],['Étanchéité','IP68 (6 m, 30 min)']]
   },
     'iPhone Duo': {
-    desc: "Le premier iPhone pliant d'Apple : un écran extérieur de 5,4\" et un grand écran intérieur de 7,6\" OLED 120 Hz qui se replie dans un format compact. Précommande au prix officiel constructeur — livraison à partir du 23 octobre 2026, dès la sortie du produit.",
-    specs: [['Écran','5,4" extérieur · 7,6" intérieur, OLED 120 Hz'],['Puce','A20 Pro'],['Appareil photo','Fusion 48 Mpx + ultra grand-angle + téléobjectif optique x2 12 Mpx'],['Autonomie',"Jusqu'à 31 h de lecture vidéo (écran intérieur), 44 h (écran extérieur)"],['Disponibilité',"Précommande le 16 oct., livraison dès le 23 oct. 2026"]]
+    desc: "Le premier iPhone pliant d'Apple : un écran extérieur de 5,4\" et un grand écran intérieur de 7,6\" OLED 120 Hz qui se replie dans un format compact. Disponible au prix officiel constructeur — livraison offerte.",
+    specs: [['Écran','5,4" extérieur · 7,6" intérieur, OLED 120 Hz'],['Puce','A20 Pro'],['Appareil photo','Fusion 48 Mpx + ultra grand-angle + téléobjectif optique x2 12 Mpx'],['Autonomie',"Jusqu'à 31 h de lecture vidéo (écran intérieur), 44 h (écran extérieur)"],['Disponibilité','En stock, livraison offerte']]
   },
   'iPhone 12 Pro Max': {
     desc: "L'iPhone 12 Pro Max, c'est le grand format Pro : \u00e9cran 6,7\" Super Retina XDR, ch\u00e2ssis en acier inoxydable, puce A14 Bionic et un syst\u00e8me photo Pro triple 12 Mpx avec stabilisation par d\u00e9calage de capteur et scanner LiDAR. Excellent pour la photo et la vid\u00e9o.",
